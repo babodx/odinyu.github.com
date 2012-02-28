@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[我是清都山水郎]]></title>
-  <link href="http://odinyu.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: test | 我是清都山水郎]]></title>
+  <link href="http://odinyu.github.com/blog/categories/test/atom.xml" rel="self"/>
   <link href="http://odinyu.github.com/"/>
   <updated>2012-02-28T22:50:35+08:00</updated>
   <id>http://odinyu.github.com/</id>
