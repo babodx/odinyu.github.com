@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[我是清都山水郎]]></title>
-  <link href="http://odinyu.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: github | 我是清都山水郎]]></title>
+  <link href="http://odinyu.github.com/blog/categories/github/atom.xml" rel="self"/>
   <link href="http://odinyu.github.com/"/>
   <updated>2012-02-29T04:44:26+08:00</updated>
   <id>http://odinyu.github.com/</id>
@@ -91,17 +91,6 @@
 <li>最后执行<code>rake deploy</code>，将日志提交到github上，完美收工！</li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[原来是在这里填中文的标题]]></title>
-    <link href="http://odinyu.github.com/blog/2012/02/28/first-post/"/>
-    <updated>2012-02-28T22:29:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/2012/02/28/first-post</id>
-    <content type="html"><![CDATA[<p>刚才一直试图修改_config.yml的一些默认项，每次改成中文rake generate都会报错，很郁闷！</p>
-
-<p>这是我的第一个用markdown写的日志，并且是第一次在github上用octopress发布，感觉小小地geek了一把。</p>
 ]]></content>
   </entry>
   
