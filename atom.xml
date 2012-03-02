@@ -4,10 +4,10 @@
   <title><![CDATA[我是清都山水郎]]></title>
   <link href="http://odinyu.github.com/atom.xml" rel="self"/>
   <link href="http://odinyu.github.com/"/>
-  <updated>2012-02-29T04:44:26+08:00</updated>
+  <updated>2012-03-02T13:57:56+08:00</updated>
   <id>http://odinyu.github.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[sleepy]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[在github上用octopress搭建博客过程纪要]]></title>
-    <link href="http://odinyu.github.com/blog/2012/02/29/introduce-octopress-on-github/"/>
+    <link href="http://odinyu.github.com/blog/introduce-octopress-on-github/"/>
     <updated>2012-02-29T01:25:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/2012/02/29/introduce-octopress-on-github</id>
+    <id>http://odinyu.github.com/blog/introduce-octopress-on-github</id>
     <content type="html"><![CDATA[<p>几个小时之前刚在github pages上使用octopress搭建了一个博客副本。本来基于本人一贯拖延的作风，是想过几天再记录整个过程的，但是正好在通宵工作但又暂时无事可干中，所以还是趁记忆还比较清晰的时候来搞定它。</p>
 
 <p>在开始写过程之前先要交待一下我为什么要去做这件事，又或者说是这么做有什么好处：</p>
@@ -96,9 +96,9 @@
   
   <entry>
     <title type="html"><![CDATA[原来是在这里填中文的标题]]></title>
-    <link href="http://odinyu.github.com/blog/2012/02/28/first-post/"/>
+    <link href="http://odinyu.github.com/blog/first-post/"/>
     <updated>2012-02-28T22:29:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/2012/02/28/first-post</id>
+    <id>http://odinyu.github.com/blog/first-post</id>
     <content type="html"><![CDATA[<p>刚才一直试图修改_config.yml的一些默认项，每次改成中文rake generate都会报错，很郁闷！</p>
 
 <p>这是我的第一个用markdown写的日志，并且是第一次在github上用octopress发布，感觉小小地geek了一把。</p>

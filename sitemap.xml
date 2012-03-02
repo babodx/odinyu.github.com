@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://odinyu.github.com/blog/2012/02/28/first-post/</loc>
+        <loc>http://odinyu.github.com/blog/first-post/</loc>
         <lastmod>2012-02-28T23:09:29+08:00</lastmod>
     </url>
     <url>
-        <loc>http://odinyu.github.com/blog/2012/02/29/introduce-octopress-on-github/</loc>
+        <loc>http://odinyu.github.com/blog/introduce-octopress-on-github/</loc>
         <lastmod>2012-02-29T04:43:22+08:00</lastmod>
     </url>
     <url>
