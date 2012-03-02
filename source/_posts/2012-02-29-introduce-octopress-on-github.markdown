@@ -12,7 +12,12 @@ categories: github
 
 - 首先这么做需要那么一点点伪技术，所以看上去就会比较geek一点。
 - 其次这整个服务的搭建是完全免费的，可能对于比较穷困的专业挨踢的我来说会是一个开源节流的渠道。
-- 然后用octopress来写博客，最后发布的动作很cool。`rake generate`再`rake deploy`，间或还可以`rake preview`，个人感觉很帅气。
+- 然后用octopress来写博客，最后发布的动作很cool。
+{% codeblock 个人感觉很帅气 %}
+rake generate
+rake preview
+rake deploy
+{% endcodeblock %}
 - 最后则是离线写博客很舒服，拥有纯文本markdown，良好的html支持，不使用数据库，完美的版本控制，静态页面生成等诸多优点。
 
 好了，现在开始整个服务搭建过程记录，可能比较长：
@@ -54,6 +59,13 @@ categories: github
 - 执行`rake preview`地，可以在浏览器内以[这个地址](http://127.0.0.1:4000)进行预览。
 - 最后执行`rake deploy`，将日志提交到github上，完美收工！
 
+##补充一点
+最后的但并不最不重要的，我们需要将修改的日志同步到github上，因此下面的3个命令也是必须的。
+{% codeblock %}
+git add .
+git commit -m 'your message'
+git push origin source
+{% endcodeblock %}
 
 
 
