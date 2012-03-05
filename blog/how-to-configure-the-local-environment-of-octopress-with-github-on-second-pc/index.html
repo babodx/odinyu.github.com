@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>我是清都山水郎</title>
+  <title>在第二台电脑上配置github octopress的本地环境 - 我是清都山水郎</title>
   <meta name="author" content="sleepy">
 
   
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://odinyu.github.com">
+  <link rel="canonical" href="http://odinyu.github.com/blog/how-to-configure-the-local-environment-of-octopress-with-github-on-second-pc">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -62,15 +62,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/how-to-configure-the-local-environment-of-octopress-with-github-on-second-pc/">在第二台电脑上配置github Octopress的本地环境</a></h1>
+      <h1 class="entry-title">在第二台电脑上配置github Octopress的本地环境</h1>
     
     
       <p class="meta">
@@ -88,14 +85,14 @@
 
 <time datetime="2012-03-05T23:18:00+08:00" pubdate data-updated="true">Mar 5<span>th</span>, 2012</time>
         
-         | <a href="/blog/how-to-configure-the-local-environment-of-octopress-with-github-on-second-pc/#disqus_thread">Comments</a>
+         | <a href="#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><p>本来倒是没想在家里的本本上也进行配置，不过一颗geek的心却始终骚动着，最终还是google了出来具体的方法，当然也是综合了多方建议，所以有必要在还没有忘记之时记录一下。</p>
+<div class="entry-content"><p>本来倒是没想在家里的本本上也进行配置，不过一颗geek的心却始终骚动着，最终还是google了出来具体的方法，当然也是综合了多方建议，所以有必要在还没有忘记之时记录一下。</p>
 
 <h2>安装Ruby</h2>
 
@@ -170,159 +167,16 @@
 
 
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/introduce-octopress-on-github/">在github上用octopress搭建博客过程纪要</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">sleepy</span></span>
 
-<time datetime="2012-02-29T01:25:00+08:00" pubdate data-updated="true">Feb 29<span>th</span>, 2012</time>
-        
-         | <a href="/blog/introduce-octopress-on-github/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>几个小时之前刚在github pages上使用octopress搭建了一个博客副本。本来基于本人一贯拖延的作风，是想过几天再记录整个过程的，但是正好在通宵工作但又暂时无事可干中，所以还是趁记忆还比较清晰的时候来搞定它。</p>
-
-<p>在开始写过程之前先要交待一下我为什么要去做这件事，又或者说是这么做有什么好处：</p>
-
-<ul>
-<li>首先这么做需要那么一点点伪技术，所以看上去就会比较geek一点。</li>
-<li>其次这整个服务的搭建是完全免费的，可能对于比较穷困的专业挨踢的我来说会是一个开源节流的渠道。</li>
-<li>然后用octopress来写博客，最后发布的动作很cool。</li>
-</ul>
-
-
-<figure class='code'><figcaption><span>个人感觉很帅气 </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate
-</span><span class='line'>rake preview
-</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>最后则是离线写博客很舒服，拥有纯文本markdown，良好的html支持，不使用数据库，完美的版本控制，静态页面生成等诸多优点。</li>
-</ul>
-
-
-<p>好了，现在开始整个服务搭建过程记录，可能比较长：</p>
-
-<h2>安装Git并进行配置</h2>
-
-<ul>
-<li>先注册一个github账号。</li>
-<li>下载并安装Git。</li>
-<li>到Git的安装目录找到Git Bash.lnk并打开。</li>
-<li>执行<code>ssh-keygen -t rsa -C "your_email@youremail.com"</code>，回车。</li>
-<li>然后输入两遍密码。</li>
-<li>到c:\Users\用户名.ssh\目录找到id_rsa.pub，并用文本软件打开复制全部。</li>
-<li>到github网站选择“Account Settings”>>“SSH Public Keys”>>“Add another public key”，将刚才复制的内容粘贴到key文本框内。</li>
-</ul>
-
-
-<h2>建立github pages</h2>
-
-<ul>
-<li>创建一个新的Repository。这里需要注意的是，如果想要博客的首页是http://yourname.github.com，则Repository的project name就必须是yourname.github.com。</li>
-<li>根据github给出的指导进行一些命令的键入，即可完成pages的建立。</li>
-</ul>
-
-
-<h2>安装Ruby</h2>
-
-<ul>
-<li>这里要指出一点的是，因为我是在windows里安装，所以采用了<a href="http://rubyinstaller.org/">RubyInstaller</a>的方式，下载这个软件需要翻墙。</li>
-<li>另外别忘记在同一个网站上下载<a href="http://rubyinstaller.org/add-ons/devkit/">DevKit</a>，必须安装。</li>
-</ul>
-
-
-<h2>安装octopress</h2>
-
-<ul>
-<li>获取octopress，执行<code>git clone git://github.com/imathis/octopress.git myblog</code>。</li>
-<li>gem install bundler（记得翻墙）</li>
-<li>bundle install（还是要翻墙）</li>
-<li>rake install</li>
-</ul>
-
-
-<p>到了这一步基本上可以开始写日志了，不过这里要给出两个小的tips。</p>
-
-<h2>修改配置</h2>
-
-<ul>
-<li>将octopress的目录内的_config.yml的编码改成UTF-8。</li>
-<li>到Ruby的安装目录\lib\ruby\gems\1.9.1\gems\jekyll-0.11.0\lib\jekyll\找到convertible.rb这个文件，修改<code>self.content = File.read(File.join(base, name))</code>为<code>self.content = File.read(File.join(base, name), :encoding =&gt; "utf-8")</code>。</li>
-<li>修改配置文件_config.yml，修改url、title、subtitle、author等等。</li>
-</ul>
-
-
-<h2>总算到了激动人心的一步了，开始写日志</h2>
-
-<ul>
-<li>执行<code>rake new_post["my first blog"]</code>，这样会在octopress的/source/_post下生成一个markdown文件，可以用文本软件进行编辑</li>
-<li>完成编辑后执行<code>rake generate</code>，生成。</li>
-<li>执行<code>rake preview</code>地，可以在浏览器内以<a href="http://127.0.0.1:4000">这个地址</a>进行预览。</li>
-<li>最后执行<code>rake deploy</code>，将日志提交到github上，完美收工！</li>
-</ul>
-
-
-<h2>补充一点</h2>
-
-<p>最后的但并不最不重要的，我们需要将修改的日志同步到github上，因此下面的3个命令也是必须的。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git add .
-</span><span class='line'>git commit -m 'your message'
-</span><span class='line'>git push origin source</span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/first-post/">原来是在这里填中文的标题</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -334,31 +188,38 @@
   
 
 
-<time datetime="2012-02-28T22:29:00+08:00" pubdate data-updated="true">Feb 28<span>th</span>, 2012</time>
-        
-         | <a href="/blog/first-post/#disqus_thread">Comments</a>
-        
-      </p>
+<time datetime="2012-03-05T23:18:00+08:00" pubdate data-updated="true">Mar 5<span>th</span>, 2012</time>
+      
+
+
+    </p>
     
-  </header>
-
-
-  <div class="entry-content"><p>刚才一直试图修改_config.yml的一些默认项，每次改成中文rake generate都会报错，很郁闷！</p>
-
-<p>这是我的第一个用markdown写的日志，并且是第一次在github上用octopress发布，感觉小小地geek了一把。</p>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://odinyu.github.com/blog/how-to-configure-the-local-environment-of-octopress-with-github-on-second-pc/" data-via="" data-counturl="http://odinyu.github.com/blog/how-to-configure-the-local-environment-of-octopress-with-github-on-second-pc/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/introduce-octopress-on-github/" title="Previous Post: 在github上用octopress搭建博客过程纪要">&laquo; 在github上用octopress搭建博客过程纪要</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
+  </section>
+
+</div>
+
 <aside class="sidebar">
   
     <section>
@@ -388,6 +249,7 @@
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -402,7 +264,10 @@
       var disqus_shortname = 'sleepy';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://odinyu.github.com/blog/how-to-configure-the-local-environment-of-octopress-with-github-on-second-pc/';
+        var disqus_url = 'http://odinyu.github.com/blog/how-to-configure-the-local-environment-of-octopress-with-github-on-second-pc/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
