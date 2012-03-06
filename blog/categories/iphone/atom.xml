@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: iphone | 我是清都山水郎]]></title>
+  <link href="http://odinyu.github.com/blog/categories/iphone/atom.xml" rel="self"/>
+  <link href="http://odinyu.github.com/"/>
+  <updated>2012-03-06T14:45:04+08:00</updated>
+  <id>http://odinyu.github.com/</id>
+  <author>
+    <name><![CDATA[sleepy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Iphone App更新控]]></title>
+    <link href="http://odinyu.github.com/blog/iphone-app-update-controller/"/>
+    <updated>2011-08-03T00:00:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/iphone-app-update-controller</id>
+    <content type="html"><![CDATA[<p>在用iphone的人多少都可能会有一些app更新的强迫症，即看到App Store上的红字就想点掉它冲动，至少我就是这样。</p>
+
+<p>我是越了狱在用iphone，因此不可避免地会装一些并不是免费但经人破解的app，因此在如何消除红字上会有点麻烦，因为并不每个破解的app的下个版本会再有人去破解并再公之于众。</p>
+
+<p>还好我们现在有网络，还好国外的破解高手分享精神够高，因此一般只要不是比较冷门的app基本上都能在第一时间找到经破解的更新。下面我简单介绍寻找破解app的步骤，也算是展示一下我的乐于分享的精神。</p>
+
+<p>需要准备两个软件，IPALINK和Mipony，前者用于搜索app的最新破解版的网盘下载链接，后者则用于网盘链接的下载。另外还需要一个趁手的翻墙工具，这个就看个人喜好了，比较随意。</p>
+
+<p><img style="display: block; float: none; margin-left: auto; margin-right: auto" src="http://public.bay.livefilestore.com/y1prHflFdL6quFJ_LfBr5i4Wu6WuFOmoae6Ez68hEji_4hMF1luuvwL0tbZW55ePtmcBjqqvfZS1gnDQcQJV1yxQg/ScreenShot_2011-08-03_214829.jpg"></p>
+
+<p>如上图上所示，复制要下载或者更新的app的链接，然后复制到IPALINK里去进行搜索。记得要先翻墙然后再搜索，如果有搜索如下图，则选择你想要的版本。</p>
+
+<p><img style="display: block; float: none; margin-left: auto; margin-right: auto" src="http://public.bay.livefilestore.com/y1pMwESgg76C5fDCYZmLnXbDtarneJC2Ta8ZVSFoVvGBDilOJUqxdVFtahN94-Wm1jH-er6NaXRpGiKkct7Eqkh_Q/ScreenShot_2011-08-03_215521.jpg"></p>
+
+<p>将网盘的下载链接复制，然后粘贴到Mipony内，使用方法和一般的下载软件区别不大，我就不截图了。注意，下载的时候不要翻墙，不然可能会没什么速度。</p>
+
+<p>最后就是把这些下载好的经破解的app安装到越狱后的iphone内，再打开App Store刷新一下，红字就会相应地减少或者消失。当然，如果是免费app，那最好还是直接在App Store内进行下载和更新，比较方便。</p>
+
+<p>我会经常检查是不是有红字，然后尽量把红字控制在个位数，估计我就是App更新控吧。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[小技巧：使Nook的iphone app阅读个人书籍]]></title>
+    <link href="http://odinyu.github.com/blog/tips-make-nook-iphone-app-read-personal-book/"/>
+    <updated>2011-07-28T00:00:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/tips-make-nook-iphone-app-read-personal-book</id>
+    <content type="html"><![CDATA[<p>刚才在用wlw写的时候崩溃了，郁闷！重来！</p>
+
+<p>其实iphone上用Stanza可以很好地看epub书籍，但是好不容易去申请了itunes美国账号然后下载了的Nook放着不用，好像有点太浪费了，于是就对Nook进行了一点小改动，当然前提是我的iphone是已经越狱过的。</p>
+
+<p>用i-FunBox打开nook，如下图红圈所示的目录内会有一本免费书，用自己的epub书籍替换之，名字还是要用这个免费书的。</p>
+
+<p><img style="display: block; float: none; margin-left: auto; margin-right: auto" src="http://public.bay.livefilestore.com/y1pJN7TeDQ9U0eKrCTq-Zn-I5Vj7leuFlv5z4QTCprY6hprmtJjXuQS0_LsBOt_YHxasLy7ORmkQNKR1hE97clvdw/ScreenShot_2011-07-28_164916.jpg"></p>
+
+<p>然后再将自己电脑上的雅黑及雅黑粗体改名，分别将msyh.ttf、msyhbd.ttf改成CenturySchoolbook.ttf、CenturySchoolbook-B.ttf，然后还是用i-FunBox将这两个改好名的文件替换到下图红圈所示的目录。</p>
+
+<p><img style="display: block; float: none; margin-left: auto; margin-right: auto" src="http://public.bay.livefilestore.com/y1pJLyEOUpnwga7trCIqD6pxsT_nOAaOJHmZHzkhgIA3j0XnWHThkDG9GRDSm0l_SWkhyZRFn4EKxYVE6UFmaWTgw/ScreenShot_2011-07-28_165756.jpg"></p>
+
+<p>然后是回到iphone打开Nook，选择那本免费书，打开后应该是一堆的问号，进入设置界面选择刚才所改的字体，如下图。</p>
+
+<p><img style="display: block; float: none; margin-left: auto; margin-right: auto" src="http://public.bay.livefilestore.com/y1pwV-i5-GmOARYIOlSid1GkF-etQDLFS8aXI5BnmIUhfd_RrdSk5SX5xhfW1QhpCA0yZfIKBiev0ph_D12pUd6tA/IMG_0595.PNG"></p>
+
+<p>接下来就一切ok了，可以像在Nook或者Nook Color里一样地来阅读我们自己的书籍了，效果图如下。</p>
+
+<p><img style="display: block; float: none; margin-left: auto; margin-right: auto" src="http://public.bay.livefilestore.com/y1p0ejvzLtD-OCRTn5T8vLYQ7OoiTvpbEey0QU2w77XyimkuyXxq4qyInX7rOk_e5DHvzfJFe1SeXGYj9irXA_ysQ/IMG_0596.PNG"></p>
+
+<p>这样做的优点是可以充分使用Nook的iphone app，缺点是非越狱不行且每次只能看一本。所以这个只能是小技巧，仅此而已。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Momento，不只是用来记日记]]></title>
+    <link href="http://odinyu.github.com/blog/momento-a-unique-approach-to-diary-writing/"/>
+    <updated>2011-07-25T00:00:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/momento-a-unique-approach-to-diary-writing</id>
+    <content type="html"><![CDATA[<p>从小就知道坚持记日记有很多好处，可是真的要这样做却很难很难。虽然可以把原因推到工作忙没时间、没有好的记日记的方式等，但可能最大原因还是自己的惰性吧。</p>
+
+<p>用手机来记日记可能是解决的一个方案，虽然手机的输入并不那么顺畅，日记的展示也不可能会如何地多姿多彩，但随时在手边却是手机的一个最大的优点吧。</p>
+
+<p>作为普通的打工族，买个iphone4虽然不至于伤筋动骨，但是尽量把iphone4物尽其用好像也是需要的吧。从新手机入手到现在，我已经从App Store上下载了不下10个日记记录软件，然后也用它们分别记了那么一两天。但最后还是把它们一一遗忘，然后再是一一删除，因为我根本想不起来要去用它们记日记。</p>
+
+<p>虽然我可以用日程管理软件强迫在每天的某一时间去打开某个App来记日记，可那样有点像在完成任务，那不是我想要的。于是用手机来记日记，用手机来记录生活又变得那么不切实际，尽管手机依然时刻在手边。直到某一天某个时刻，机缘巧合地在App Store里看到了Momento，并随手把它下载了下来。</p>
+
+<p><img style="display: block; float: none; margin-left: auto; margin-right: auto" src="http://public.bay.livefilestore.com/y1pHEqGJU-dPDm3GN1tSzVrv1K20nMDvBBMH-w89dzPGO48cvJgrXmDVk9fZToD95RqLTVqXLB93CXOPttmw_lMag/IMG_0569.PNG"></p>
+
+<p>上面的截图是它的启动画面，我个人很喜欢这样的风格。整个App内部的色调基本上也是这样，让我在记录的时候会比较地从容，而不像某些App那样花哨地让人不能集中精神。</p>
+
+<p>其实如果Momento仅仅只能让我用来记日记的话，我想也不会有这篇日志存在的必要。Momento本身可以同步一些常见的web2.0网站的feeds，而正是这个特点，让它变得与别不同。</p>
+
+<p>以我个人为例，我将foursquare同步到Momento来记录自己的行踪，将twitter同步到Momento来记录我的碎碎念，将blog同步到Momento来记录自己的想法，将Instagram同步到Momento来记录我的彩色心情。</p>
+
+<p>所以，有时即使我不是想记日记，我也一样会打开Momento来看一下某一天我做了些什么事，去过哪，有什么念想等等。</p>
+
+<p>目前我已经连续用了7天的Momento，也就是说我已经连续记了7天的日记，希望可以保持下去。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[iphone4越狱后必装的20个cydia app]]></title>
+    <link href="http://odinyu.github.com/blog/20-must-be-installed-cydia-app-after-jailbreak/"/>
+    <updated>2011-05-11T00:00:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/20-must-be-installed-cydia-app-after-jailbreak</id>
+    <content type="html"><![CDATA[<p>还是那句话，越或者不越，纯粹是个人的想法，和其他人没有一点点关系。但对于我来说，iphone4是一定要越狱的，不然iphone4就是暴殄天物。</p>
+
+<p>下面罗列一下我觉得需要安装的20个app（排名不分先后）以及它们的用途，都是从cydia上安装，具体如何安装就不详细展开了。</p>
+
+<p>1、actionmenu    <br>这个类似于用户字典，可以事先定义一些在手机里经常要输入的字符，像用户名密码什么的。然后在需要填写的时候，常按输入框，然后选择收藏，再选择想要输入的字符。这样的好处一是不用每次去输入，二是不怕输入错误。</p>
+
+<p>2、ifile    <br>iphone上首选的文件管理软件。</p>
+
+<p>3、infinidock    <br>可以在dock上放任意个图标。</p>
+
+<p>4、infinifolders    <br>可以在文件夹里放任意个图标，解除原先12个的限制。</p>
+
+<p>5、gridlock    <br>可以在桌面上任意位置摆放图标，尽量让墙纸更好看。</p>
+
+<p>6、overboard    <br>让多个桌面之间切换不再需要划动手指或者点小圆点。</p>
+
+<p>7、bitesms    <br>越狱后一定要用到的短信应用，好处太多太多了。</p>
+
+<p>8、kuaidial    <br>越狱后一定要用到的电话增强应用，同样也是好处多多。</p>
+
+<p>9、clockhide    <br>锁屏界面美化，把那大大的时钟去掉。</p>
+
+<p>10、ntpdate    <br>校正系统时间，永远做最准时的人。</p>
+
+<p>11、ischeduler    <br>定时执行任务，包括静音、切换飞行模式、切换情景、打开指定app等。</p>
+
+<p>12、activator    <br>iphone上除了quickdo外超好用的手势应用，主要目的：省home键。</p>
+
+<p>13、multifl0w    <br>后台任务切换，直观漂亮。</p>
+
+<p>14、notifiedpro    <br>改善iphone让人一直诟病的通知模式，像android下拉式通知看齐。</p>
+
+<p>15、photoshuttermute    <br>相机快门静音，手机偷拍必备。</p>
+
+<p>16、quicklock    <br>点击图标即可锁屏，同样省home键。</p>
+
+<p>17、sbsettings    <br>类似android上的那种多键开关，绝对必备。</p>
+
+<p>18、removebackground    <br>sbsettings一键关闭后台应用。</p>
+
+<p>19、sbsettings-vpn    <br>sbsettings一键切换vpn。</p>
+
+<p>20、winterboard    <br>强大的系统美化应用，爱美及追求个性者必备。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[iphone4入手]]></title>
+    <link href="http://odinyu.github.com/blog/iphone4-in-hand/"/>
+    <updated>2011-05-10T00:00:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/iphone4-in-hand</id>
+    <content type="html"><![CDATA[<p>4月25日，我终于还是没有挡住易迅网上iphone4一再降价的诱惑，以4699的空机价下单。易迅的送货速度也很给力，第二天上午10点不到就把手机送到。</p>
+
+<p>接下来的半天，就是对iphone的熟悉。然后接下来的两周，都是对iphone的慢慢适应和调教的过程。</p>
+
+<p>在经历了两次越狱（收到iphone4的当天就越了，之后因为某些原因又刷了一次），多次在多个论坛查看教程攻略、无数次做伸手党并上国外网站下载破解应用。到今天，我想我应该可以说基本上已经搞定了我的iphone4，并会越来越喜欢它的。</p>
+
+<p>博客好久没有更新，一是自己比较懒，还有就是因为感觉好像没什么可以写。不过，我想在有了iphone4后，一切都会有所改观的。可能接下来的一个阶段，博客的主题会转到以iphone为主，包括相关的应用游戏及其他的使用心得等。</p>
+]]></content>
+  </entry>
+  
+</feed>
