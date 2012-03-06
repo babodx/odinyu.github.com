@@ -54,7 +54,20 @@
 <ul>
 <li>首先这么做需要那么一点点伪技术，所以看上去就会比较geek一点。</li>
 <li>其次这整个服务的搭建是完全免费的，可能对于比较穷困的专业挨踢的我来说会是一个开源节流的渠道。</li>
-<li>然后用octopress来写博客，最后发布的动作很cool。<code>rake generate</code>再<code>rake deploy</code>，间或还可以<code>rake preview</code>，个人感觉很帅气。</li>
+<li>然后用octopress来写博客，最后发布的动作很cool。</li>
+</ul>
+
+
+<figure class='code'><figcaption><span>个人感觉很帅气 </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate
+</span><span class='line'>rake preview
+</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
 <li>最后则是离线写博客很舒服，拥有纯文本markdown，良好的html支持，不使用数据库，完美的版本控制，静态页面生成等诸多优点。</li>
 </ul>
 
@@ -119,6 +132,20 @@
 <li>执行<code>rake preview</code>地，可以在浏览器内以<a href="http://127.0.0.1:4000">这个地址</a>进行预览。</li>
 <li>最后执行<code>rake deploy</code>，将日志提交到github上，完美收工！</li>
 </ul>
+
+
+<h2>补充一点</h2>
+
+<p>最后的但并不最不重要的，我们需要将修改的日志同步到github上，因此下面的3个命令也是必须的。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git add .
+</span><span class='line'>git commit -m 'your message'
+</span><span class='line'>git push origin source</span></code></pre></td></tr></table></div></figure>
+
+
 
 </div>
     <div class="meta">
