@@ -7,7 +7,7 @@
     <meta name="author" content="sleepy">
 
     
-    <meta name="description" content="在第二台电脑上配置github Octopress的本地环境 本来倒是没想在家里的本本上也进行配置，不过一颗geek的心却始终骚动着，最终还是google了出来具体的方法，当然也是综合了多方建议，所以有必要在还没有忘记之时记录一下。 安装Ruby 还是通过http://rubyinstaller &hellip;">
+    <meta name="description" content="从Wordpress迁移到Octopress 既然已经建了octopress，又把公司和家里的两台电脑的环境都配置好，那就没有理由不从Wordpress迁移到Octopress。通过网络上高手给出的脚本和指导，整个过程比较顺利，现记录之。 导出Wordpress里的内容 &hellip;">
     
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
 
@@ -46,6 +46,78 @@
 </header>
 	
 	<div id="content" class="inner">
+
+
+    <article class="post">
+    <h1 class="title"><a href="/blog/migrate-from-wordpress-to-octopress/">从Wordpress迁移到Octopress</a></h1>
+    <div class="entry">
+        <p>既然已经建了octopress，又把公司和家里的两台电脑的环境都配置好，那就没有理由不从Wordpress迁移到Octopress。通过网络上高手给出的脚本和指导，整个过程比较顺利，现记录之。</p>
+
+<h3>导出Wordpress里的内容</h3>
+
+<p>我用的是Wordpress导出的xml文件，而不是数据库的备份。</p>
+
+<h3>转换xml到md文档</h3>
+
+<p>使用高手给出的脚本,<a href="https://github.com/odinyu/odinyu.github.com/blob/source/md.rb" title="下载">https://github.com/odinyu/odinyu.github.com/blob/source/md.rb</a>。</p>
+
+<p>重命名Wordpress导出的文件为wordpress.xml，然后放到<code>～/octopress/source/_post</code>下，再执行下面的代码</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd octopress/source/_post
+</span><span class='line'>ruby md.rb wordpress.xml</span></code></pre></td></tr></table></div></figure>
+
+
+<p>可能会提示少包，可以这样安装</p>
+
+<p><code>gem install ya2yaml</code></p>
+
+<p>注意，如果是windows环境下，hpricot这个包需要这样安装，不然会一直不成功</p>
+
+<p><code>gem install hpricot --platform=mswin32</code></p>
+
+<h3>细节处理</h3>
+
+<p>脚本生成的是每篇wordpress上日志的md文档，未能完全按markdown语法格式化，还需要人工调整一下。另外就是原先的图片，如果是外链的还好，对于直接上传到wordpress上的需要修改一下路径。</p>
+
+<p>当然，有些日志可能不再需要，适当的再进行一些清理工作。</p>
+
+<h3>记录很重要</h3>
+
+<p>虽然网络上需要的资讯一般都能找到，但是每次要用的时候再找总是很麻烦，记录在自己的手边才是王道！</p>
+
+        
+        
+    </div>
+    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-06T14:54:00+08:00" pubdate data-updated="true">Mar 6<span>th</span>, 2012</time></div>
+        <div class="tags">
+
+<div class="cat">
+  
+    <a class='category' href='/blog/categories/octopress/'>Octopress</a>
+  
+</div>
+
+</div>
+        
+        <div class="comments"><a href="/blog/migrate-from-wordpress-to-octopress/#disqus_thread">Comments</a></div>
+        
+    </div>
+</article>
 
 
     <article class="post">
@@ -667,60 +739,6 @@
 </div>
         
         <div class="comments"><a href="/blog/prepare-of-4-days-3-nights-in-hongkong/#disqus_thread">Comments</a></div>
-        
-    </div>
-</article>
-
-
-    <article class="post">
-    <h1 class="title"><a href="/blog/memo-temporary-sharing-network-on-win7/">备忘：win7临时分享网络</a></h1>
-    <div class="entry">
-        <p>本来公司在公司里有同事自己用无线路由器分享的无线信号可以用，但这两天他自己家也需要这个无线路由器，因此我的iphone就没法在公司用wifi上网了，有点不大方便。</p>
-
-<p>碰巧在威锋上看帖子的时候看到一个关于如何用pc上的无线网卡分享网络给移动设备使用的教程，而且我手头也正好有一个闲置下来的usb无线网卡，这样正好可以试一下自给自足。</p>
-
-<p>虽说最终总结下来的过程并不是很复杂，但中间也稍稍绕了一点弯路，小小地麻烦了一下。所以，为了以后再有这样的需要时不至于再次失忆，还是在博客上备忘一下。</p>
-
-<p>其实用几张截图就能很好地说明整个流程：</p>
-
-<p><img src="http://public.bay.livefilestore.com/y1pXYjeDhjsDX6ys37shyISivYA3F-JLyTqWWhgQOzYePy8v8o1lRK2tIg-9KkNrUX-DAp86eXxtRP_PDJLW8FQeA/ScreenShot_2011-10-09_141612.jpg" alt="" /></p>
-
-<p><img src="http://public.bay.livefilestore.com/y1p7tU_rqzUDT5jHRIk5yK0SnIIuvq3cZROCCS1gbw7oYmSvFYcWsUlQFoA4-S3bvPuWrtWvMB03e1_fW4nQV0QDQ/ScreenShot_2011-10-09_141652.jpg" alt="" /></p>
-
-<p><img src="http://public.bay.livefilestore.com/y1p7tU_rqzUDT6jML7qfj4VEFxLJ5ylGRMgRKoj-vMN9nCZAw-4jjT4G-i4JwmrAMu2bJDumyDMDNjEwy0zCG_cIQ/ScreenShot_2011-10-09_141728.jpg" alt="" /></p>
-
-<p><img src="http://public.bay.livefilestore.com/y1p7tU_rqzUDT5xJmzijTR5ECuLy2Ttj5pNJC8UHcQyx52BaZKylWAXn3miets6ww0pyTBZ0ehApnMyWNWHNIGk0Q/ScreenShot_2011-10-09_143058.jpg" alt="" /></p>
-
-<p>就是这么简单，不过我自己在试验的过程中有的时候会不成功，需要多试几次，可能和我的usb无线网卡有关。</p>
-
-        
-        
-    </div>
-    <div class="meta">
-        <div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-10-09T00:00:00+08:00" pubdate data-updated="true">Oct 9<span>th</span>, 2011</time></div>
-        <div class="tags">
-
-<div class="cat">
-  
-    <a class='category' href='/blog/categories/about-soft/'>about soft</a>, <a class='category' href='/blog/categories/about-web/'>about web</a>
-  
-</div>
-
-</div>
-        
-        <div class="comments"><a href="/blog/memo-temporary-sharing-network-on-win7/#disqus_thread">Comments</a></div>
         
     </div>
 </article>
