@@ -22,7 +22,7 @@ rake deploy
 
 好了，现在开始整个服务搭建过程记录，可能比较长：
 
-## 安装Git并进行配置
+### 安装Git并进行配置
 - 先注册一个github账号。
 - 下载并安装Git。
 - 到Git的安装目录找到Git Bash.lnk并打开。
@@ -31,16 +31,16 @@ rake deploy
 - 到c:\Users\用户名\.ssh\目录找到id_rsa.pub，并用文本软件打开复制全部。
 - 到github网站选择“Account Settings”>>“SSH Public Keys”>>“Add another public key”，将刚才复制的内容粘贴到key文本框内。
 
-## 建立github pages
+### 建立github pages
 - 创建一个新的Repository。这里需要注意的是，如果想要博客的首页是http://yourname.github.com，则Repository的project name就必须是yourname.github.com。
 - 根据github给出的指导进行一些命令的键入，即可完成pages的建立。
 
-## 安装Ruby
+### 安装Ruby
 
 - 这里要指出一点的是，因为我是在windows里安装，所以采用了[RubyInstaller](http://rubyinstaller.org/)的方式，下载这个软件需要翻墙。
 - 另外别忘记在同一个网站上下载[DevKit](http://rubyinstaller.org/add-ons/devkit/)，必须安装。
 
-## 安装octopress
+### 安装octopress
 - 获取octopress，执行`git clone git://github.com/imathis/octopress.git myblog`。
 - gem install bundler（记得翻墙）
 - bundle install（还是要翻墙）
@@ -48,18 +48,18 @@ rake deploy
 
 到了这一步基本上可以开始写日志了，不过这里要给出两个小的tips。
 
-## 修改配置
+### 修改配置
 - 将octopress的目录内的_config.yml的编码改成UTF-8。
 - 到Ruby的安装目录\lib\ruby\gems\1.9.1\gems\jekyll-0.11.0\lib\jekyll\找到convertible.rb这个文件，修改`self.content = File.read(File.join(base, name))`为`self.content = File.read(File.join(base, name), :encoding => "utf-8")`。
 - 修改配置文件_config.yml，修改url、title、subtitle、author等等。
 
-##总算到了激动人心的一步了，开始写日志
+### 总算到了激动人心的一步了，开始写日志
 - 执行`rake new_post["my first blog"]`，这样会在octopress的/source/_post下生成一个markdown文件，可以用文本软件进行编辑
 - 完成编辑后执行`rake generate`，生成。
 - 执行`rake preview`地，可以在浏览器内以[这个地址](http://127.0.0.1:4000)进行预览。
 - 最后执行`rake deploy`，将日志提交到github上，完美收工！
 
-##补充一点
+### 补充一点
 最后的但并不最不重要的，我们需要将修改的日志同步到github上，因此下面的3个命令也是必须的。
 {% codeblock %}
 git add .
