@@ -13,7 +13,7 @@ categories: Octopress
 
 ### 转换xml到md文档
 
-使用高手给出的脚本,[https://github.com/odinyu/odinyu.github.com/blob/source/md.rb](https://github.com/odinyu/odinyu.github.com/blob/source/md.rb "下载")。
+使用高手给出的脚本,[下载](https://github.com/odinyu/odinyu.github.com/blob/source/md.rb "下载")。
 
 重命名Wordpress导出的文件为wordpress.xml，然后放到`～/octopress/source/_post`下，再执行下面的代码
 
