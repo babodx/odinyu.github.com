@@ -2,18 +2,24 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://odinyu.github.com/blog/first-post/</loc>
-        <lastmod>2012-02-28T23:09:29+08:00</lastmod>
+        <lastmod>2012-03-06T09:41:06+08:00</lastmod>
     </url>
     <url>
         <loc>http://odinyu.github.com/blog/introduce-octopress-on-github/</loc>
-        <lastmod>2012-03-02T14:38:19+08:00</lastmod>
+        <lastmod>2012-03-06T09:48:53+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://odinyu.github.com/blog/how-to-configure-the-local-environment-of-octopress-with-github-on-second-pc/
+        </loc>
+        <lastmod>2012-03-06T09:48:00+08:00</lastmod>
     </url>
     <url>
         <loc>http://odinyu.github.com/blog/archives/</loc>
-        <lastmod>2012-03-02T14:38:19+08:00</lastmod>
+        <lastmod>2012-03-06T09:48:53+08:00</lastmod>
     </url>
     <url>
         <loc>http://odinyu.github.com/</loc>
-        <lastmod>2012-03-02T14:38:19+08:00</lastmod>
+        <lastmod>2012-03-06T09:48:53+08:00</lastmod>
     </url>
 </urlset>
