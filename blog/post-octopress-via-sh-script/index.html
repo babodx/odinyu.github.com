@@ -7,9 +7,7 @@
     <meta name="author" content="sleepy">
 
     
-    <meta name="description" content="使用脚本发布octopress日志 经过本人不断的努力和尝试，终于可以比较舒服地并不受打扰地发布日志到octopress，这下终于爽了！哈哈！ 此举的目的 可以毫不避讳地说，是为了偷懒。 准备工作 不过为了长期地偷懒，先期还是需要做一些准备工作的。
-+ 首先是在网上找到高手写的sh脚本。
-+ &hellip;">
+    <meta name="description" content="使用脚本发布octopress日志 经过本人不断的努力和尝试，终于可以比较舒服地并不受打扰地发布日志到octopress，这下终于爽了！哈哈！ 此举的目的 可以毫不避讳地说，是为了偷懒。 准备工作 不过为了长期地偷懒，先期还是需要做一些准备工作的。 首先是在网上找到高手写的sh脚本。 &hellip;">
     
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
 
@@ -57,14 +55,165 @@
 
 <h3>准备工作</h3>
 
-<p>不过为了长期地偷懒，先期还是需要做一些准备工作的。
-+ 首先是在网上找到高手写的sh脚本。
-+ 然后对脚本进行修改，也就是自定义。
-+ 下载并安装mktemp for windows。</p>
+<p>不过为了长期地偷懒，先期还是需要做一些准备工作的。</p>
+
+<ul>
+<li>首先是在网上找到高手写的sh脚本。</li>
+<li>然后对脚本进行修改，也就是自定义。</li>
+<li>下载并安装mktemp for windows。</li>
+</ul>
+
 
 <h3>贴出脚本</h3>
 
-<p>Liquid error: No such file or directory - python -c &#8220;import sys; print sys.executable&#8221;</p>
+<figure class='code'><figcaption><span>blog </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#!/bin/bash
+</span><span class='line'># Author: Hsin-Yi Chen &lt;ossug.hychen AT gmail.com>
+</span><span class='line'># Alter: Odin Yu &lt;qdssly AT gmail.com>
+</span><span class='line'>ERRMSG_WRONGDIR='You are not under octopress directory'
+</span><span class='line'>[ ! -f _config.yml ] && echo ${ERRMSG_WRONGDIR} && exit
+</span><span class='line'>
+</span><span class='line'>BLOGDIR=${PWD}
+</span><span class='line'>
+</span><span class='line'>submit(){
+</span><span class='line'>  git add .
+</span><span class='line'>  git commit -m '$1'
+</span><span class='line'>  git push origin source
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>deploy(){
+</span><span class='line'>  rake generate
+</span><span class='line'>  rake deploy
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>#我没有用到
+</span><span class='line'>update_octopress(){
+</span><span class='line'>  echo 'upgrading octopress source'
+</span><span class='line'>  git pull octopress master     # Get the latest Octopress
+</span><span class='line'>  bundle install                # Keep gems updated
+</span><span class='line'>  rake update_source            # update the template's source
+</span><span class='line'>  rake update_style             # update the template's style
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>preview(){
+</span><span class='line'>  rake preview &
+</span><span class='line'>  sleep 1
+</span><span class='line'>  ff http://127.0.0.1:4000             # 这里的ff是我加的，是用firefox进行预览
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>#也没有用到
+</span><span class='line'>upgrade(){
+</span><span class='line'>  update_octopress
+</span><span class='line'>  deploy
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'># start to write new post
+</span><span class='line'># @param: post title
+</span><span class='line'>post(){
+</span><span class='line'>  local title=${1?"requires title"}
+</span><span class='line'>  _new_item post ${title}
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'># start to write new page
+</span><span class='line'># @param: page title
+</span><span class='line'>page(){
+</span><span class='line'>  _new_item page $1
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>_new_item(){
+</span><span class='line'>  local tmpfile=`mktemp`
+</span><span class='line'>  local item_name=${1?"requires item name"}
+</span><span class='line'>  local title=${2?"requires title"}
+</span><span class='line'>  rake new_${item_name}["${title}"] | tee ${tmpfile}
+</span><span class='line'>  local file=`cat ${tmpfile} | awk -F: '{print $2}' | sed -e 's/ //'`
+</span><span class='line'>  md ${BLOGDIR}/$file                 # 这里的md是我自己加的，是用MarkdownPad打开生成的文件
+</span><span class='line'>  rm ${tmpfile}
+</span><span class='line'>  # return file name
+</span><span class='line'>  RET=${file}
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'># Main
+</span><span class='line'># ----
+</span><span class='line'>actions="post upgrade preview deploy"
+</span><span class='line'>action=${1?"requirs action!, avaliabl actions are ${actions}"}
+</span><span class='line'>
+</span><span class='line'># run action
+</span><span class='line'>shift
+</span><span class='line'>${action} $@</span></code></pre></td></tr></table></div></figure>
+
 
 <h3>我的自定义</h3>
 
