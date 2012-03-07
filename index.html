@@ -70,6 +70,8 @@
 
 <h3>贴出脚本</h3>
 
+<p>脚本需要放在octopress的安装目录。</p>
+
 <figure class='code'><figcaption><span>blog </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -227,9 +229,11 @@
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
+<span class='line-number'>4</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>#!/bin/sh
 </span><span class='line'>
-</span><span class='line'>exec "c:\Users\Administrator\AppData\Local\Apps\2.0\W8LVT3AZ.YHR\5O9LMMDL.270\mark..tion_12329825c85e214b_0001.0001_aee1d4f50dc5492c\MarkdownPad" "$@"</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>exec "c:\Users\Administrator\AppData\Local\Apps\2.0\W8LVT3AZ.YHR\5O9LMMDL.270\mark..tion_12329825c85e214b_0001.0001_aee1d4f50dc5492c\MarkdownPad" "$@"
+</span><span class='line'># 上面的路径需要自己修改</span></code></pre></td></tr></table></div></figure>
 
 
 
@@ -238,12 +242,47 @@
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
+<span class='line-number'>4</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>#!/bin/sh
 </span><span class='line'>
-</span><span class='line'>exec "d:\Program Files\Mozilla Firefox\firefox" "$@"</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>exec "d:\Program Files\Mozilla Firefox\firefox" "$@"
+</span><span class='line'># 上面的路径需要自己修改</span></code></pre></td></tr></table></div></figure>
 
 
 <p>这两个文件不要有后缀名，并放到Git安装目录里的bin目录下</p>
+
+<h3>整个日志发布的工作流</h3>
+
+<figure class='code'><figcaption><span>日志发布的步骤 </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>blog.sh update
+</span><span class='line'># 如果有多台电脑同时编辑博客的话，可能需要先更新到最新的状态
+</span><span class='line'>blog.sh post this-is-the-test-title        
+</span><span class='line'># blog.sh是我对脚本的命名
+</span><span class='line'># post是命令
+</span><span class='line'># this-is-the-test-title是日志的title，同时也是markdown文件的名字
+</span><span class='line'># 执行这条命令后我的电脑上会打开MarkdownPad来编辑新创建的markdown文件
+</span><span class='line'>blog.sh deploy
+</span><span class='line'># 执行这条命令后，会进行rake genarate和rake deploy操作，如果有发布密码则会提示
+</span><span class='line'>blog.sh submit this is work for XXX
+</span><span class='line'># 执行这条命令，即提交所有的修改到github上去</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>小结</h3>
+
+<p>通过脚本将原先需要分多次手打的命令整合到一起，这样方便操作，更适合懒人。</p>
+
+<p>脚本方面可能还需要调整和测试，不过暂时能凑合着用了。</p>
 
         
         
@@ -263,6 +302,12 @@
 
 <time datetime="2012-03-07T13:31:00+08:00" pubdate data-updated="true">Mar 7<span>th</span>, 2012</time></div>
         <div class="tags">
+
+<div class="cat">
+  
+    <a class='category' href='/blog/categories/octopress/'>octopress</a>
+  
+</div>
 
 </div>
         
