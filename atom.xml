@@ -4,7 +4,7 @@
   <title><![CDATA[我是清都山水郎]]></title>
   <link href="http://odinyu.github.com/atom.xml" rel="self"/>
   <link href="http://odinyu.github.com/"/>
-  <updated>2012-03-06T18:18:55+08:00</updated>
+  <updated>2012-03-07T14:50:56+08:00</updated>
   <id>http://odinyu.github.com/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
@@ -12,6 +12,86 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[使用脚本发布octopress日志]]></title>
+    <link href="http://odinyu.github.com/blog/post-octopress-via-sh-script/"/>
+    <updated>2012-03-07T13:31:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/post-octopress-via-sh-script</id>
+    <content type="html"><![CDATA[<p>经过本人不断的努力和尝试，终于可以比较舒服地并不受打扰地发布日志到octopress，这下终于爽了！哈哈！</p>
+
+<h3>此举的目的</h3>
+
+<p>可以毫不避讳地说，是为了偷懒。</p>
+
+<h3>准备工作</h3>
+
+<p>不过为了长期地偷懒，先期还是需要做一些准备工作的。
++ 首先是在网上找到高手写的sh脚本。
++ 然后对脚本进行修改，也就是自定义。
++ 下载并安装mktemp for windows。</p>
+
+<h3>贴出脚本</h3>
+
+<p>Liquid error: No such file or directory - python -c &#8220;import sys; print sys.executable&#8221;</p>
+
+<h3>我的自定义</h3>
+
+<p>上面的脚本里提到的两个我自己加的程序调用的代码如下</p>
+
+<figure class='code'><figcaption><span>md </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#!/bin/sh
+</span><span class='line'>
+</span><span class='line'>exec "c:\Users\Administrator\AppData\Local\Apps\2.0\W8LVT3AZ.YHR\5O9LMMDL.270\mark..tion_12329825c85e214b_0001.0001_aee1d4f50dc5492c\MarkdownPad" "$@"</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>ff </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#!/bin/sh
+</span><span class='line'>
+</span><span class='line'>exec "d:\Program Files\Mozilla Firefox\firefox" "$@"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>这两个文件不要有后缀名，并放到Git安装目录里的bin目录下</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[从iphone上发布日志到octopress]]></title>
+    <link href="http://odinyu.github.com/blog/post-from-iphone/"/>
+    <updated>2012-03-07T11:20:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/post-from-iphone</id>
+    <content type="html"><![CDATA[<h3>昨天在被窝里的记录</h3>
+
+<p>在iphone上试了几个号称支持markdown并能同步到dropbox的应用，结果都不尽如人意，最后还是选择用evernote来进行移动终端的日志记录。</p>
+
+<p>其实移动终端的记录有其一定的意义，比如我现在就是躺在被窝里单手写日志，准备明天公司里从evernote里复制到文本再发到线上博客。</p>
+
+<p>感觉整个过程有点曲折，所以明天有必要去网上找一下能更方便的方法。</p>
+
+<p>最好是能向iphone上的wordpress那样 ，写完直接发布就一切OK。</p>
+
+<p>罗列一下明天需要做的一些事情
++ 继续修改从wordpress迁移过来的日志
++ 将本篇日志发出去
++ 寻找更方便的移动日志发布手段</p>
+
+<h3>之后睡前的神奇发现</h3>
+
+<p>突然在google上看到有人说goodreader可以同步txt到dropbox，报着最后试一下不行就睡的想法试了一把，居然goodreader真的完成了这个本来是不可能完成的任务。</p>
+
+<p>今天早上又重新启用了Belvedere这个小软件，用途是当dropbox内某文件夹有txt文件存在，就改后缀名为markdown，然后移动到octopress/source/_post文件夹内。目前这个功能已经测试成功，也就是说打开电脑后不多会就可直接使用命令来发布日志到octopress了，而无需手动复制内容。</p>
+
+<p>接下来考虑通过执行脚本来发布文章，不过目前看来还是有点困难，因为本人不是很懂Ruby，这个需要慢慢研究了。不过至少移动端记录并同步到云端已经ok，已经减少了很多与写作无关的步骤，心情大好！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[从Wordpress迁移到Octopress]]></title>
@@ -301,17 +381,6 @@
 <p>今天不太想把整个过程写下来，不过改天还是要记录一下的，多总结总是不错的。</p>
 
 <p>最后附上在github上的<a href="http://odinyu.github.com/" title="新博客地址">http://odinyu.github.com/</a>，用的是slash主题。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[原来是在这里填中文的标题]]></title>
-    <link href="http://odinyu.github.com/blog/first-post/"/>
-    <updated>2012-02-28T22:29:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/first-post</id>
-    <content type="html"><![CDATA[<p>刚才一直试图修改_config.yml的一些默认项，每次改成中文rake generate都会报错，很郁闷！</p>
-
-<p>这是我的第一个用markdown写的日志，并且是第一次在github上用octopress发布，感觉小小地geek了一把。</p>
 ]]></content>
   </entry>
   
@@ -610,57 +679,6 @@
 <p>我估计我应该可以跻身前1000名，同时我也希望看到这篇日志同时也想参加的朋友也能如愿。</p>
 
 <p>最后，当然是要加上这次活动的链接啦，<a href="http://www.nuffnang.com.cn/blog/2011/05/23/challenge-1000" target="_blank">请猛击</a>！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[iphone4越狱后必装的20个cydia app]]></title>
-    <link href="http://odinyu.github.com/blog/20-must-be-installed-cydia-app-after-jailbreak/"/>
-    <updated>2011-05-11T00:00:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/20-must-be-installed-cydia-app-after-jailbreak</id>
-    <content type="html"><![CDATA[<p>还是那句话，越或者不越，纯粹是个人的想法，和其他人没有一点点关系。但对于我来说，iphone4是一定要越狱的，不然iphone4就是暴殄天物。</p>
-
-<p>下面罗列一下我觉得需要安装的20个app（排名不分先后）以及它们的用途，都是从cydia上安装，具体如何安装就不详细展开了。</p>
-
-<p>1、actionmenu    <br>这个类似于用户字典，可以事先定义一些在手机里经常要输入的字符，像用户名密码什么的。然后在需要填写的时候，常按输入框，然后选择收藏，再选择想要输入的字符。这样的好处一是不用每次去输入，二是不怕输入错误。</p>
-
-<p>2、ifile    <br>iphone上首选的文件管理软件。</p>
-
-<p>3、infinidock    <br>可以在dock上放任意个图标。</p>
-
-<p>4、infinifolders    <br>可以在文件夹里放任意个图标，解除原先12个的限制。</p>
-
-<p>5、gridlock    <br>可以在桌面上任意位置摆放图标，尽量让墙纸更好看。</p>
-
-<p>6、overboard    <br>让多个桌面之间切换不再需要划动手指或者点小圆点。</p>
-
-<p>7、bitesms    <br>越狱后一定要用到的短信应用，好处太多太多了。</p>
-
-<p>8、kuaidial    <br>越狱后一定要用到的电话增强应用，同样也是好处多多。</p>
-
-<p>9、clockhide    <br>锁屏界面美化，把那大大的时钟去掉。</p>
-
-<p>10、ntpdate    <br>校正系统时间，永远做最准时的人。</p>
-
-<p>11、ischeduler    <br>定时执行任务，包括静音、切换飞行模式、切换情景、打开指定app等。</p>
-
-<p>12、activator    <br>iphone上除了quickdo外超好用的手势应用，主要目的：省home键。</p>
-
-<p>13、multifl0w    <br>后台任务切换，直观漂亮。</p>
-
-<p>14、notifiedpro    <br>改善iphone让人一直诟病的通知模式，像android下拉式通知看齐。</p>
-
-<p>15、photoshuttermute    <br>相机快门静音，手机偷拍必备。</p>
-
-<p>16、quicklock    <br>点击图标即可锁屏，同样省home键。</p>
-
-<p>17、sbsettings    <br>类似android上的那种多键开关，绝对必备。</p>
-
-<p>18、removebackground    <br>sbsettings一键关闭后台应用。</p>
-
-<p>19、sbsettings-vpn    <br>sbsettings一键切换vpn。</p>
-
-<p>20、winterboard    <br>强大的系统美化应用，爱美及追求个性者必备。</p>
 ]]></content>
   </entry>
   

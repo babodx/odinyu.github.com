@@ -7,7 +7,9 @@
     <meta name="author" content="sleepy">
 
     
-    <meta name="description" content="从Wordpress迁移到Octopress 既然已经建了octopress，又把公司和家里的两台电脑的环境都配置好，那就没有理由不从Wordpress迁移到Octopress。通过网络上高手给出的脚本和指导，整个过程比较顺利，现记录之。 导出Wordpress里的内容 &hellip;">
+    <meta name="description" content="使用脚本发布octopress日志 经过本人不断的努力和尝试，终于可以比较舒服地并不受打扰地发布日志到octopress，这下终于爽了！哈哈！ 此举的目的 可以毫不避讳地说，是为了偷懒。 准备工作 不过为了长期地偷懒，先期还是需要做一些准备工作的。
++ 首先是在网上找到高手写的sh脚本。
++ &hellip;">
     
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
 
@@ -46,6 +48,138 @@
 </header>
 	
 	<div id="content" class="inner">
+
+
+    <article class="post">
+    <h1 class="title"><a href="/blog/post-octopress-via-sh-script/">使用脚本发布octopress日志</a></h1>
+    <div class="entry">
+        <p>经过本人不断的努力和尝试，终于可以比较舒服地并不受打扰地发布日志到octopress，这下终于爽了！哈哈！</p>
+
+<h3>此举的目的</h3>
+
+<p>可以毫不避讳地说，是为了偷懒。</p>
+
+<h3>准备工作</h3>
+
+<p>不过为了长期地偷懒，先期还是需要做一些准备工作的。
++ 首先是在网上找到高手写的sh脚本。
++ 然后对脚本进行修改，也就是自定义。
++ 下载并安装mktemp for windows。</p>
+
+<h3>贴出脚本</h3>
+
+<p>Liquid error: No such file or directory - python -c &#8220;import sys; print sys.executable&#8221;</p>
+
+<h3>我的自定义</h3>
+
+<p>上面的脚本里提到的两个我自己加的程序调用的代码如下</p>
+
+<figure class='code'><figcaption><span>md </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#!/bin/sh
+</span><span class='line'>
+</span><span class='line'>exec "c:\Users\Administrator\AppData\Local\Apps\2.0\W8LVT3AZ.YHR\5O9LMMDL.270\mark..tion_12329825c85e214b_0001.0001_aee1d4f50dc5492c\MarkdownPad" "$@"</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>ff </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#!/bin/sh
+</span><span class='line'>
+</span><span class='line'>exec "d:\Program Files\Mozilla Firefox\firefox" "$@"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>这两个文件不要有后缀名，并放到Git安装目录里的bin目录下</p>
+
+        
+        
+    </div>
+    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-07T13:31:00+08:00" pubdate data-updated="true">Mar 7<span>th</span>, 2012</time></div>
+        <div class="tags">
+
+</div>
+        
+        <div class="comments"><a href="/blog/post-octopress-via-sh-script/#disqus_thread">Comments</a></div>
+        
+    </div>
+</article>
+
+
+    <article class="post">
+    <h1 class="title"><a href="/blog/post-from-iphone/">从iphone上发布日志到octopress</a></h1>
+    <div class="entry">
+        <h3>昨天在被窝里的记录</h3>
+
+<p>在iphone上试了几个号称支持markdown并能同步到dropbox的应用，结果都不尽如人意，最后还是选择用evernote来进行移动终端的日志记录。</p>
+
+<p>其实移动终端的记录有其一定的意义，比如我现在就是躺在被窝里单手写日志，准备明天公司里从evernote里复制到文本再发到线上博客。</p>
+
+<p>感觉整个过程有点曲折，所以明天有必要去网上找一下能更方便的方法。</p>
+
+<p>最好是能向iphone上的wordpress那样 ，写完直接发布就一切OK。</p>
+
+<p>罗列一下明天需要做的一些事情
++ 继续修改从wordpress迁移过来的日志
++ 将本篇日志发出去
++ 寻找更方便的移动日志发布手段</p>
+
+<h3>之后睡前的神奇发现</h3>
+
+<p>突然在google上看到有人说goodreader可以同步txt到dropbox，报着最后试一下不行就睡的想法试了一把，居然goodreader真的完成了这个本来是不可能完成的任务。</p>
+
+<p>今天早上又重新启用了Belvedere这个小软件，用途是当dropbox内某文件夹有txt文件存在，就改后缀名为markdown，然后移动到octopress/source/_post文件夹内。目前这个功能已经测试成功，也就是说打开电脑后不多会就可直接使用命令来发布日志到octopress了，而无需手动复制内容。</p>
+
+<p>接下来考虑通过执行脚本来发布文章，不过目前看来还是有点困难，因为本人不是很懂Ruby，这个需要慢慢研究了。不过至少移动端记录并同步到云端已经ok，已经减少了很多与写作无关的步骤，心情大好！</p>
+
+        
+        
+    </div>
+    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-07T11:20:00+08:00" pubdate data-updated="true">Mar 7<span>th</span>, 2012</time></div>
+        <div class="tags">
+
+<div class="cat">
+  
+    <a class='category' href='/blog/categories/octopress/'>octopress</a>
+  
+</div>
+
+</div>
+        
+        <div class="comments"><a href="/blog/post-from-iphone/#disqus_thread">Comments</a></div>
+        
+    </div>
+</article>
 
 
     <article class="post">
@@ -220,6 +354,12 @@
 
 <time datetime="2012-03-05T23:18:00+08:00" pubdate data-updated="true">Mar 5<span>th</span>, 2012</time></div>
         <div class="tags">
+
+<div class="cat">
+  
+    <a class='category' href='/blog/categories/octopress/'>octopress</a>
+  
+</div>
 
 </div>
         
@@ -443,7 +583,7 @@
 
 <div class="cat">
   
-    <a class='category' href='/blog/categories/github/'>github</a>
+    <a class='category' href='/blog/categories/octopress/'>octopress</a>
   
 </div>
 
@@ -502,46 +642,6 @@
 </div>
         
         <div class="comments"><a href="/blog/overnight-work/#disqus_thread">Comments</a></div>
-        
-    </div>
-</article>
-
-
-    <article class="post">
-    <h1 class="title"><a href="/blog/first-post/">原来是在这里填中文的标题</a></h1>
-    <div class="entry">
-        <p>刚才一直试图修改_config.yml的一些默认项，每次改成中文rake generate都会报错，很郁闷！</p>
-
-<p>这是我的第一个用markdown写的日志，并且是第一次在github上用octopress发布，感觉小小地geek了一把。</p>
-
-        
-        
-    </div>
-    <div class="meta">
-        <div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-02-28T22:29:00+08:00" pubdate data-updated="true">Feb 28<span>th</span>, 2012</time></div>
-        <div class="tags">
-
-<div class="cat">
-  
-    <a class='category' href='/blog/categories/test/'>test</a>
-  
-</div>
-
-</div>
-        
-        <div class="comments"><a href="/blog/first-post/#disqus_thread">Comments</a></div>
         
     </div>
 </article>
@@ -677,68 +777,6 @@
 </div>
         
         <div class="comments"><a href="/blog/first-day-of-4-days-3-nights-in-hongkong/#disqus_thread">Comments</a></div>
-        
-    </div>
-</article>
-
-
-    <article class="post">
-    <h1 class="title"><a href="/blog/prepare-of-4-days-3-nights-in-hongkong/">香港4天3晚自由行游记&#8211;准备篇</a></h1>
-    <div class="entry">
-        <p>10月30日-11月2日，我们一家三口终于圆满完成为期4天3晚的香港自由行旅程。整个旅程虽然有点累，不过一路充满着欢乐，所以一定要趁记忆还没有完全淡忘之时快点记录下来。</p>
-
-<p>因为不想跟团，所以一切的准备工作都要自己来做，老婆对于这些是完全不管的，美其名曰是能我完全放心，其实是她懒，呵呵。</p>
-
-<p>计划出行是在国庆之前，一家三口去申请办理了港澳通行证，20元拍照+120办证/每人。因为国庆放假，通行证是10月13日到手，总共用了20天，这个效率！</p>
-
-<p>自由行主要需要解决的是机票加酒店，对于平时基本不出上海的我来说，对这两样的预订什么的完全不懂。在拿到通行证后，在网络上参考多家旅游网站的报价后，还是选择了携程的香港4天3晚自由行，用建行单币信用卡支付立减800，总价7100。包括港龙航空2大1小往返机票和铜锣湾智选假日酒店3晚住宿，然后我在淘宝上花6元钱买了个200元的优惠码，最后实际支付了6900元。</p>
-
-<p>去的时候是个小飞机，早上8点半起飞，因为我们带小孩，可以优先登机，并且起降都很平稳，体验很好！飞机餐一般，忘记拍照了。回的时候本来应该也是同样的小飞机，不过最后坐的是个中型机，而且人很多。因为我们需要3个人坐在一起，只能坐到倒数第二排，事实证明绝对是个失误。飞机降落前15分钟开始就感觉耳朵难受，落地前俯冲的时候更是让人感觉恶心想吐，我家的小朋友直接把刚吃的全吐了，郁闷！不过回程的飞机餐还不错，味道蛮好，也如同论坛上的人所说的那样有HD冰淇淋吃。</p>
-
-<p>铜锣湾智选假日酒店的地理位置绝佳，在时代广场车库入口对面，也就是说从房间到时代广场电梯通畅的话只要3分钟！走到稍远的崇光也就6、7分钟，周边购物吃饭都超级方便。房间就香港这个超拥挤的环境来说还算是大的，1个1.5大床，卫生间干湿分离，房间内设施一应俱全。另外有一点很爽，就是可以免费无线或者有线上网，貌似香港的大部分酒店还没这个条件吧。</p>
-
-<p>补充一下，因为本身没有建行的信用卡，所以在确定这个度假产品的时候就去申请建行的信用卡，先是在网上填下表格，然后等短信通知面签，最后等卡送上门。具体花了多少时间想不起来了，不过效率应该比办通行证要高一点的。</p>
-
-<p>然后在淘宝上购买迪斯尼门票+餐券，成人235元<em>2+小童193元，美心午餐A套+晚餐E套205元</em>2。这个买得很值，我们早上到迪斯尼的时候看到排队的人挺多的，而我们直接就可以进入，且还便宜。餐券更是满意，本来还担心量少可能吃不饱，事实上我们一家三口正好都能吃饱而不撑，味道还很不错，完全不是国内什么什么乐园内的垃圾套餐可比。</p>
-
-<p>海洋公园门票，合家欢443元。八达通，成人136元*2+小童110元。行程紧张没有去，正在网上转让。</p>
-
-<p>香港手机sim卡，100港币面额38元，可上网。非常好用！因为我们电话不多，这个卡主要就是给我的iphone上网用，方便在外面看google map找路。</p>
-
-<p>其他的准备就是行程的规划了，整个过程主要使用了google、google map和evernote，然后同步到iphone和ipad上。</p>
-
-<p>最后，也是最重要的，就是换港币。我是在中国银行换的，2000人民币不到，换了2400港币。事实证明换少了，后来在香港直接东亚银行取款机上取了500港币，还在街边小店换了300多港币。</p>
-
-<p>上面就是大致的准备情况，包含少许评论，具体的评论请参考随后的相关日志。</p>
-
-        
-        
-    </div>
-    <div class="meta">
-        <div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-11-03T00:00:00+08:00" pubdate data-updated="true">Nov 3<span>rd</span>, 2011</time></div>
-        <div class="tags">
-
-<div class="cat">
-  
-    <a class='category' href='/blog/categories/normal-life/'>normal life</a>
-  
-</div>
-
-</div>
-        
-        <div class="comments"><a href="/blog/prepare-of-4-days-3-nights-in-hongkong/#disqus_thread">Comments</a></div>
         
     </div>
 </article>

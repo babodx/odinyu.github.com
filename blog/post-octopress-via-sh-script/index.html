@@ -3,11 +3,13 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>原来是在这里填中文的标题 - 我是清都山水郎</title>
+    <title>使用脚本发布octopress日志 - 我是清都山水郎</title>
     <meta name="author" content="sleepy">
 
     
-    <meta name="description" content="原来是在这里填中文的标题 刚才一直试图修改_config.yml的一些默认项，每次改成中文rake generate都会报错，很郁闷！ 这是我的第一个用markdown写的日志，并且是第一次在github上用octopress发布，感觉小小地geek了一把。 Feb 28th, 2012 &hellip;">
+    <meta name="description" content="使用脚本发布octopress日志 经过本人不断的努力和尝试，终于可以比较舒服地并不受打扰地发布日志到octopress，这下终于爽了！哈哈！ 此举的目的 可以毫不避讳地说，是为了偷懒。 准备工作 不过为了长期地偷懒，先期还是需要做一些准备工作的。
++ 首先是在网上找到高手写的sh脚本。
++ &hellip;">
     
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
 
@@ -46,10 +48,49 @@
 </header>
 	
 	<div id="content" class="inner"><article class="post">
-    <h1 class="title">原来是在这里填中文的标题</h1>
-    <div class="entry"><p>刚才一直试图修改_config.yml的一些默认项，每次改成中文rake generate都会报错，很郁闷！</p>
+    <h1 class="title">使用脚本发布octopress日志</h1>
+    <div class="entry"><p>经过本人不断的努力和尝试，终于可以比较舒服地并不受打扰地发布日志到octopress，这下终于爽了！哈哈！</p>
 
-<p>这是我的第一个用markdown写的日志，并且是第一次在github上用octopress发布，感觉小小地geek了一把。</p>
+<h3>此举的目的</h3>
+
+<p>可以毫不避讳地说，是为了偷懒。</p>
+
+<h3>准备工作</h3>
+
+<p>不过为了长期地偷懒，先期还是需要做一些准备工作的。
++ 首先是在网上找到高手写的sh脚本。
++ 然后对脚本进行修改，也就是自定义。
++ 下载并安装mktemp for windows。</p>
+
+<h3>贴出脚本</h3>
+
+<p>Liquid error: No such file or directory - python -c &#8220;import sys; print sys.executable&#8221;</p>
+
+<h3>我的自定义</h3>
+
+<p>上面的脚本里提到的两个我自己加的程序调用的代码如下</p>
+
+<figure class='code'><figcaption><span>md </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#!/bin/sh
+</span><span class='line'>
+</span><span class='line'>exec "c:\Users\Administrator\AppData\Local\Apps\2.0\W8LVT3AZ.YHR\5O9LMMDL.270\mark..tion_12329825c85e214b_0001.0001_aee1d4f50dc5492c\MarkdownPad" "$@"</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>ff </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#!/bin/sh
+</span><span class='line'>
+</span><span class='line'>exec "d:\Program Files\Mozilla Firefox\firefox" "$@"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>这两个文件不要有后缀名，并放到Git安装目录里的bin目录下</p>
 </div>
     <div class="meta">
         <div class="date">
@@ -64,14 +105,8 @@
   
 
 
-<time datetime="2012-02-28T22:29:00+08:00" pubdate data-updated="true">Feb 28<span>th</span>, 2012</time></div>
+<time datetime="2012-03-07T13:31:00+08:00" pubdate data-updated="true">Mar 7<span>th</span>, 2012</time></div>
         <div class="tags">
-
-<div class="cat">
-  
-    <a class='category' href='/blog/categories/test/'>test</a>
-  
-</div>
 
 </div>
         
@@ -108,8 +143,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://odinyu.github.com/blog/first-post/';
-        var disqus_url = 'http://odinyu.github.com/blog/first-post/';
+        var disqus_identifier = 'http://odinyu.github.com/blog/post-octopress-via-sh-script/';
+        var disqus_url = 'http://odinyu.github.com/blog/post-octopress-via-sh-script/';
         var disqus_script = 'embed.js';
       
     (function () {

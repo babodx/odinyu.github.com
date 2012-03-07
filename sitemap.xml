@@ -583,16 +583,12 @@
         <lastmod>2012-03-06T11:17:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://odinyu.github.com/blog/first-post/</loc>
-        <lastmod>2012-03-06T09:41:06+08:00</lastmod>
-    </url>
-    <url>
         <loc>http://odinyu.github.com/blog/overnight-work/</loc>
         <lastmod>2012-03-06T11:09:06+08:00</lastmod>
     </url>
     <url>
         <loc>http://odinyu.github.com/blog/introduce-octopress-on-github/</loc>
-        <lastmod>2012-03-06T09:48:53+08:00</lastmod>
+        <lastmod>2012-03-07T11:09:35+08:00</lastmod>
     </url>
     <url>
         <loc>http://odinyu.github.com/blog/thunder-before-jingzhe/</loc>
@@ -606,18 +602,26 @@
         <loc>
             http://odinyu.github.com/blog/how-to-configure-the-local-environment-of-octopress-with-github-on-second-pc/
         </loc>
-        <lastmod>2012-03-06T09:48:00+08:00</lastmod>
+        <lastmod>2012-03-07T11:09:43+08:00</lastmod>
     </url>
     <url>
         <loc>http://odinyu.github.com/blog/migrate-from-wordpress-to-octopress/</loc>
         <lastmod>2012-03-06T16:04:57+08:00</lastmod>
     </url>
     <url>
+        <loc>http://odinyu.github.com/blog/post-from-iphone/</loc>
+        <lastmod>2012-03-07T11:25:36+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://odinyu.github.com/blog/post-octopress-via-sh-script/</loc>
+        <lastmod>2012-03-07T14:46:44+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://odinyu.github.com/blog/archives/</loc>
-        <lastmod>2012-03-06T18:18:06+08:00</lastmod>
+        <lastmod>2012-03-07T14:46:44+08:00</lastmod>
     </url>
     <url>
         <loc>http://odinyu.github.com/</loc>
-        <lastmod>2012-03-06T18:18:06+08:00</lastmod>
+        <lastmod>2012-03-07T14:46:44+08:00</lastmod>
     </url>
 </urlset>
