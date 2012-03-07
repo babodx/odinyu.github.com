@@ -11,7 +11,7 @@
     
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
 
-    <link href="/atom.xml" rel="alternate" title="我是清都山水郎" type="application/atom+xml">
+    <link href="http://feed.feedsky.com/odinyu" rel="alternate" title="我是清都山水郎" type="application/atom+xml">
     <link rel="canonical" href="">
     <link href="/favicon.png" rel="shortcut icon">
     <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -38,13 +38,29 @@
 		
 		
 		
+		<a class="twitter" href="http://twitter.com/fayeyl" title="Twitter">Twitter</a>
 		
-		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+		<a class="rss" href="http://feed.feedsky.com/odinyu" title="RSS">RSS</a>
 		
 	</div>
 </div>
 </header>
 	
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://twitter.com/fayeyl">fayeyl</a> @ <a href="http://twitter.com">Twitter</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/twitter.js"></script>
+<script type="text/javascript">
+	(function($){
+		$('#banner').getTwitterFeed('fayeyl', 4, false);
+	})(jQuery);
+</script>
+
 	<div id="content" class="inner"><article class="post">
     <h1 class="title">Pidgin新版本可以下载了，版本号2.4.1</h1>
     <div class="entry"><p>今天打开Pidgin，就弹出提示让我去更新它的最新版。前天我刚下了它的2.4.0版，没发现有什么比2.3版本好的地方，却让我的QQ好友的昵称一个都看不到，全部变成了null。于是怀着有所期待的心情下了2.4.1，刚才装好了一看，QQ好友那还是老样子，真怀疑是不是我有什么地方没设置好。</p>

@@ -12,7 +12,7 @@ Select text, video, music or photos from any web page and post it instantly to y
     
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
 
-    <link href="/atom.xml" rel="alternate" title="我是清都山水郎" type="application/atom+xml">
+    <link href="http://feed.feedsky.com/odinyu" rel="alternate" title="我是清都山水郎" type="application/atom+xml">
     <link rel="canonical" href="">
     <link href="/favicon.png" rel="shortcut icon">
     <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -39,13 +39,29 @@ Select text, video, music or photos from any web page and post it instantly to y
 		
 		
 		
+		<a class="twitter" href="http://twitter.com/fayeyl" title="Twitter">Twitter</a>
 		
-		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+		<a class="rss" href="http://feed.feedsky.com/odinyu" title="RSS">RSS</a>
 		
 	</div>
 </div>
 </header>
 	
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://twitter.com/fayeyl">fayeyl</a> @ <a href="http://twitter.com">Twitter</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/twitter.js"></script>
+<script type="text/javascript">
+	(function($){
+		$('#banner').getTwitterFeed('fayeyl', 4, false);
+	})(jQuery);
+</script>
+
 	<div id="content" class="inner"><article class="post">
     <h1 class="title">刚还在说Posterous，马上就看到它又出了新功能了，不错！</h1>
     <div class="entry"><p><span class="inner_title">Posterous已经被河蟹，sigh!</span></p>

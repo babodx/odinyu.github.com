@@ -11,7 +11,7 @@
     
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
 
-    <link href="/atom.xml" rel="alternate" title="我是清都山水郎" type="application/atom+xml">
+    <link href="http://feed.feedsky.com/odinyu" rel="alternate" title="我是清都山水郎" type="application/atom+xml">
     <link rel="canonical" href="">
     <link href="/favicon.png" rel="shortcut icon">
     <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -38,13 +38,29 @@
 		
 		
 		
+		<a class="twitter" href="http://twitter.com/fayeyl" title="Twitter">Twitter</a>
 		
-		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+		<a class="rss" href="http://feed.feedsky.com/odinyu" title="RSS">RSS</a>
 		
 	</div>
 </div>
 </header>
 	
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://twitter.com/fayeyl">fayeyl</a> @ <a href="http://twitter.com">Twitter</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/twitter.js"></script>
+<script type="text/javascript">
+	(function($){
+		$('#banner').getTwitterFeed('fayeyl', 4, false);
+	})(jQuery);
+</script>
+
 	<div id="content" class="inner"><article class="post">
     <h1 class="title">换了个主机，感觉访问速度快点了</h1>
     <div class="entry"><p>这两天在改博客的侧边栏的ajax调用，在改的过程中越来越感觉自己博客的访问速度好慢，ping了一下平均要340多毫秒。本来博客的访问量就不大，如果访问速度再慢，估计就更没人光顾了。  我的主机方案是购买的<a href="http://hugege.com/" target="_blank">胡戈戈</a>的site5的主机，3月份买的，当时速度还挺快的。于是直接上gtalk询问了下<a href="http://hugege.com/" target="_blank">胡戈戈</a>，得到的回答是我所在的线给天朝给干掉了，所以很慢。不过<a href="http://hugege.com/" target="_blank">胡戈戈</a>说可以帮我换个主机，而且只要花半个小时，这当然让我心动，一定是要换的。  晚上9点半多开始换，中间我出去了1小时，等我回来的时候已经一切都OK了。映射了hosts文件后再访问我的博客，速度可是比以前快得多喽！  在这里要严重地表扬一下<a href="http://hugege.com/" target="_blank">胡戈戈</a>的耐心和诚意，只要能维持目前的访问速度，我想以后我仍然还是会到他这来购买主机的。目前在考虑什么时候也把在万网注册的域名转到国外去，到时候还要去麻烦<a href="http://hugege.com/" target="_blank">胡戈戈</a>，希望他一如际往地耐心哦。</p>

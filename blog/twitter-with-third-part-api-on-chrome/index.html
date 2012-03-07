@@ -11,7 +11,7 @@
     
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
 
-    <link href="/atom.xml" rel="alternate" title="我是清都山水郎" type="application/atom+xml">
+    <link href="http://feed.feedsky.com/odinyu" rel="alternate" title="我是清都山水郎" type="application/atom+xml">
     <link rel="canonical" href="">
     <link href="/favicon.png" rel="shortcut icon">
     <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -38,13 +38,29 @@
 		
 		
 		
+		<a class="twitter" href="http://twitter.com/fayeyl" title="Twitter">Twitter</a>
 		
-		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+		<a class="rss" href="http://feed.feedsky.com/odinyu" title="RSS">RSS</a>
 		
 	</div>
 </div>
 </header>
 	
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://twitter.com/fayeyl">fayeyl</a> @ <a href="http://twitter.com">Twitter</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/twitter.js"></script>
+<script type="text/javascript">
+	(function($){
+		$('#banner').getTwitterFeed('fayeyl', 4, false);
+	})(jQuery);
+</script>
+
 	<div id="content" class="inner"><article class="post">
     <h1 class="title">Chrome上用第三方API来twitter</h1>
     <div class="entry"><p>最近一直试着研究chrome的扩展，自己也尝试地做了一个，而今天的主题同样也是和chrome的扩展有关。  <span class="inner_title">关键词：</span>  twitter，主要的目的就是要在chrome上用这个。  第三方twitter API，使用这个就可以不用VPN，不用代理，不用设置hosts而担心什么时候又不能用了。  chrome扩展，因为是要在chrome上用，所以离不开扩展。介绍两个扩展，<a href="https://chrome.google.com/extensions/detail/aefaeloiencfjnaljicdoieoekoecmha" target="_blank">Metrist</a>和<a href="https://chrome.google.com/extensions/detail/ffcbeckjmgmgigkmnhmgjplmomcpfall" target="_blank">Chrowety</a>，需要翻墙才能安装。  <span class="inner_title">使用Metrist</span>  <a href="https://chrome.google.com/extensions/detail/aefaeloiencfjnaljicdoieoekoecmha" target="_blank">Metrist</a>，这个是国人开发的一个扩展，它的强大之处在于支持自定义第三方API以及很好地还原了twitter的原始样式（我是这样看的），缺点是没有短网址生成的功能，打开链接是前台而不是后台等等。  至于Metrist如何使用第三方API，它的作者有官方的解释，我给出链接而不再越俎代庖了，链接：<a href="http://code.google.com/p/chrome-metrist/wiki/API_HOWTO_ZH" target="_blank">Metrist 的第三方 API 设置说明</a>  <a name="%E8%AE%BE%E7%BD%AE%E7%AC%AC%E4%B8%89%E6%96%B9_API"></a></p>
