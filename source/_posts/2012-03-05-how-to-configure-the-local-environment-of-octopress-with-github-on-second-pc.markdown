@@ -3,7 +3,7 @@ layout: post
 title: "在第二台电脑上配置github octopress的本地环境"
 date: 2012-03-05 23:18
 comments: true
-categories: 
+categories: octopress
 ---
 本来倒是没想在家里的本本上也进行配置，不过一颗geek的心却始终骚动着，最终还是google了出来具体的方法，当然也是综合了多方建议，所以有必要在还没有忘记之时记录一下。
 

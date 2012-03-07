@@ -3,7 +3,7 @@ layout: post
 title: "在github上用octopress搭建博客过程纪要"
 date: 2012-02-29 01:25
 comments: true
-categories: github
+categories: octopress
 ---
 
 几个小时之前刚在github pages上使用octopress搭建了一个博客副本。本来基于本人一贯拖延的作风，是想过几天再记录整个过程的，但是正好在通宵工作但又暂时无事可干中，所以还是趁记忆还比较清晰的时候来搞定它。
