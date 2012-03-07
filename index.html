@@ -1,80 +1,82 @@
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!DOCTYPE HTML>
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>我是清都山水郎</title>
-  <meta name="author" content="sleepy">
+    <meta charset="utf-8">
+    <title>我是清都山水郎</title>
+    <meta name="author" content="sleepy">
 
-  
-  <meta name="description" content="本来倒是没想在家里的本本上也进行配置，不过一颗geek的心却始终骚动着，最终还是google了出来具体的方法，当然也是综合了多方建议，所以有必要在还没有忘记之时记录一下。 安装Ruby 还是通过http://rubyinstaller.org/的方式，不过好像我在家却不用翻墙居然也能下，上天有眼 &hellip;">
-  
+    
+    <meta name="description" content="安装octopress主题slash 还是对于octopress折腾的记录，年纪大了记不住那么多的命令。 这个slash主题就是我现在用的这个，很简洁大方，同时还很喜欢它的灰色调。 1
+2
+3
+4
+cd octopress
+git clone git@github.com:tommy351/ &hellip;">
+    
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
 
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://odinyu.github.com">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="我是清都山水郎" type="application/atom+xml">
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
+    <link href="/atom.xml" rel="alternate" title="我是清都山水郎" type="application/atom+xml">
+    <link rel="canonical" href="">
+    <link href="/favicon.png" rel="shortcut icon">
+    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]><script src="/javascripts/html5.js"></script><![endif]-->
+    <script src="/javascripts/jquery.min.js"></script>
+    
+    
 
 </head>
 
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">我是清都山水郎</a></h1>
-  
-    <h2>all about life</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
+<body>
+	<header class="inner"><h1 class="left"><a href="/">我是清都山水郎</a></h1>
+<nav class="menu left"><ul class="main">
+	<li><a href="/">Blog</a></li>
+	<li><a href="/blog/archives">Archives</a></li>
 </ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:odinyu.github.com" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
-
 </nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/how-to-configure-the-local-environment-of-octopress-with-github-on-second-pc/">在第二台电脑上配置github Octopress的本地环境</a></h1>
-    
-    
-      <p class="meta">
+<div class="right">
+	<form class="search right" action="http://google.com/search" method="get">
+		<input class="left" type="text" name="q" results="0">
+		<input type="hidden" name="q" value="site:odinyu.github.com">
+	</form>
+	<div class="social right">
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</div>
+</header>
+	
+	<div id="content" class="inner">
+
+
+    <article class="post">
+    <h1 class="title"><a href="/blog/install-octopress-theme-slash/">安装octopress主题slash</a></h1>
+    <div class="entry">
+        <p>还是对于octopress折腾的记录，年纪大了记不住那么多的命令。</p>
+
+<p>这个slash主题就是我现在用的这个，很简洁大方，同时还很喜欢它的灰色调。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd octopress
+</span><span class='line'>git clone git@github.com:tommy351/Octopress-Theme-Slash.git .themes/slash
+</span><span class='line'>rake install['slash']
+</span><span class='line'>rake generate</span></code></pre></td></tr></table></div></figure>
+
+
+
+
         
+        
+    </div>
+    <div class="meta">
+        <div class="date">
 
 
 
@@ -86,18 +88,433 @@
   
 
 
-<time datetime="2012-03-05T23:18:00+08:00" pubdate data-updated="true">Mar 5<span>th</span>, 2012</time>
+<time datetime="2012-03-07T21:45:00+08:00" pubdate data-updated="true">Mar 7<span>th</span>, 2012</time></div>
+        <div class="tags">
+
+<div class="cat">
+  
+    <a class='category' href='/blog/categories/octopress/'>octopress</a>
+  
+</div>
+
+</div>
         
-         | <a href="/blog/how-to-configure-the-local-environment-of-octopress-with-github-on-second-pc/#disqus_thread">Comments</a>
+        <div class="comments"><a href="/blog/install-octopress-theme-slash/#disqus_thread">Comments</a></div>
         
-      </p>
-    
-  </header>
+    </div>
+</article>
 
 
-  <div class="entry-content"><p>本来倒是没想在家里的本本上也进行配置，不过一颗geek的心却始终骚动着，最终还是google了出来具体的方法，当然也是综合了多方建议，所以有必要在还没有忘记之时记录一下。</p>
+    <article class="post">
+    <h1 class="title"><a href="/blog/post-octopress-via-sh-script/">使用脚本发布octopress日志</a></h1>
+    <div class="entry">
+        <p>经过本人不断的努力和尝试，终于可以比较舒服地并不受打扰地发布日志到octopress，这下终于爽了！哈哈！</p>
 
-<h2>安装Ruby</h2>
+<h3>此举的目的</h3>
+
+<p>可以毫不避讳地说，是为了偷懒。</p>
+
+<h3>准备工作</h3>
+
+<p>不过为了长期地偷懒，先期还是需要做一些准备工作的。</p>
+
+<ul>
+<li>首先是在网上找到高手写的sh脚本。</li>
+<li>然后对脚本进行修改，也就是自定义。</li>
+<li>下载并安装mktemp for windows。</li>
+</ul>
+
+
+<h3>贴出脚本</h3>
+
+<p>脚本需要放在octopress的安装目录。</p>
+
+<figure class='code'><figcaption><span>blog </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#!/bin/bash
+</span><span class='line'># Author: Hsin-Yi Chen &lt;ossug.hychen AT gmail.com>
+</span><span class='line'># Alter: Odin Yu &lt;qdssly AT gmail.com>
+</span><span class='line'>ERRMSG_WRONGDIR='You are not under octopress directory'
+</span><span class='line'>[ ! -f _config.yml ] && echo ${ERRMSG_WRONGDIR} && exit
+</span><span class='line'>
+</span><span class='line'>BLOGDIR=${PWD}
+</span><span class='line'>
+</span><span class='line'>submit(){
+</span><span class='line'>  git add .
+</span><span class='line'>  git commit -m $1
+</span><span class='line'>  git push origin source
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>deploy(){
+</span><span class='line'>  rake generate
+</span><span class='line'>  rake deploy
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>#我没有用到
+</span><span class='line'>update_octopress(){
+</span><span class='line'>  echo 'upgrading octopress source'
+</span><span class='line'>  git pull octopress master     # Get the latest Octopress
+</span><span class='line'>  bundle install                # Keep gems updated
+</span><span class='line'>  rake update_source            # update the template's source
+</span><span class='line'>  rake update_style             # update the template's style
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>preview(){
+</span><span class='line'>  rake preview &
+</span><span class='line'>  sleep 1
+</span><span class='line'>  ff http://127.0.0.1:4000             # 这里的ff是我加的，是用firefox进行预览
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>#也没有用到
+</span><span class='line'>upgrade(){
+</span><span class='line'>  update_octopress
+</span><span class='line'>  deploy
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'># start to write new post
+</span><span class='line'># @param: post title
+</span><span class='line'>post(){
+</span><span class='line'>  local title=${1?"requires title"}
+</span><span class='line'>  _new_item post ${title}
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'># start to write new page
+</span><span class='line'># @param: page title
+</span><span class='line'>page(){
+</span><span class='line'>  _new_item page $1
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>_new_item(){
+</span><span class='line'>  local tmpfile=`mktemp`
+</span><span class='line'>  local item_name=${1?"requires item name"}
+</span><span class='line'>  local title=${2?"requires title"}
+</span><span class='line'>  rake new_${item_name}["${title}"] | tee ${tmpfile}
+</span><span class='line'>  local file=`cat ${tmpfile} | awk -F: '{print $2}' | sed -e 's/ //'`
+</span><span class='line'>  md ${BLOGDIR}/$file                 # 这里的md是我自己加的，是用MarkdownPad打开生成的文件
+</span><span class='line'>  rm ${tmpfile}
+</span><span class='line'>  # return file name
+</span><span class='line'>  RET=${file}
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'># Main
+</span><span class='line'># ----
+</span><span class='line'>actions="post upgrade preview deploy"
+</span><span class='line'>action=${1?"requirs action!, avaliabl actions are ${actions}"}
+</span><span class='line'>
+</span><span class='line'># run action
+</span><span class='line'>shift
+</span><span class='line'>${action} $@</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>我的自定义</h3>
+
+<p>上面的脚本里提到的两个我自己加的程序调用的代码如下</p>
+
+<figure class='code'><figcaption><span>md </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#!/bin/sh
+</span><span class='line'>
+</span><span class='line'>exec "c:\Users\Administrator\AppData\Local\Apps\2.0\W8LVT3AZ.YHR\5O9LMMDL.270\mark..tion_12329825c85e214b_0001.0001_aee1d4f50dc5492c\MarkdownPad" "$@"
+</span><span class='line'># 上面的路径需要自己修改</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>ff </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#!/bin/sh
+</span><span class='line'>
+</span><span class='line'>exec "d:\Program Files\Mozilla Firefox\firefox" "$@"
+</span><span class='line'># 上面的路径需要自己修改</span></code></pre></td></tr></table></div></figure>
+
+
+<p>这两个文件不要有后缀名，并放到Git安装目录里的bin目录下</p>
+
+<h3>整个日志发布的工作流</h3>
+
+<figure class='code'><figcaption><span>日志发布的步骤 </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>blog.sh update
+</span><span class='line'># 如果有多台电脑同时编辑博客的话，可能需要先更新到最新的状态
+</span><span class='line'>blog.sh post this-is-the-test-title        
+</span><span class='line'># blog.sh是我对脚本的命名
+</span><span class='line'># post是命令
+</span><span class='line'># this-is-the-test-title是日志的title，同时也是markdown文件的名字
+</span><span class='line'># 执行这条命令后我的电脑上会打开MarkdownPad来编辑新创建的markdown文件
+</span><span class='line'>blog.sh deploy
+</span><span class='line'># 执行这条命令后，会进行rake genarate和rake deploy操作，如果有发布密码则会提示
+</span><span class='line'>blog.sh submit this is work for XXX
+</span><span class='line'># 执行这条命令，即提交所有的修改到github上去</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>小结</h3>
+
+<p>通过脚本将原先需要分多次手打的命令整合到一起，这样方便操作，更适合懒人。</p>
+
+<p>脚本方面可能还需要调整和测试，不过暂时能凑合着用了。</p>
+
+        
+        
+    </div>
+    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-07T13:31:00+08:00" pubdate data-updated="true">Mar 7<span>th</span>, 2012</time></div>
+        <div class="tags">
+
+<div class="cat">
+  
+    <a class='category' href='/blog/categories/octopress/'>octopress</a>
+  
+</div>
+
+</div>
+        
+        <div class="comments"><a href="/blog/post-octopress-via-sh-script/#disqus_thread">Comments</a></div>
+        
+    </div>
+</article>
+
+
+    <article class="post">
+    <h1 class="title"><a href="/blog/post-from-iphone/">从iphone上发布日志到octopress</a></h1>
+    <div class="entry">
+        <h3>昨天在被窝里的记录</h3>
+
+<p>在iphone上试了几个号称支持markdown并能同步到dropbox的应用，结果都不尽如人意，最后还是选择用evernote来进行移动终端的日志记录。</p>
+
+<p>其实移动终端的记录有其一定的意义，比如我现在就是躺在被窝里单手写日志，准备明天公司里从evernote里复制到文本再发到线上博客。</p>
+
+<p>感觉整个过程有点曲折，所以明天有必要去网上找一下能更方便的方法。</p>
+
+<p>最好是能向iphone上的wordpress那样 ，写完直接发布就一切OK。</p>
+
+<p>罗列一下明天需要做的一些事情</p>
+
+<ul>
+<li>继续修改从wordpress迁移过来的日志</li>
+<li>将本篇日志发出去</li>
+<li>寻找更方便的移动日志发布手段</li>
+</ul>
+
+
+<h3>之后睡前的神奇发现</h3>
+
+<p>突然在google上看到有人说goodreader可以同步txt到dropbox，报着最后试一下不行就睡的想法试了一把，居然goodreader真的完成了这个本来是不可能完成的任务。</p>
+
+<p>今天早上又重新启用了Belvedere这个小软件，用途是当dropbox内某文件夹有txt文件存在，就改后缀名为markdown，然后移动到octopress/source/_post文件夹内。目前这个功能已经测试成功，也就是说打开电脑后不多会就可直接使用命令来发布日志到octopress了，而无需手动复制内容。</p>
+
+<p>接下来考虑通过执行脚本来发布文章，不过目前看来还是有点困难，因为本人不是很懂Ruby，这个需要慢慢研究了。不过至少移动端记录并同步到云端已经ok，已经减少了很多与写作无关的步骤，心情大好！</p>
+
+        
+        
+    </div>
+    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-07T11:20:00+08:00" pubdate data-updated="true">Mar 7<span>th</span>, 2012</time></div>
+        <div class="tags">
+
+<div class="cat">
+  
+    <a class='category' href='/blog/categories/octopress/'>octopress</a>
+  
+</div>
+
+</div>
+        
+        <div class="comments"><a href="/blog/post-from-iphone/#disqus_thread">Comments</a></div>
+        
+    </div>
+</article>
+
+
+    <article class="post">
+    <h1 class="title"><a href="/blog/migrate-from-wordpress-to-octopress/">从Wordpress迁移到Octopress</a></h1>
+    <div class="entry">
+        <p>既然已经建了octopress，又把公司和家里的两台电脑的环境都配置好，那就没有理由不从Wordpress迁移到Octopress。通过网络上高手给出的脚本和指导，整个过程比较顺利，现记录之。</p>
+
+<h3>导出Wordpress里的内容</h3>
+
+<p>我用的是Wordpress导出的xml文件，而不是数据库的备份。</p>
+
+<h3>转换xml到md文档</h3>
+
+<p>使用高手给出的脚本,<a href="https://github.com/odinyu/odinyu.github.com/blob/source/md.rb" title="下载">下载</a>。</p>
+
+<p>重命名Wordpress导出的文件为wordpress.xml，然后放到<code>～/octopress/source/_post</code>下，再执行下面的代码</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd octopress/source/_post
+</span><span class='line'>ruby md.rb wordpress.xml</span></code></pre></td></tr></table></div></figure>
+
+
+<p>可能会提示少包，可以这样安装</p>
+
+<p><code>gem install ya2yaml</code></p>
+
+<p>注意，如果是windows环境下，hpricot这个包需要这样安装，不然会一直不成功</p>
+
+<p><code>gem install hpricot --platform=mswin32</code></p>
+
+<h3>细节处理</h3>
+
+<p>脚本生成的是每篇wordpress上日志的md文档，未能完全按markdown语法格式化，还需要人工调整一下。另外就是原先的图片，如果是外链的还好，对于直接上传到wordpress上的需要修改一下路径。</p>
+
+<p>当然，有些日志可能不再需要，适当的再进行一些清理工作。</p>
+
+<h3>记录很重要</h3>
+
+<p>虽然网络上需要的资讯一般都能找到，但是每次要用的时候再找总是很麻烦，记录在自己的手边才是王道！</p>
+
+        
+        
+    </div>
+    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-06T14:54:00+08:00" pubdate data-updated="true">Mar 6<span>th</span>, 2012</time></div>
+        <div class="tags">
+
+<div class="cat">
+  
+    <a class='category' href='/blog/categories/octopress/'>Octopress</a>
+  
+</div>
+
+</div>
+        
+        <div class="comments"><a href="/blog/migrate-from-wordpress-to-octopress/#disqus_thread">Comments</a></div>
+        
+    </div>
+</article>
+
+
+    <article class="post">
+    <h1 class="title"><a href="/blog/how-to-configure-the-local-environment-of-octopress-with-github-on-second-pc/">在第二台电脑上配置github Octopress的本地环境</a></h1>
+    <div class="entry">
+        <p>本来倒是没想在家里的本本上也进行配置，不过一颗geek的心却始终骚动着，最终还是google了出来具体的方法，当然也是综合了多方建议，所以有必要在还没有忘记之时记录一下。</p>
+
+<h3>安装Ruby</h3>
 
 <ul>
 <li>还是通过<a href="http://rubyinstaller.org/" title="RubyInstraller">http://rubyinstaller.org/</a>的方式，不过好像我在家却不用翻墙居然也能下，上天有眼？</li>
@@ -105,7 +522,7 @@
 </ul>
 
 
-<h2>从github上获取自己的octopress内容</h2>
+<h3>从github上获取自己的octopress内容</h3>
 
 <figure class='code'><figcaption><span>从github上获取自己的octopress内容 </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -116,7 +533,7 @@
 </span><span class='line'>git clone git@github.com:username/username.github.com.git _deploy</span></code></pre></td></tr></table></div></figure>
 
 
-<h2>安装依赖gems</h2>
+<h3>安装依赖gems</h3>
 
 <figure class='code'><figcaption><span>安装依赖gems </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -127,18 +544,22 @@
 </span><span class='line'>rake install</span></code></pre></td></tr></table></div></figure>
 
 
-<p>这里在我具体安装的时候有点小曲折，不过都还是用google解决了。
-- <code>gem install bundler</code>可能会比较慢，所以改用<code>gem install bundler --pre</code>
-- <code>rake install</code>的时候报错，好像是说我用的gem版本太新什么的，google后的解决方法是<code>bundle update</code>，然后再<code>rake install</code>。</p>
+<p>这里在我具体安装的时候有点小曲折，不过都还是用google解决了。</p>
 
-<h2>修改配置</h2>
+<ul>
+<li><code>gem install bundler</code>可能会比较慢，所以改用<code>gem install bundler --pre</code></li>
+<li><code>rake install</code>的时候报错，好像是说我用的gem版本太新什么的，google后的解决方法是<code>bundle update</code>，然后再<code>rake install</code>。</li>
+</ul>
+
+
+<h3>修改配置</h3>
 
 <ul>
 <li>到Ruby的安装目录\lib\ruby\gems\1.9.1\gems\jekyll-0.11.0\lib\jekyll\找到convertible.rb这个文件，修改<code>self.content = File.read(File.join(base, name))</code>为<code>self.content = File.read(File.join(base, name), :encoding =&gt; "utf-8")</code>。</li>
 </ul>
 
 
-<h2>从github上更新source内容的命令</h2>
+<h3>从github上更新source内容的命令</h3>
 
 <figure class='code'><figcaption><span>从github上更新source内容的命令 </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -153,7 +574,7 @@
 
 <p>至此大功告成！总耗时1小时左右，还算顺利。</p>
 
-<h2>另外补充一下windows下安装Devkit的方法，免得下次还要找。</h2>
+<h3>另外补充一下windows下安装Devkit的方法，免得下次还要找。</h3>
 
 <figure class='code'><figcaption><span>windows下安装Devkit的方法 </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -169,23 +590,57 @@
 
 
 
+
+        
+        
+    </div>
+    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-05T23:18:00+08:00" pubdate data-updated="true">Mar 5<span>th</span>, 2012</time></div>
+        <div class="tags">
+
+<div class="cat">
+  
+    <a class='category' href='/blog/categories/octopress/'>octopress</a>
+  
 </div>
-  
-  
 
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/introduce-octopress-on-github/">在github上用octopress搭建博客过程纪要</a></h1>
-    
-    
-      <p class="meta">
+</div>
         
+        <div class="comments"><a href="/blog/how-to-configure-the-local-environment-of-octopress-with-github-on-second-pc/#disqus_thread">Comments</a></div>
+        
+    </div>
+</article>
+
+
+    <article class="post">
+    <h1 class="title"><a href="/blog/chun-cui-xia-xiang/">纯粹瞎想</a></h1>
+    <div class="entry">
+        <p>躺下了却睡不着，刚才和老婆因为该如何教育儿子有点意见分歧。</p>
+
+<p>儿子很顽皮，小孩的天性如此，但我觉得也需要让他知道一点规矩。虽然我很乐意接受自由，也希望孩子可以自由得成长，但如今的中国社会自由两字的代价又何其之大！</p>
+
+<p>不知道在哪里看到过的一句话，深以为然。“不能游离于制度之外，而应该了解并掌握制度，然后再决定是否需要摧毁制度或是重建制度。”
+作为小屁民的我，其实也只是希望孩子能早点学会怎么去尊重他可能并不以为然的教条。</p>
+
+<p>我的想法可能很牵强，也必然无人理会，所以就只能记录在这杂草丛生的博客，供自己日后再慢慢端详。</p>
+
+        
+        
+    </div>
+    <div class="meta">
+        <div class="date">
 
 
 
@@ -197,16 +652,71 @@
   
 
 
-<time datetime="2012-02-29T01:25:00+08:00" pubdate data-updated="true">Feb 29<span>th</span>, 2012</time>
+<time datetime="2012-03-02T00:00:00+08:00" pubdate data-updated="true">Mar 2<span>nd</span>, 2012</time></div>
+        <div class="tags">
+
+<div class="cat">
+  
+    <a class='category' href='/blog/categories/normal-life/'>normal life</a>
+  
+</div>
+
+</div>
         
-         | <a href="/blog/introduce-octopress-on-github/#disqus_thread">Comments</a>
+        <div class="comments"><a href="/blog/chun-cui-xia-xiang/#disqus_thread">Comments</a></div>
         
-      </p>
-    
-  </header>
+    </div>
+</article>
 
 
-  <div class="entry-content"><p>几个小时之前刚在github pages上使用octopress搭建了一个博客副本。本来基于本人一贯拖延的作风，是想过几天再记录整个过程的，但是正好在通宵工作但又暂时无事可干中，所以还是趁记忆还比较清晰的时候来搞定它。</p>
+    <article class="post">
+    <h1 class="title"><a href="/blog/thunder-before-jingzhe/">惊蛰未到，魔都已经打雷了</a></h1>
+    <div class="entry">
+        <p>这两天公司里人心惶惶的，看着一个个部门里的人被裁到只剩个位数，怎么可能让人心情愉快呢。</p>
+
+<p>窗外一片迷雾中，偶尔亮出几道闪电，轰鸣的春雷也应声响起。魔都果然有魔都的风范，惊蛰还没到，老天就开始打雷了。</p>
+
+<p>和同事戏言，是不是公司大规模裁员搞得老天也发怒了？</p>
+
+<p>以上文字是忙了一天后郁闷心情之下的表述，仅此而已。</p>
+
+        
+        
+    </div>
+    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-01T00:00:00+08:00" pubdate data-updated="true">Mar 1<span>st</span>, 2012</time></div>
+        <div class="tags">
+
+<div class="cat">
+  
+    <a class='category' href='/blog/categories/normal-life/'>normal life</a>
+  
+</div>
+
+</div>
+        
+        <div class="comments"><a href="/blog/thunder-before-jingzhe/#disqus_thread">Comments</a></div>
+        
+    </div>
+</article>
+
+
+    <article class="post">
+    <h1 class="title"><a href="/blog/introduce-octopress-on-github/">在github上用octopress搭建博客过程纪要</a></h1>
+    <div class="entry">
+        <p>几个小时之前刚在github pages上使用octopress搭建了一个博客副本。本来基于本人一贯拖延的作风，是想过几天再记录整个过程的，但是正好在通宵工作但又暂时无事可干中，所以还是趁记忆还比较清晰的时候来搞定它。</p>
 
 <p>在开始写过程之前先要交待一下我为什么要去做这件事，又或者说是这么做有什么好处：</p>
 
@@ -233,7 +743,7 @@
 
 <p>好了，现在开始整个服务搭建过程记录，可能比较长：</p>
 
-<h2>安装Git并进行配置</h2>
+<h3>安装Git并进行配置</h3>
 
 <ul>
 <li>先注册一个github账号。</li>
@@ -246,7 +756,7 @@
 </ul>
 
 
-<h2>建立github pages</h2>
+<h3>建立github pages</h3>
 
 <ul>
 <li>创建一个新的Repository。这里需要注意的是，如果想要博客的首页是http://yourname.github.com，则Repository的project name就必须是yourname.github.com。</li>
@@ -254,7 +764,7 @@
 </ul>
 
 
-<h2>安装Ruby</h2>
+<h3>安装Ruby</h3>
 
 <ul>
 <li>这里要指出一点的是，因为我是在windows里安装，所以采用了<a href="http://rubyinstaller.org/">RubyInstaller</a>的方式，下载这个软件需要翻墙。</li>
@@ -262,7 +772,7 @@
 </ul>
 
 
-<h2>安装octopress</h2>
+<h3>安装octopress</h3>
 
 <ul>
 <li>获取octopress，执行<code>git clone git://github.com/imathis/octopress.git myblog</code>。</li>
@@ -274,7 +784,7 @@
 
 <p>到了这一步基本上可以开始写日志了，不过这里要给出两个小的tips。</p>
 
-<h2>修改配置</h2>
+<h3>修改配置</h3>
 
 <ul>
 <li>将octopress的目录内的_config.yml的编码改成UTF-8。</li>
@@ -283,7 +793,7 @@
 </ul>
 
 
-<h2>总算到了激动人心的一步了，开始写日志</h2>
+<h3>总算到了激动人心的一步了，开始写日志</h3>
 
 <ul>
 <li>执行<code>rake new_post["my first blog"]</code>，这样会在octopress的/source/_post下生成一个markdown文件，可以用文本软件进行编辑</li>
@@ -293,7 +803,7 @@
 </ul>
 
 
-<h2>补充一点</h2>
+<h3>补充一点</h3>
 
 <p>最后的但并不最不重要的，我们需要将修改的日志同步到github上，因此下面的3个命令也是必须的。</p>
 
@@ -306,23 +816,64 @@
 
 
 
+
+        
+        
+    </div>
+    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-29T01:25:00+08:00" pubdate data-updated="true">Feb 29<span>th</span>, 2012</time></div>
+        <div class="tags">
+
+<div class="cat">
+  
+    <a class='category' href='/blog/categories/octopress/'>octopress</a>
+  
 </div>
-  
-  
 
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/first-post/">原来是在这里填中文的标题</a></h1>
-    
-    
-      <p class="meta">
+</div>
         
+        <div class="comments"><a href="/blog/introduce-octopress-on-github/#disqus_thread">Comments</a></div>
+        
+    </div>
+</article>
+
+
+    <article class="post">
+    <h1 class="title"><a href="/blog/overnight-work/">通宵</a></h1>
+    <div class="entry">
+        <p>今天通宵干活，是的，2012年的第一个通宵，为了服务的迁移。</p>
+
+<p>其实我的任务不是很重，只是负责服务迁移后的测试并处理可能会发生的问题，但人还是必须在场的。</p>
+
+<p>虽说现在眼睛有点酸，不过人却并不是很累，可能和刚刚学会怎么在github上用octopress建立博客有关。</p>
+
+<p>下午快下班的时候搜索markdown的时候顺带看到的octopress，看下来感觉很有geek的感觉，就决定试一下。</p>
+
+<p>由于对github、ruby等相关知识不是很熟，所以是一边搜索一边在做，去掉中间晚饭的时间一共用了3个多小时。</p>
+
+<p>windows环境下对中文编码的支持有点小问题，还好有万能的google。</p>
+
+<p>今天不太想把整个过程写下来，不过改天还是要记录一下的，多总结总是不错的。</p>
+
+<p>最后附上在github上的<a href="http://odinyu.github.com/" title="新博客地址">http://odinyu.github.com/</a>，用的是slash主题。</p>
+
+        
+        
+    </div>
+    <div class="meta">
+        <div class="date">
 
 
 
@@ -334,69 +885,74 @@
   
 
 
-<time datetime="2012-02-28T22:29:00+08:00" pubdate data-updated="true">Feb 28<span>th</span>, 2012</time>
+<time datetime="2012-02-29T00:00:00+08:00" pubdate data-updated="true">Feb 29<span>th</span>, 2012</time></div>
+        <div class="tags">
+
+<div class="cat">
+  
+    <a class='category' href='/blog/categories/normal-life/'>normal life</a>
+  
+</div>
+
+</div>
         
-         | <a href="/blog/first-post/#disqus_thread">Comments</a>
+        <div class="comments"><a href="/blog/overnight-work/#disqus_thread">Comments</a></div>
         
-      </p>
-    
-  </header>
+    </div>
+</article>
 
 
-  <div class="entry-content"><p>刚才一直试图修改_config.yml的一些默认项，每次改成中文rake generate都会报错，很郁闷！</p>
+    <article class="post">
+    <h1 class="title"><a href="/blog/first-post/">原来是在这里填中文的标题</a></h1>
+    <div class="entry">
+        <p>刚才一直试图修改_config.yml的一些默认项，每次改成中文rake generate都会报错，很郁闷！</p>
 
 <p>这是我的第一个用markdown写的日志，并且是第一次在github上用octopress发布，感觉小小地geek了一把。</p>
-</div>
-  
-  
 
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/how-to-configure-the-local-environment-of-octopress-with-github-on-second-pc/">在第二台电脑上配置github octopress的本地环境</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/introduce-octopress-on-github/">在github上用octopress搭建博客过程纪要</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/first-post/">原来是在这里填中文的标题</a>
-      </li>
-    
-  </ul>
-</section>
-
-
-
-
-
-
-  
-</aside>
-
+        
+        
     </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2012 - sleepy -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
+    <div class="meta">
+        <div class="date">
 
-</footer>
+
+
+
+
+
+
+
   
+
+
+<time datetime="2012-02-28T22:29:00+08:00" pubdate data-updated="true">Feb 28<span>th</span>, 2012</time></div>
+        <div class="tags">
+
+<div class="cat">
+  
+    <a class='category' href='/blog/categories/test/'>test</a>
+  
+</div>
+
+</div>
+        
+        <div class="comments"><a href="/blog/first-post/#disqus_thread">Comments</a></div>
+        
+    </div>
+</article>
+
+<nav id="pagenavi">
+    
+    
+        <a href="/blog/page/2/" class="next">Next</a>
+    
+    <a href="/blog/archives" class="center">Blog Archives</a>
+</nav></div>
+	<footer class="inner">Copyright &copy; 2012 我是清都山水郎</footer>
+	<script src="/javascripts/jquery.easing.1.3.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script src="/javascripts/slash.js"></script>
+
 
 <script type="text/javascript">
       var disqus_shortname = 'sleepy';
@@ -410,24 +966,6 @@
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     }());
 </script>
-
-
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
 
 
 
