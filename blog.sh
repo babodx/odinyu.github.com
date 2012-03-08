@@ -7,8 +7,9 @@ ERRMSG_WRONGDIR='You are not under octopress directory'
 BLOGDIR=${PWD}
 
 submit(){
+	local message=${1?"requires message"}
 	git add .
-	git commit -m $1
+	git commit -m ${message}
 	git push origin source
 }
 
