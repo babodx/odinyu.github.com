@@ -3,7 +3,8 @@ layout: post
 title: "关于美剧的吐槽"
 date: 2012-03-08 15:57
 comments: true
-categories: normal-life
+categories:
+  - "normal life"
 ---
 美剧也看了有好多年了，现在也还一直在看，当前就同时在追7个剧集。大言不惭地说，看多了自己的欣赏水平也上去了，因此对于美剧也有些东西不得不吐槽一下。
 

@@ -47,6 +47,7 @@ preview(){
 #也没有用到
 upgrade(){
 	update_octopress
+	generate
 	deploy
 }
 

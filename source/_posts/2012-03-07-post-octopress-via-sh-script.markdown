@@ -3,7 +3,7 @@ layout: post
 title: "使用脚本发布octopress日志"
 date: 2012-03-07 13:31
 comments: true
-categories: octopress
+categories: Octopress
 ---
 经过本人不断的努力和尝试，终于可以比较舒服地并不受打扰地发布日志到octopress，这下终于爽了！哈哈！
 

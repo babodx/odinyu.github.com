@@ -3,7 +3,7 @@ layout: post
 title: "从iphone上发布日志到octopress"
 date: 2012-03-07 11:20
 comments: true
-categories: octopress
+categories: Octopress
 tags: octopress,iphone
 ---
 ###昨天在被窝里的记录

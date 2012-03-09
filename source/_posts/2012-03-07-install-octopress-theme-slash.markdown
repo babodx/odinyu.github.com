@@ -3,7 +3,7 @@ layout: post
 title: "安装octopress主题slash"
 date: 2012-03-07 21:45
 comments: true
-categories: octopress
+categories: Octopress
 ---
 还是对于octopress折腾的记录，年纪大了记不住那么多的命令。
 
