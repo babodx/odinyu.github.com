@@ -18,10 +18,14 @@ update(){
 	git pull origin master
 	cd ..
 	git pull origin source
+	rake generate
+}
+
+generate(){
+	rake generate
 }
 
 deploy(){
-	rake generate
 	rake deploy
 }
 
