@@ -1,53 +1,89 @@
 
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
-    <meta charset="utf-8">
-    <title>杯具之后的洗具，再谈Chrome上twitter - 我是清都山水郎</title>
-    <meta name="author" content="sleepy">
+  <meta charset="utf-8">
+  <title>杯具之后的洗具，再谈Chrome上twitter - 我是清都山水郎</title>
+  <meta name="author" content="sleepy">
 
-    
-    <meta name="description" content="杯具之后的洗具，再谈Chrome上twitter 昨天的日志里有点不怎么负责任地推出了一个“教程”，结果是日志发布后没多久就杯具了，Chrowety更新到了1.6.320，而我“教程”里所说的方法也就没用了。 于是昨晚很不甘地想再修改Chrowety的代码，不过实在是对80多K的js有点眼晕， &hellip;">
-    
-    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+  
+  <meta name="description" content="昨天的日志里有点不怎么负责任地推出了一个“教程”，结果是日志发布后没多久就杯具了，Chrowety更新到了1.6.320，而我“教程”里所说的方法也就没用了。 于是昨晚很不甘地想再修改Chrowety的代码，不过实在是对80多K的js有点眼晕，无从下手之余从作者的google code上下了个1. &hellip;">
+  
 
-    <link href="http://feed.feedsky.com/odinyu" rel="alternate" title="我是清都山水郎" type="application/atom+xml">
-    <link rel="canonical" href="">
-    <link href="/favicon.png" rel="shortcut icon">
-    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-    <!--[if lt IE 9]><script src="/javascripts/html5.js"></script><![endif]-->
-    <script src="/javascripts/jquery.min.js"></script>
-    
-    
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://odinyu.github.com/blog/comedy-after-tragedy-talk-about-twitter-on-chrome-again">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feed.feedsky.com/odinyu" rel="alternate" title="我是清都山水郎" type="application/atom+xml">
+  
+  
 
 </head>
 
-<body>
-	<header class="inner"><h1 class="left"><a href="/">我是清都山水郎</a></h1>
-<nav class="menu left"><ul class="main">
+<body   >
+  <header role="banner">
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feed.feedsky.com/odinyu" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:odinyu.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main">
 	<li><a href="/">Blog</a></li>
 	<li><a href="/blog/archives">Archives</a></li>
 </ul>
+
 </nav>
-<div class="right">
-	<form class="search right" action="http://google.com/search" method="get">
-		<input class="left" type="text" name="q" results="0">
-		<input type="hidden" name="q" value="site:odinyu.github.com">
-	</form>
-	<div class="social right">
-		
-		
-		
-		
-		<a class="rss" href="http://feed.feedsky.com/odinyu" title="RSS">RSS</a>
-		
-	</div>
-</div>
-</header>
-	
-	<div id="content" class="inner"><article class="post">
-    <h1 class="title">杯具之后的洗具，再谈Chrome上twitter</h1>
-    <div class="entry"><p>昨天的日志里有点不怎么负责任地推出了一个“教程”，结果是日志发布后没多久就杯具了，<a href="https://chrome.google.com/extensions/detail/ffcbeckjmgmgigkmnhmgjplmomcpfall" target="_blank">Chrowety</a>更新到了1.6.320，而我“教程”里所说的方法也就没用了。  于是昨晚很不甘地想再修改<a href="https://chrome.google.com/extensions/detail/ffcbeckjmgmgigkmnhmgjplmomcpfall" target="_blank">Chrowety</a>的代码，不过实在是对80多K的js有点眼晕，无从下手之余从作者的google code上下了个1.6.203，勉强可以对付一下。  不过今天是圣诞，也许注定了今天会有洗具发生，一早<a href="https://chrome.google.com/extensions/detail/ffcbeckjmgmgigkmnhmgjplmomcpfall" target="_blank">Chrowety</a>的作者就发了邮件给我，并在twitter上给了我<a href="http://chrowety.googlecode.com/files/Chrowety%201.6.360.crx" target="_blank">1.6.360</a>的crx。<a href="http://chrowety.googlecode.com/files/Chrowety%201.6.360.crx" target="_blank">1.6.360</a>终于可以自定义是用OAuthLogin Mode登陆还是API Login Mode，并且在选项页面里可以设置自己要使用的API。  总之，<a href="https://chrome.google.com/extensions/detail/ffcbeckjmgmgigkmnhmgjplmomcpfall" target="_blank">Chrowety</a>就目前的来看已经是chrome上twitter功能最强大的扩展了，也是功能最完善的了。</p>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">杯具之后的洗具，再谈Chrome上twitter</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-12-25T00:00:00+08:00" pubdate data-updated="true">Dec 25<span>th</span>, 2009</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>昨天的日志里有点不怎么负责任地推出了一个“教程”，结果是日志发布后没多久就杯具了，<a href="https://chrome.google.com/extensions/detail/ffcbeckjmgmgigkmnhmgjplmomcpfall" target="_blank">Chrowety</a>更新到了1.6.320，而我“教程”里所说的方法也就没用了。  于是昨晚很不甘地想再修改<a href="https://chrome.google.com/extensions/detail/ffcbeckjmgmgigkmnhmgjplmomcpfall" target="_blank">Chrowety</a>的代码，不过实在是对80多K的js有点眼晕，无从下手之余从作者的google code上下了个1.6.203，勉强可以对付一下。  不过今天是圣诞，也许注定了今天会有洗具发生，一早<a href="https://chrome.google.com/extensions/detail/ffcbeckjmgmgigkmnhmgjplmomcpfall" target="_blank">Chrowety</a>的作者就发了邮件给我，并在twitter上给了我<a href="http://chrowety.googlecode.com/files/Chrowety%201.6.360.crx" target="_blank">1.6.360</a>的crx。<a href="http://chrowety.googlecode.com/files/Chrowety%201.6.360.crx" target="_blank">1.6.360</a>终于可以自定义是用OAuthLogin Mode登陆还是API Login Mode，并且在选项页面里可以设置自己要使用的API。  总之，<a href="https://chrome.google.com/extensions/detail/ffcbeckjmgmgigkmnhmgjplmomcpfall" target="_blank">Chrowety</a>就目前的来看已经是chrome上twitter功能最强大的扩展了，也是功能最完善的了。</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>Alerts that show you the most recents tweets (Complex pages may not render Alerts)      &lt;br>Share this page button for fast content sharing       &lt;br>See your Home/Mentions/Messages/Favorites timelines       &lt;br>Change tweet font-size for better view       &lt;br>New Retweet (RT still avaiable)       &lt;br>Save draft for all individual Replies and Update       &lt;br>Favorite/Delete tweets       &lt;br>Notify when new tweets arrive       &lt;br>See user profile and zoom avatar       &lt;br>See photos from Twitpic/Tweetphoto       &lt;br>See videos from Youtube       &lt;br>Short URL       &lt;br>Initial multi-language support</span></code></pre></td></tr></table></div></figure>
@@ -55,8 +91,16 @@
 
 <p>  上面是<a href="https://chrome.google.com/extensions/detail/ffcbeckjmgmgigkmnhmgjplmomcpfall" target="_blank">Chrowety</a>所支持的所有功能，不得不承认它的作者是个牛人，继续关注之。</p>
 </div>
-    <div class="meta">
-        <div class="date">
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">sleepy</span></span>
+
+      
 
 
 
@@ -68,44 +112,89 @@
   
 
 
-<time datetime="2009-12-25T00:00:00+08:00" pubdate data-updated="true">Dec 25<span>th</span>, 2009</time></div>
-        <div class="tags">
+<time datetime="2009-12-25T00:00:00+08:00" pubdate data-updated="true">Dec 25<span>th</span>, 2009</time>
+      
 
-<div class="cat">
+<span class="categories">
   
     <a class='category' href='/blog/categories/about-soft/'>about soft</a>
   
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://odinyu.github.com/blog/comedy-after-tragedy-talk-about-twitter-on-chrome-again/" data-via="" data-counturl="http://odinyu.github.com/blog/comedy-after-tragedy-talk-about-twitter-on-chrome-again/" >Tweet</a>
+  
+  
+  
 </div>
 
-</div>
-        
-        <div class="comments"><a href="#disqus_thread">Comments</a></div>
-        
-    </div>
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/twitter-with-third-part-api-on-chrome/" title="Previous Post: Chrome上用第三方API来twitter">&laquo; Chrome上用第三方API来twitter</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/sum-up/" title="Next Post: 还是总结一下吧">还是总结一下吧 &raquo;</a>
+      
+    </p>
+  </footer>
 </article>
-<div class="share">
-	<div class="addthis_toolbox addthis_default_style ">
-	
-	
-	<a class="addthis_button_tweet"></a>
-	
-	
-	<a class="addthis_counter addthis_pill_style"></a>
-	</div>
-	<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4eb4a0c47196e907"></script>
-</div>
 
-<section id="comment">
-    <h1 class="title">Comments</h1>
+  <section>
+    <h1>Comments</h1>
     <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
-</section>
-</div>
-	<footer class="inner">Copyright &copy; 2012 我是清都山水郎</footer>
-	<script src="/javascripts/jquery.easing.1.3.js"></script>
-<script src="/javascripts/jquery.fancybox.pack.js"></script>
-<script src="/javascripts/slash.js"></script>
+  </section>
 
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/american-tv/">关于美剧的吐槽</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/install-octopress-theme-slash/">安装octopress主题slash</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/post-octopress-via-sh-script/">使用脚本发布octopress日志</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/post-from-iphone/">从iphone上发布日志到octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/migrate-from-wordpress-to-octopress/">从Wordpress迁移到Octopress</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo">Copyright &copy; 2012 我是清都山水郎
+</footer>
+  
 
 <script type="text/javascript">
       var disqus_shortname = 'sleepy';
@@ -122,6 +211,23 @@
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     }());
 </script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
 
 
 
