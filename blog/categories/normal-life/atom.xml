@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: normal-life | 我是清都山水郎]]></title>
+  <title><![CDATA[Category: normal life | 我是清都山水郎]]></title>
   <link href="http://odinyu.github.com/blog/categories/normal-life/atom.xml" rel="self"/>
   <link href="http://odinyu.github.com/"/>
-  <updated>2012-03-09T10:34:20+08:00</updated>
+  <updated>2012-03-09T18:28:10+08:00</updated>
   <id>http://odinyu.github.com/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[一周心情总结]]></title>
+    <link href="http://odinyu.github.com/blog/one-week-mood-summary/"/>
+    <updated>2012-03-09T18:13:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/one-week-mood-summary</id>
+    <content type="html"><![CDATA[<p>这周总的来说心情一般，一是因为天气一直不是很好，二是工作依然忙乱。</p>
+
+<p>总算是有时间来折腾octopress，其实也只是给自己一点写日志的动力，同时也让自己能稍稍动点脑筋。</p>
+
+<p>接下来准备调整一下octopress的样式，并再加上一些必须的功能，虽然简单是美但也不能一点功能都没有。</p>
+
+<p>这几天itunes的下载速度又不怎么样了，难道Apple又抽风了？还是在想念lumia 800，可是想想老婆应该是不会同意我买，看来也只能暂时想想罢了。</p>
+
+<p>我们的重构要走了，想不到今后没有重构的工作要怎么去做。应该会新招人来，所以还是希望新来的不要太菜！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[关于美剧的吐槽]]></title>
@@ -39,6 +56,60 @@
 <p>另外有的美剧并不是很热门，那么要等它的翻译字幕就更是有点悬了，而要等好的字幕那就想都别想了。</p>
 
 <p>暂时就先吐槽这些，美剧还是要继续看下去的。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[纯粹瞎想]]></title>
+    <link href="http://odinyu.github.com/blog/chun-cui-xia-xiang/"/>
+    <updated>2012-03-02T00:00:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/chun-cui-xia-xiang</id>
+    <content type="html"><![CDATA[<p>躺下了却睡不着，刚才和老婆因为该如何教育儿子有点意见分歧。</p>
+
+<p>儿子很顽皮，小孩的天性如此，但我觉得也需要让他知道一点规矩。虽然我很乐意接受自由，也希望孩子可以自由得成长，但如今的中国社会自由两字的代价又何其之大！</p>
+
+<p>不知道在哪里看到过的一句话，深以为然。“不能游离于制度之外，而应该了解并掌握制度，然后再决定是否需要摧毁制度或是重建制度。”
+作为小屁民的我，其实也只是希望孩子能早点学会怎么去尊重他可能并不以为然的教条。</p>
+
+<p>我的想法可能很牵强，也必然无人理会，所以就只能记录在这杂草丛生的博客，供自己日后再慢慢端详。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[惊蛰未到，魔都已经打雷了]]></title>
+    <link href="http://odinyu.github.com/blog/thunder-before-jingzhe/"/>
+    <updated>2012-03-01T00:00:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/thunder-before-jingzhe</id>
+    <content type="html"><![CDATA[<p>这两天公司里人心惶惶的，看着一个个部门里的人被裁到只剩个位数，怎么可能让人心情愉快呢。</p>
+
+<p>窗外一片迷雾中，偶尔亮出几道闪电，轰鸣的春雷也应声响起。魔都果然有魔都的风范，惊蛰还没到，老天就开始打雷了。</p>
+
+<p>和同事戏言，是不是公司大规模裁员搞得老天也发怒了？</p>
+
+<p>以上文字是忙了一天后郁闷心情之下的表述，仅此而已。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[通宵]]></title>
+    <link href="http://odinyu.github.com/blog/overnight-work/"/>
+    <updated>2012-02-29T00:00:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/overnight-work</id>
+    <content type="html"><![CDATA[<p>今天通宵干活，是的，2012年的第一个通宵，为了服务的迁移。</p>
+
+<p>其实我的任务不是很重，只是负责服务迁移后的测试并处理可能会发生的问题，但人还是必须在场的。</p>
+
+<p>虽说现在眼睛有点酸，不过人却并不是很累，可能和刚刚学会怎么在github上用octopress建立博客有关。</p>
+
+<p>下午快下班的时候搜索markdown的时候顺带看到的octopress，看下来感觉很有geek的感觉，就决定试一下。</p>
+
+<p>由于对github、ruby等相关知识不是很熟，所以是一边搜索一边在做，去掉中间晚饭的时间一共用了3个多小时。</p>
+
+<p>windows环境下对中文编码的支持有点小问题，还好有万能的google。</p>
+
+<p>今天不太想把整个过程写下来，不过改天还是要记录一下的，多总结总是不错的。</p>
+
+<p>最后附上在github上的<a href="http://odinyu.github.com/" title="新博客地址">http://odinyu.github.com/</a>，用的是slash主题。</p>
 ]]></content>
   </entry>
   

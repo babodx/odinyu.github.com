@@ -4,7 +4,7 @@
   <title><![CDATA[我是清都山水郎]]></title>
   <link href="http://odinyu.github.com/atom.xml" rel="self"/>
   <link href="http://odinyu.github.com/"/>
-  <updated>2012-03-09T10:34:20+08:00</updated>
+  <updated>2012-03-09T18:28:10+08:00</updated>
   <id>http://odinyu.github.com/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[一周心情总结]]></title>
+    <link href="http://odinyu.github.com/blog/one-week-mood-summary/"/>
+    <updated>2012-03-09T18:13:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/one-week-mood-summary</id>
+    <content type="html"><![CDATA[<p>这周总的来说心情一般，一是因为天气一直不是很好，二是工作依然忙乱。</p>
+
+<p>总算是有时间来折腾octopress，其实也只是给自己一点写日志的动力，同时也让自己能稍稍动点脑筋。</p>
+
+<p>接下来准备调整一下octopress的样式，并再加上一些必须的功能，虽然简单是美但也不能一点功能都没有。</p>
+
+<p>这几天itunes的下载速度又不怎么样了，难道Apple又抽风了？还是在想念lumia 800，可是想想老婆应该是不会同意我买，看来也只能暂时想想罢了。</p>
+
+<p>我们的重构要走了，想不到今后没有重构的工作要怎么去做。应该会新招人来，所以还是希望新来的不要太菜！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[关于美剧的吐槽]]></title>
@@ -868,33 +885,6 @@
 <p>这里我只是给个方案，具体的做法也不是很复杂，大家自己搞定吧。</p>
 
 <p>ps:新浪微博的feeds，非官方，请使用如下的形式<a href="http://medcl.net/SinaRss.aspx?uid=123456789">http://medcl.net/SinaRss.aspx?uid=123456789</a>即可。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Momento，不只是用来记日记]]></title>
-    <link href="http://odinyu.github.com/blog/momento-a-unique-approach-to-diary-writing/"/>
-    <updated>2011-07-25T00:00:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/momento-a-unique-approach-to-diary-writing</id>
-    <content type="html"><![CDATA[<p>从小就知道坚持记日记有很多好处，可是真的要这样做却很难很难。虽然可以把原因推到工作忙没时间、没有好的记日记的方式等，但可能最大原因还是自己的惰性吧。</p>
-
-<p>用手机来记日记可能是解决的一个方案，虽然手机的输入并不那么顺畅，日记的展示也不可能会如何地多姿多彩，但随时在手边却是手机的一个最大的优点吧。</p>
-
-<p>作为普通的打工族，买个iphone4虽然不至于伤筋动骨，但是尽量把iphone4物尽其用好像也是需要的吧。从新手机入手到现在，我已经从App Store上下载了不下10个日记记录软件，然后也用它们分别记了那么一两天。但最后还是把它们一一遗忘，然后再是一一删除，因为我根本想不起来要去用它们记日记。</p>
-
-<p>虽然我可以用日程管理软件强迫在每天的某一时间去打开某个App来记日记，可那样有点像在完成任务，那不是我想要的。于是用手机来记日记，用手机来记录生活又变得那么不切实际，尽管手机依然时刻在手边。直到某一天某个时刻，机缘巧合地在App Store里看到了Momento，并随手把它下载了下来。</p>
-
-<p><img style="display: block; float: none; margin-left: auto; margin-right: auto" src="http://public.bay.livefilestore.com/y1pHEqGJU-dPDm3GN1tSzVrv1K20nMDvBBMH-w89dzPGO48cvJgrXmDVk9fZToD95RqLTVqXLB93CXOPttmw_lMag/IMG_0569.PNG"></p>
-
-<p>上面的截图是它的启动画面，我个人很喜欢这样的风格。整个App内部的色调基本上也是这样，让我在记录的时候会比较地从容，而不像某些App那样花哨地让人不能集中精神。</p>
-
-<p>其实如果Momento仅仅只能让我用来记日记的话，我想也不会有这篇日志存在的必要。Momento本身可以同步一些常见的web2.0网站的feeds，而正是这个特点，让它变得与别不同。</p>
-
-<p>以我个人为例，我将foursquare同步到Momento来记录自己的行踪，将twitter同步到Momento来记录我的碎碎念，将blog同步到Momento来记录自己的想法，将Instagram同步到Momento来记录我的彩色心情。</p>
-
-<p>所以，有时即使我不是想记日记，我也一样会打开Momento来看一下某一天我做了些什么事，去过哪，有什么念想等等。</p>
-
-<p>目前我已经连续用了7天的Momento，也就是说我已经连续记了7天的日记，希望可以保持下去。</p>
 ]]></content>
   </entry>
   

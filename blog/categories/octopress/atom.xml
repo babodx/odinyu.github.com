@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | 我是清都山水郎]]></title>
   <link href="http://odinyu.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://odinyu.github.com/"/>
-  <updated>2012-03-09T10:34:20+08:00</updated>
+  <updated>2012-03-09T18:28:10+08:00</updated>
   <id>http://odinyu.github.com/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
@@ -12,6 +12,417 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[安装octopress主题slash]]></title>
+    <link href="http://odinyu.github.com/blog/install-octopress-theme-slash/"/>
+    <updated>2012-03-07T21:45:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/install-octopress-theme-slash</id>
+    <content type="html"><![CDATA[<p>还是对于octopress折腾的记录，年纪大了记不住那么多的命令。</p>
+
+<p>这个slash主题就是我现在用的这个，很简洁大方，同时还很喜欢它的灰色调。</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd octopress
+</span><span class='line'>git clone git@github.com:tommy351/Octopress-Theme-Slash.git .themes/slash
+</span><span class='line'>rake install['slash']
+</span><span class='line'>rake generate</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[使用脚本发布octopress日志]]></title>
+    <link href="http://odinyu.github.com/blog/post-octopress-via-sh-script/"/>
+    <updated>2012-03-07T13:31:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/post-octopress-via-sh-script</id>
+    <content type="html"><![CDATA[<p>经过本人不断的努力和尝试，终于可以比较舒服地并不受打扰地发布日志到octopress，这下终于爽了！哈哈！</p>
+
+<h3>此举的目的</h3>
+
+<p>可以毫不避讳地说，是为了偷懒。</p>
+
+<h3>准备工作</h3>
+
+<p>不过为了长期地偷懒，先期还是需要做一些准备工作的。</p>
+
+<ul>
+<li>首先是在网上找到高手写的sh脚本。</li>
+<li>然后对脚本进行修改，也就是自定义。</li>
+<li>下载并安装mktemp for windows。</li>
+</ul>
+
+
+<h3>贴出脚本</h3>
+
+<p>脚本需要放在octopress的安装目录。</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>blog </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+<span class='line-number'>107</span>
+<span class='line-number'>108</span>
+<span class='line-number'>109</span>
+<span class='line-number'>110</span>
+<span class='line-number'>111</span>
+<span class='line-number'>112</span>
+<span class='line-number'>113</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>!/bin/bash&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>Author: Hsin-Yi Chen &lt;ossug.hychen AT gmail.com>&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>Alter: Odin Yu &lt;qdssly AT gmail.com>&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>ERRMSG_WRONGDIR='You are not under octopress directory'
+</span><span class='line'>[ ! -f _config.yml ] &amp;&amp; echo ${ERRMSG_WRONGDIR} &amp;&amp; exit&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>BLOGDIR=${PWD}&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>submit(){&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>git add .
+</span><span class='line'>git commit -m $1
+</span><span class='line'>git push origin source
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>}&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>deploy(){&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>rake generate
+</span><span class='line'>rake deploy
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>}&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>我没有用到&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>update_octopress(){&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>echo 'upgrading octopress source'
+</span><span class='line'>git pull octopress master     # Get the latest Octopress
+</span><span class='line'>bundle install                # Keep gems updated
+</span><span class='line'>rake update_source            # update the template's source
+</span><span class='line'>rake update_style             # update the template's style
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>}&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>preview(){&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>rake preview &amp;
+</span><span class='line'>sleep 1
+</span><span class='line'>ff http://127.0.0.1:4000             # 这里的ff是我加的，是用firefox进行预览
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>}&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>也没有用到&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>upgrade(){&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>update_octopress
+</span><span class='line'>deploy
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>}&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>start to write new post&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>@param: post title&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>post(){&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>local title=${1?"requires title"}
+</span><span class='line'>_new_item post ${title}
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>}&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>start to write new page&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>@param: page title&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>page(){&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>_new_item page $1
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>}&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>_new_item(){&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>local tmpfile=`mktemp`
+</span><span class='line'>local item_name=${1?"requires item name"}
+</span><span class='line'>local title=${2?"requires title"}
+</span><span class='line'>rake new_${item_name}["${title}"] | tee ${tmpfile}
+</span><span class='line'>local file=`cat ${tmpfile} | awk -F: '{print $2}' | sed -e 's/ //'`
+</span><span class='line'>md ${BLOGDIR}/$file                 # 这里的md是我自己加的，是用MarkdownPad打开生成的文件
+</span><span class='line'>rm ${tmpfile}
+</span><span class='line'># return file name
+</span><span class='line'>RET=${file}
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>}&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>Main&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>----&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>actions="post upgrade preview deploy"
+</span><span class='line'>action=${1?"requirs action!, avaliabl actions are ${actions}"}&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>run action&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>shift
+</span><span class='line'>${action} $@&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h3>我的自定义</h3>
+
+<p>上面的脚本里提到的两个我自己加的程序调用的代码如下
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>md </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>!/bin/sh&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>exec "c:\Users\Administrator\AppData\Local\Apps\2.0\W8LVT3AZ.YHR\5O9LMMDL.270\mark..tion_12329825c85e214b_0001.0001_aee1d4f50dc5492c\MarkdownPad" "$@"&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>上面的路径需要自己修改&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>ff </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>!/bin/sh&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>exec "d:\Program Files\Mozilla Firefox\firefox" "$@"&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>上面的路径需要自己修改&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>这两个文件不要有后缀名，并放到Git安装目录里的bin目录下</p>
+
+<h3>整个日志发布的工作流</h3>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>日志发布的步骤 </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>blog.sh update&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>如果有多台电脑同时编辑博客的话，可能需要先更新到最新的状态&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>blog.sh post this-is-the-test-title&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>blog.sh是我对脚本的命名&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>post是命令&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>this-is-the-test-title是日志的title，同时也是markdown文件的名字&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>执行这条命令后我的电脑上会打开MarkdownPad来编辑新创建的markdown文件&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>blog.sh deploy&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>执行这条命令后，会进行rake genarate和rake deploy操作，如果有发布密码则会提示&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>blog.sh submit this is work for XXX&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>执行这条命令，即提交所有的修改到github上去&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h3>小结</h3>
+
+<p>通过脚本将原先需要分多次手打的命令整合到一起，这样方便操作，更适合懒人。</p>
+
+<p>脚本方面可能还需要调整和测试，不过暂时能凑合着用了。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[从iphone上发布日志到octopress]]></title>
+    <link href="http://odinyu.github.com/blog/post-from-iphone/"/>
+    <updated>2012-03-07T11:20:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/post-from-iphone</id>
+    <content type="html"><![CDATA[<h3>昨天在被窝里的记录</h3>
+
+<p>在iphone上试了几个号称支持markdown并能同步到dropbox的应用，结果都不尽如人意，最后还是选择用evernote来进行移动终端的日志记录。</p>
+
+<p>其实移动终端的记录有其一定的意义，比如我现在就是躺在被窝里单手写日志，准备明天公司里从evernote里复制到文本再发到线上博客。</p>
+
+<p>感觉整个过程有点曲折，所以明天有必要去网上找一下能更方便的方法。</p>
+
+<p>最好是能向iphone上的wordpress那样 ，写完直接发布就一切OK。</p>
+
+<p>罗列一下明天需要做的一些事情</p>
+
+<ul>
+<li>继续修改从wordpress迁移过来的日志</li>
+<li>将本篇日志发出去</li>
+<li>寻找更方便的移动日志发布手段</li>
+</ul>
+
+
+<h3>之后睡前的神奇发现</h3>
+
+<p>突然在google上看到有人说goodreader可以同步txt到dropbox，报着最后试一下不行就睡的想法试了一把，居然goodreader真的完成了这个本来是不可能完成的任务。</p>
+
+<p>今天早上又重新启用了Belvedere这个小软件，用途是当dropbox内某文件夹有txt文件存在，就改后缀名为markdown，然后移动到octopress/source/_post文件夹内。目前这个功能已经测试成功，也就是说打开电脑后不多会就可直接使用命令来发布日志到octopress了，而无需手动复制内容。</p>
+
+<p>接下来考虑通过执行脚本来发布文章，不过目前看来还是有点困难，因为本人不是很懂Ruby，这个需要慢慢研究了。不过至少移动端记录并同步到云端已经ok，已经减少了很多与写作无关的步骤，心情大好！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[从Wordpress迁移到Octopress]]></title>
@@ -52,6 +463,90 @@
 <h3>记录很重要</h3>
 
 <p>虽然网络上需要的资讯一般都能找到，但是每次要用的时候再找总是很麻烦，记录在自己的手边才是王道！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[在第二台电脑上配置github octopress的本地环境]]></title>
+    <link href="http://odinyu.github.com/blog/how-to-configure-the-local-environment-of-octopress-with-github-on-second-pc/"/>
+    <updated>2012-03-05T23:18:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/how-to-configure-the-local-environment-of-octopress-with-github-on-second-pc</id>
+    <content type="html"><![CDATA[<p>本来倒是没想在家里的本本上也进行配置，不过一颗geek的心却始终骚动着，最终还是google了出来具体的方法，当然也是综合了多方建议，所以有必要在还没有忘记之时记录一下。</p>
+
+<h3>安装Ruby</h3>
+
+<ul>
+<li>还是通过<a href="http://rubyinstaller.org/" title="RubyInstraller">http://rubyinstaller.org/</a>的方式，不过好像我在家却不用翻墙居然也能下，上天有眼？</li>
+<li>同样还是不要忘记安装<a href="http://rubyinstaller.org/add-ons/devkit/" title="Devkit">http://rubyinstaller.org/add-ons/devkit/</a>.</li>
+</ul>
+
+
+<h3>从github上获取自己的octopress内容</h3>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>从github上获取自己的octopress内容 </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone -b source git@github.com:username/username.github.com.git octopress
+</span><span class='line'>cd octopress
+</span><span class='line'>git clone git@github.com:username/username.github.com.git _deploy</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h3>安装依赖gems</h3>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>安装依赖gems </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install bundler --pre
+</span><span class='line'>bundle install
+</span><span class='line'>rake install</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>这里在我具体安装的时候有点小曲折，不过都还是用google解决了。</p>
+
+<ul>
+<li><code>gem install bundler</code>可能会比较慢，所以改用<code>gem install bundler --pre</code></li>
+<li><code>rake install</code>的时候报错，好像是说我用的gem版本太新什么的，google后的解决方法是<code>bundle update</code>，然后再<code>rake install</code>。</li>
+</ul>
+
+
+<h3>修改配置</h3>
+
+<ul>
+<li>到Ruby的安装目录\lib\ruby\gems\1.9.1\gems\jekyll-0.11.0\lib\jekyll\找到convertible.rb这个文件，修改<code>self.content = File.read(File.join(base, name))</code>为<code>self.content = File.read(File.join(base, name), :encoding =&gt; "utf-8")</code>。</li>
+</ul>
+
+
+<h3>从github上更新source内容的命令</h3>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>从github上更新source内容的命令 </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd _deploy
+</span><span class='line'>git pull origin master
+</span><span class='line'>cd ..
+</span><span class='line'>git pull origin source</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>至此大功告成！总耗时1小时左右，还算顺利。</p>
+
+<h3>另外补充一下windows下安装Devkit的方法，免得下次还要找。</h3>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>windows下安装Devkit的方法 </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd &lt;DEVKIT_INSTALL_DIR>
+</span><span class='line'>ruby dk.rb init
+</span><span class='line'>ruby dk.rb install&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>检验是否成功&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>gem install rdiscount --platform=ruby</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 ]]></content>
   </entry>
   
