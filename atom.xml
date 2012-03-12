@@ -4,7 +4,7 @@
   <title><![CDATA[我是清都山水郎]]></title>
   <link href="http://odinyu.github.com/atom.xml" rel="self"/>
   <link href="http://odinyu.github.com/"/>
-  <updated>2012-03-09T18:28:10+08:00</updated>
+  <updated>2012-03-12T18:36:49+08:00</updated>
   <id>http://odinyu.github.com/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[没有重构的日子]]></title>
+    <link href="http://odinyu.github.com/blog/without-rconstruction-day/"/>
+    <updated>2012-03-12T18:15:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/without-rconstruction-day</id>
+    <content type="html"><![CDATA[<p>今天我们的团队开始没有重构，也意味着痛苦的日子真正开始。</p>
+
+<p>整整一天，为了一个问卷弹出框的样式搞得晕头转向，最后草草收工。</p>
+
+<p>看着同事被页面上的样式问题困扰，而因为没有重构的协助只能继续痛苦。</p>
+
+<p>还有同事因为样式问题周末加班到凌晨，然后周日晚上再次加班。</p>
+
+<p>真是很不明白，一个网页游戏的团队居然没有一个重构。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[一周心情总结]]></title>
@@ -870,21 +887,6 @@
 <p><img style="display: block; float: none; margin-left: auto; margin-right: auto" src="http://public.bay.livefilestore.com/y1p0ejvzLtD-OCRTn5T8vLYQ7OoiTvpbEey0QU2w77XyimkuyXxq4qyInX7rOk_e5DHvzfJFe1SeXGYj9irXA_ysQ/IMG_0596.PNG"></p>
 
 <p>这样做的优点是可以充分使用Nook的iphone app，缺点是非越狱不行且每次只能看一本。所以这个只能是小技巧，仅此而已。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Momento无法同步新浪微博的暂时解决方案]]></title>
-    <link href="http://odinyu.github.com/blog/temporary-solution-to-synchronize-sina-microblogging-to-momento/"/>
-    <updated>2011-07-25T00:00:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/temporary-solution-to-synchronize-sina-microblogging-to-momento</id>
-    <content type="html"><![CDATA[<p>在天朝，玩新浪微博比twitter要方便得多，但如果要同步新浪微博的内容到其他平台就有点麻烦了。</p>
-
-<p>Momento内虽然可以使用rss feeds，但是却不能同步新浪微博的feeds，所以我的方案就是曲线救国。使用ifttt同步新浪微博的feeds到twitter，然后Momento同步twitter。</p>
-
-<p>这里我只是给个方案，具体的做法也不是很复杂，大家自己搞定吧。</p>
-
-<p>ps:新浪微博的feeds，非官方，请使用如下的形式<a href="http://medcl.net/SinaRss.aspx?uid=123456789">http://medcl.net/SinaRss.aspx?uid=123456789</a>即可。</p>
 ]]></content>
   </entry>
   

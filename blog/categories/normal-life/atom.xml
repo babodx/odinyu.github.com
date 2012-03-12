@@ -4,7 +4,7 @@
   <title><![CDATA[Category: normal life | 我是清都山水郎]]></title>
   <link href="http://odinyu.github.com/blog/categories/normal-life/atom.xml" rel="self"/>
   <link href="http://odinyu.github.com/"/>
-  <updated>2012-03-09T18:28:10+08:00</updated>
+  <updated>2012-03-12T18:36:49+08:00</updated>
   <id>http://odinyu.github.com/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[没有重构的日子]]></title>
+    <link href="http://odinyu.github.com/blog/without-rconstruction-day/"/>
+    <updated>2012-03-12T18:15:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/without-rconstruction-day</id>
+    <content type="html"><![CDATA[<p>今天我们的团队开始没有重构，也意味着痛苦的日子真正开始。</p>
+
+<p>整整一天，为了一个问卷弹出框的样式搞得晕头转向，最后草草收工。</p>
+
+<p>看着同事被页面上的样式问题困扰，而因为没有重构的协助只能继续痛苦。</p>
+
+<p>还有同事因为样式问题周末加班到凌晨，然后周日晚上再次加班。</p>
+
+<p>真是很不明白，一个网页游戏的团队居然没有一个重构。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[一周心情总结]]></title>
@@ -87,29 +104,6 @@
 <p>和同事戏言，是不是公司大规模裁员搞得老天也发怒了？</p>
 
 <p>以上文字是忙了一天后郁闷心情之下的表述，仅此而已。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[通宵]]></title>
-    <link href="http://odinyu.github.com/blog/overnight-work/"/>
-    <updated>2012-02-29T00:00:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/overnight-work</id>
-    <content type="html"><![CDATA[<p>今天通宵干活，是的，2012年的第一个通宵，为了服务的迁移。</p>
-
-<p>其实我的任务不是很重，只是负责服务迁移后的测试并处理可能会发生的问题，但人还是必须在场的。</p>
-
-<p>虽说现在眼睛有点酸，不过人却并不是很累，可能和刚刚学会怎么在github上用octopress建立博客有关。</p>
-
-<p>下午快下班的时候搜索markdown的时候顺带看到的octopress，看下来感觉很有geek的感觉，就决定试一下。</p>
-
-<p>由于对github、ruby等相关知识不是很熟，所以是一边搜索一边在做，去掉中间晚饭的时间一共用了3个多小时。</p>
-
-<p>windows环境下对中文编码的支持有点小问题，还好有万能的google。</p>
-
-<p>今天不太想把整个过程写下来，不过改天还是要记录一下的，多总结总是不错的。</p>
-
-<p>最后附上在github上的<a href="http://odinyu.github.com/" title="新博客地址">http://odinyu.github.com/</a>，用的是slash主题。</p>
 ]]></content>
   </entry>
   
