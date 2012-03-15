@@ -4,7 +4,7 @@
   <title><![CDATA[我是清都山水郎]]></title>
   <link href="http://odinyu.github.com/atom.xml" rel="self"/>
   <link href="http://odinyu.github.com/"/>
-  <updated>2012-03-15T17:19:46+08:00</updated>
+  <updated>2012-03-15T18:35:10+08:00</updated>
   <id>http://odinyu.github.com/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[将我的域名指向到github上的octopress]]></title>
+    <link href="http://odinyu.github.com/blog/direct-domain-to-octopress-at-equals-github/"/>
+    <updated>2012-03-15T17:58:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/direct-domain-to-octopress-at-equals-github</id>
+    <content type="html"><![CDATA[<p>经过了一周时间不断加班的摧残，今天终于有空来折腾octopress了。</p>
+
+<p>想着将disqus换成友言的，希望更适合中文环境。将评论导入的过程比较麻烦，先是想在wordpress装上友言的插件，然后导出所有评论，以为这样可能会比较好导入。可是打开一看，日志的url不正确，不是我需要的那种。</p>
+
+<p>换种方法，从之前导入好评论的disqus里导出，然后写代码生成友言格式的xml文件。使用dom4j，还蛮简单的，1个多小时搞定。</p>
+
+<p>可惜导入成功后，无法与现有的日志进行匹配，自动化程序远不及disqus。</p>
+
+<p>所以最后还是回归disqus，并且顺便把域名也指向github，以示今后就在octopress上折腾的决心。</p>
+
+<h3>记录一下将域名指向github的过程</h3>
+
+<p>需要在octopress的根目录里增加一个文件</p>
+
+<p><code>echo 'fancyoung.com' &gt;&gt; source/CNAME</code></p>
+
+<p>到godaddy上修改cname</p>
+
+<p><code>@ =&gt; odinyu.github.com</code></p>
+
+<p>并修改A</p>
+
+<p><code>@ =&gt; 207.97.227.245</code></p>
+
+<h4>今天游戏上线还算比较平稳，所以终于不用加班到很晚，抚额庆幸</h4>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[没有重构的日子]]></title>
@@ -885,35 +918,6 @@
 <p><img style="display: block; float: none; margin-left: auto; margin-right: auto" src="http://public.bay.livefilestore.com/y1pELVv5ncLDtmz3kQ9DsbzQkkWCyj4Mq0LjZ9eK3zclGRj6tccoz7pajWlQfermoLisLIwfllqeogV7LXMDbAe-A/ScreenShot_2011-08-02_135242.jpg"></p>
 
 <p>还是google上找到一些appkey，不过今天早上一个appkey又不能用了，所以看来今后找appkey好像会变成经常要做的事情了。鄙视新浪！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[小技巧：使Nook的iphone app阅读个人书籍]]></title>
-    <link href="http://odinyu.github.com/blog/tips-make-nook-iphone-app-read-personal-book/"/>
-    <updated>2011-07-28T00:00:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/tips-make-nook-iphone-app-read-personal-book</id>
-    <content type="html"><![CDATA[<p>刚才在用wlw写的时候崩溃了，郁闷！重来！</p>
-
-<p>其实iphone上用Stanza可以很好地看epub书籍，但是好不容易去申请了itunes美国账号然后下载了的Nook放着不用，好像有点太浪费了，于是就对Nook进行了一点小改动，当然前提是我的iphone是已经越狱过的。</p>
-
-<p>用i-FunBox打开nook，如下图红圈所示的目录内会有一本免费书，用自己的epub书籍替换之，名字还是要用这个免费书的。</p>
-
-<p><img style="display: block; float: none; margin-left: auto; margin-right: auto" src="http://public.bay.livefilestore.com/y1pJN7TeDQ9U0eKrCTq-Zn-I5Vj7leuFlv5z4QTCprY6hprmtJjXuQS0_LsBOt_YHxasLy7ORmkQNKR1hE97clvdw/ScreenShot_2011-07-28_164916.jpg"></p>
-
-<p>然后再将自己电脑上的雅黑及雅黑粗体改名，分别将msyh.ttf、msyhbd.ttf改成CenturySchoolbook.ttf、CenturySchoolbook-B.ttf，然后还是用i-FunBox将这两个改好名的文件替换到下图红圈所示的目录。</p>
-
-<p><img style="display: block; float: none; margin-left: auto; margin-right: auto" src="http://public.bay.livefilestore.com/y1pJLyEOUpnwga7trCIqD6pxsT_nOAaOJHmZHzkhgIA3j0XnWHThkDG9GRDSm0l_SWkhyZRFn4EKxYVE6UFmaWTgw/ScreenShot_2011-07-28_165756.jpg"></p>
-
-<p>然后是回到iphone打开Nook，选择那本免费书，打开后应该是一堆的问号，进入设置界面选择刚才所改的字体，如下图。</p>
-
-<p><img style="display: block; float: none; margin-left: auto; margin-right: auto" src="http://public.bay.livefilestore.com/y1pwV-i5-GmOARYIOlSid1GkF-etQDLFS8aXI5BnmIUhfd_RrdSk5SX5xhfW1QhpCA0yZfIKBiev0ph_D12pUd6tA/IMG_0595.PNG"></p>
-
-<p>接下来就一切ok了，可以像在Nook或者Nook Color里一样地来阅读我们自己的书籍了，效果图如下。</p>
-
-<p><img style="display: block; float: none; margin-left: auto; margin-right: auto" src="http://public.bay.livefilestore.com/y1p0ejvzLtD-OCRTn5T8vLYQ7OoiTvpbEey0QU2w77XyimkuyXxq4qyInX7rOk_e5DHvzfJFe1SeXGYj9irXA_ysQ/IMG_0596.PNG"></p>
-
-<p>这样做的优点是可以充分使用Nook的iphone app，缺点是非越狱不行且每次只能看一本。所以这个只能是小技巧，仅此而已。</p>
 ]]></content>
   </entry>
   

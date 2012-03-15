@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | 我是清都山水郎]]></title>
   <link href="http://odinyu.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://odinyu.github.com/"/>
-  <updated>2012-03-15T17:19:46+08:00</updated>
+  <updated>2012-03-15T18:35:10+08:00</updated>
   <id>http://odinyu.github.com/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[将我的域名指向到github上的octopress]]></title>
+    <link href="http://odinyu.github.com/blog/direct-domain-to-octopress-at-equals-github/"/>
+    <updated>2012-03-15T17:58:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/direct-domain-to-octopress-at-equals-github</id>
+    <content type="html"><![CDATA[<p>经过了一周时间不断加班的摧残，今天终于有空来折腾octopress了。</p>
+
+<p>想着将disqus换成友言的，希望更适合中文环境。将评论导入的过程比较麻烦，先是想在wordpress装上友言的插件，然后导出所有评论，以为这样可能会比较好导入。可是打开一看，日志的url不正确，不是我需要的那种。</p>
+
+<p>换种方法，从之前导入好评论的disqus里导出，然后写代码生成友言格式的xml文件。使用dom4j，还蛮简单的，1个多小时搞定。</p>
+
+<p>可惜导入成功后，无法与现有的日志进行匹配，自动化程序远不及disqus。</p>
+
+<p>所以最后还是回归disqus，并且顺便把域名也指向github，以示今后就在octopress上折腾的决心。</p>
+
+<h3>记录一下将域名指向github的过程</h3>
+
+<p>需要在octopress的根目录里增加一个文件</p>
+
+<p><code>echo 'fancyoung.com' &gt;&gt; source/CNAME</code></p>
+
+<p>到godaddy上修改cname</p>
+
+<p><code>@ =&gt; odinyu.github.com</code></p>
+
+<p>并修改A</p>
+
+<p><code>@ =&gt; 207.97.227.245</code></p>
+
+<h4>今天游戏上线还算比较平稳，所以终于不用加班到很晚，抚额庆幸</h4>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[安装octopress主题slash]]></title>
@@ -410,90 +443,6 @@
 <h3>记录很重要</h3>
 
 <p>虽然网络上需要的资讯一般都能找到，但是每次要用的时候再找总是很麻烦，记录在自己的手边才是王道！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[在第二台电脑上配置github octopress的本地环境]]></title>
-    <link href="http://odinyu.github.com/blog/how-to-configure-the-local-environment-of-octopress-with-github-on-second-pc/"/>
-    <updated>2012-03-05T23:18:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/how-to-configure-the-local-environment-of-octopress-with-github-on-second-pc</id>
-    <content type="html"><![CDATA[<p>本来倒是没想在家里的本本上也进行配置，不过一颗geek的心却始终骚动着，最终还是google了出来具体的方法，当然也是综合了多方建议，所以有必要在还没有忘记之时记录一下。</p>
-
-<h3>安装Ruby</h3>
-
-<ul>
-<li>还是通过<a href="http://rubyinstaller.org/" title="RubyInstraller">http://rubyinstaller.org/</a>的方式，不过好像我在家却不用翻墙居然也能下，上天有眼？</li>
-<li>同样还是不要忘记安装<a href="http://rubyinstaller.org/add-ons/devkit/" title="Devkit">http://rubyinstaller.org/add-ons/devkit/</a>.</li>
-</ul>
-
-
-<h3>从github上获取自己的octopress内容</h3>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>从github上获取自己的octopress内容 </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git clone -b source git@github.com:username/username.github.com.git octopress
-</span><span class='line'>cd octopress
-</span><span class='line'>git clone git@github.com:username/username.github.com.git _deploy</span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<h3>安装依赖gems</h3>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>安装依赖gems </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>gem install bundler --pre
-</span><span class='line'>bundle install
-</span><span class='line'>rake install</span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<p>这里在我具体安装的时候有点小曲折，不过都还是用google解决了。</p>
-
-<ul>
-<li><code>gem install bundler</code>可能会比较慢，所以改用<code>gem install bundler --pre</code></li>
-<li><code>rake install</code>的时候报错，好像是说我用的gem版本太新什么的，google后的解决方法是<code>bundle update</code>，然后再<code>rake install</code>。</li>
-</ul>
-
-
-<h3>修改配置</h3>
-
-<ul>
-<li>到Ruby的安装目录\lib\ruby\gems\1.9.1\gems\jekyll-0.11.0\lib\jekyll\找到convertible.rb这个文件，修改<code>self.content = File.read(File.join(base, name))</code>为<code>self.content = File.read(File.join(base, name), :encoding =&gt; "utf-8")</code>。</li>
-</ul>
-
-
-<h3>从github上更新source内容的命令</h3>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>从github上更新source内容的命令 </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>cd _deploy
-</span><span class='line'>git pull origin master
-</span><span class='line'>cd ..
-</span><span class='line'>git pull origin source</span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<p>至此大功告成！总耗时1小时左右，还算顺利。</p>
-
-<h3>另外补充一下windows下安装Devkit的方法，免得下次还要找。</h3>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>windows下安装Devkit的方法 </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>cd &lt;DEVKIT_INSTALL_DIR>
-</span><span class='line'>ruby dk.rb init
-</span><span class='line'>ruby dk.rb install&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;h1>检验是否成功&lt;/h1>
-</span><span class='line'>
-</span><span class='line'>&lt;p>gem install rdiscount --platform=ruby</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 ]]></content>
   </entry>
   
