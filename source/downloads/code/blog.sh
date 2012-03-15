@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+#!/bin/bash
 # Author: Hsin-Yi Chen <ossug.hychen AT gmail.com>
 # Alter: Odin Yu <qdssly AT gmail.com>
 ERRMSG_WRONGDIR='You are not under octopress directory'
