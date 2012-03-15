@@ -68,7 +68,181 @@
 
 <p>脚本需要放在octopress的安装目录。</p>
 
-<p>Liquid error: invalid byte sequence in GBK</p>
+<figure class='code'><figcaption><span> (blog.sh)</span> <a href='/downloads/code/blog.sh'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="c">#!/bin/bash</span>
+</span><span class='line'><span class="c"># Author: Hsin-Yi Chen &lt;ossug.hychen AT gmail.com&gt;</span>
+</span><span class='line'><span class="c"># Alter: Odin Yu &lt;qdssly AT gmail.com&gt;</span>
+</span><span class='line'><span class="nv">ERRMSG_WRONGDIR</span><span class="o">=</span><span class="s1">&#39;You are not under octopress directory&#39;</span>
+</span><span class='line'><span class="o">[</span> ! -f _config.yml <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="k">${</span><span class="nv">ERRMSG_WRONGDIR</span><span class="k">}</span> <span class="o">&amp;&amp;</span> <span class="nb">exit</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">BLOGDIR</span><span class="o">=</span><span class="k">${</span><span class="nv">PWD</span><span class="k">}</span>
+</span><span class='line'>
+</span><span class='line'>submit<span class="o">(){</span>
+</span><span class='line'>  <span class="nb">local </span><span class="nv">message</span><span class="o">=</span><span class="k">${</span><span class="nv">1</span><span class="p">?</span><span class="s2">&quot;requires message&quot;</span><span class="k">}</span>
+</span><span class='line'>  git add .
+</span><span class='line'>  git commit -m <span class="k">${</span><span class="nv">message</span><span class="k">}</span>
+</span><span class='line'>  git push origin <span class="nb">source</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>update<span class="o">(){</span>
+</span><span class='line'>  <span class="nb">cd </span>_deploy
+</span><span class='line'>  git pull origin master
+</span><span class='line'>  <span class="nb">cd</span> ..
+</span><span class='line'>  git pull origin <span class="nb">source</span>
+</span><span class='line'><span class="nb"> </span>rake generate
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>generate<span class="o">(){</span>
+</span><span class='line'>  rake generate
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>deploy<span class="o">(){</span>
+</span><span class='line'>  rake deploy
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>update_octopress<span class="o">(){</span>
+</span><span class='line'>  <span class="nb">echo</span> <span class="s1">&#39;upgrading octopress source&#39;</span>
+</span><span class='line'>  git pull octopress master     <span class="c"># Get the latest Octopress</span>
+</span><span class='line'>  bundle install                <span class="c"># Keep gems updated</span>
+</span><span class='line'>  rake update_source            <span class="c"># update the template&#39;s source</span>
+</span><span class='line'>  rake update_style             <span class="c"># update the template&#39;s style</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>preview<span class="o">(){</span>
+</span><span class='line'>  rake preview &amp;
+</span><span class='line'>  sleep 1
+</span><span class='line'>  ff http://127.0.0.1:4000
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>upgrade<span class="o">(){</span>
+</span><span class='line'>  update_octopress
+</span><span class='line'>  generate
+</span><span class='line'>  deploy
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># start to write new post</span>
+</span><span class='line'><span class="c"># @param: post title</span>
+</span><span class='line'>post<span class="o">(){</span>
+</span><span class='line'>  <span class="nb">local </span><span class="nv">title</span><span class="o">=</span><span class="k">${</span><span class="nv">1</span><span class="p">?</span><span class="s2">&quot;requires title&quot;</span><span class="k">}</span>
+</span><span class='line'>  _new_item post <span class="k">${</span><span class="nv">title</span><span class="k">}</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># start to write new page</span>
+</span><span class='line'><span class="c"># @param: page title</span>
+</span><span class='line'>page<span class="o">(){</span>
+</span><span class='line'>  _new_item page <span class="nv">$1</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>_new_item<span class="o">(){</span>
+</span><span class='line'>  <span class="nb">local </span><span class="nv">tmpfile</span><span class="o">=</span><span class="sb">`</span>mktemp<span class="sb">`</span>
+</span><span class='line'>  <span class="nb">local </span><span class="nv">item_name</span><span class="o">=</span><span class="k">${</span><span class="nv">1</span><span class="p">?</span><span class="s2">&quot;requires item name&quot;</span><span class="k">}</span>
+</span><span class='line'>  <span class="nb">local </span><span class="nv">title</span><span class="o">=</span><span class="k">${</span><span class="nv">2</span><span class="p">?</span><span class="s2">&quot;requires title&quot;</span><span class="k">}</span>
+</span><span class='line'>  rake new_<span class="k">${</span><span class="nv">item_name</span><span class="k">}</span><span class="o">[</span><span class="s2">&quot;${title}&quot;</span><span class="o">]</span> | tee <span class="k">${</span><span class="nv">tmpfile</span><span class="k">}</span>
+</span><span class='line'>  <span class="nb">local </span><span class="nv">file</span><span class="o">=</span><span class="sb">`</span>cat <span class="k">${</span><span class="nv">tmpfile</span><span class="k">}</span> | awk -F: <span class="s1">&#39;{print $2}&#39;</span> | sed -e <span class="s1">&#39;s/ //&#39;</span><span class="sb">`</span>
+</span><span class='line'>  md <span class="k">${</span><span class="nv">BLOGDIR</span><span class="k">}</span>/<span class="nv">$file</span>
+</span><span class='line'>  rm <span class="k">${</span><span class="nv">tmpfile</span><span class="k">}</span>
+</span><span class='line'>  <span class="c"># return file name</span>
+</span><span class='line'>  <span class="nv">RET</span><span class="o">=</span><span class="k">${</span><span class="nv">file</span><span class="k">}</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># Main</span>
+</span><span class='line'><span class="c"># ----</span>
+</span><span class='line'><span class="nv">actions</span><span class="o">=</span><span class="s2">&quot;post upgrade preview deploy&quot;</span>
+</span><span class='line'><span class="nv">action</span><span class="o">=</span><span class="k">${</span><span class="nv">1</span><span class="p">?</span><span class="s2">&quot;requirs action!, avaliabl actions are ${actions}&quot;</span><span class="k">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># run action</span>
+</span><span class='line'><span class="nb">shift</span>
+</span><span class='line'><span class="k">${</span><span class="nv">action</span><span class="k">}</span> <span class="nv">$@</span>
+</span></code></pre></td></tr></table></div></figure>
+
 
 <h3>我的自定义</h3>
 
