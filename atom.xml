@@ -4,7 +4,7 @@
   <title><![CDATA[我是清都山水郎]]></title>
   <link href="http://odinyu.github.com/atom.xml" rel="self"/>
   <link href="http://odinyu.github.com/"/>
-  <updated>2012-03-19T18:16:27+08:00</updated>
+  <updated>2012-03-19T18:25:48+08:00</updated>
   <id>http://odinyu.github.com/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[disqus回复评论超方便]]></title>
+    <link href="http://odinyu.github.com/blog/disqus-is-very-convenience/"/>
+    <updated>2012-03-19T18:20:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/disqus-is-very-convenience</id>
+    <content type="html"><![CDATA[<p>disqus用下来感觉还不错，昨天又发现了一个很方便的功能，就是可以直接在disqus的通知邮件里回复评论者，很sweet!</p>
+
+<blockquote><p>You can moderate through email. Respond in the body with &#8220;Delete&#8221;. Respond in the body to post a reply comment.</p></blockquote>
+
+<p>上面是disqus通知邮件里的提示，我按提示回复了一下，果然直接在原评论后嵌套了我的回复，相当地方便，超好用!</p>
+
+<p>ps，刚才试用了一个和友言差不多的国内的社会化评论产品&#8211;评论啦，能导入wordpress，但却不能在新的网页上显示评论，也就是无法关联评论。所以现在还是继续用disqus，虽然很国外。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[我的宝贝小猪]]></title>
@@ -903,28 +918,6 @@
 <p><img src="http://public.bay.livefilestore.com/y1p7tU_rqzUDT5xJmzijTR5ECuLy2Ttj5pNJC8UHcQyx52BaZKylWAXn3miets6ww0pyTBZ0ehApnMyWNWHNIGk0Q/ScreenShot_2011-10-09_143058.jpg" alt="" /></p>
 
 <p>就是这么简单，不过我自己在试验的过程中有的时候会不成功，需要多试几次，可能和我的usb无线网卡有关。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[firefox伪装成chrome的简单教程]]></title>
-    <link href="http://odinyu.github.com/blog/simple-tutorial-of-firefox-disguised-as-chrome-3/"/>
-    <updated>2011-09-09T00:00:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/simple-tutorial-of-firefox-disguised-as-chrome-3</id>
-    <content type="html"><![CDATA[<p>其实我的主力浏览器一直是chrome，但因为工作的需要，经常为了调试代码而使用firefox，于是就有了各种的不甘。正巧今天有空想动动手，经过一番搜索加测试，效果还是比较满意的，请参考下图。<br/>
-<img src="http://public.bay.livefilestore.com/y1pZkdB53cm8SerfkBQVkw28F43zRFn5HEq7akf1dYNpw89C-p5ZNV_U-N6H79bEWgz4rBb_J5hUrUhcKH700Cp4g/ScreenShot_2011-09-09_123117.jpg" alt="" /></p>
-
-<p>开始简单教程，其实也真的是很简单。</p>
-
-<ul>
-<li>安装<a href="https://addons.mozilla.org/zh-CN/firefox/addon/fxchrome/" title="FXChrome">https://addons.mozilla.org/zh-CN/firefox/addon/fxchrome/</a>主题。</li>
-<li>安装<a href="https://addons.mozilla.org/zh-CN/firefox/addon/stylish/" title="Stylish">https://addons.mozilla.org/zh-CN/firefox/addon/stylish/</a>扩展。</li>
-<li>重启firefox后访问<a href="http://userstyles.org/styles/51118/fxchrome-firox-button-icons?r=1311430549" title="这个网址">http://userstyles.org/styles/51118/fxchrome-firox-button-icons?r=1311430549</a>来修改左上角profile图标。</li>
-<li>如果附加组件栏打开的话请手动关闭,就是底下的状态栏。</li>
-</ul>
-
-
-<p>OK，做完上述步骤后就一切完成，个人感觉相似度95%以上了，有木有？呵呵！</p>
 ]]></content>
   </entry>
   
