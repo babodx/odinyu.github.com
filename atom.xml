@@ -4,7 +4,7 @@
   <title><![CDATA[我是清都山水郎]]></title>
   <link href="http://odinyu.github.com/atom.xml" rel="self"/>
   <link href="http://odinyu.github.com/"/>
-  <updated>2012-03-19T18:25:48+08:00</updated>
+  <updated>2012-03-20T22:07:18+08:00</updated>
   <id>http://odinyu.github.com/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[吐槽]]></title>
+    <link href="http://odinyu.github.com/blog/tucao/"/>
+    <updated>2012-03-20T21:53:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/tucao</id>
+    <content type="html"><![CDATA[<p>在我的理解中吐槽就是抱怨的意思，虽然知道抱怨并没有什么用，不过还是要吐一下，不然憋得不舒服。</p>
+
+<p>汽油又涨了，93号直接进入8元区间，从我刚开车时2007年的5元不到涨到5年后的8元，国人的消费能力还是很值得鼓舞的。</p>
+
+<p>老婆的医院依然是那么地忙，昨天晚上10点多了还有10多个人在浑浊并充斥着病菌的空气中排队等着吊针，而我的美女只能埋头工作，还常常要担心某个脑子也需要吊水的病人的谩骂。</p>
+
+<p>工作团队的一个产品貌似社会反响还不错，不过团队中某些人的工作能力实在是不得不让人抓狂，既愤怒于他们的呆板兼麻木，又悲哀于他们的无脑兼脑残。</p>
+
+<p>自己的身体好像越来越容易出问题，不过还好我已经开始注意，平时上下班尽量少开车多走路，争取以后工作时能经常站起来动动手脚，久坐伤身啊！</p>
+
+<p>好像吐得不多，也算是先吐为快吧，下次继续。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[disqus回复评论超方便]]></title>
@@ -893,31 +912,6 @@
 <p>最后，也是最重要的，就是换港币。我是在中国银行换的，2000人民币不到，换了2400港币。事实证明换少了，后来在香港直接东亚银行取款机上取了500港币，还在街边小店换了300多港币。</p>
 
 <p>上面就是大致的准备情况，包含少许评论，具体的评论请参考随后的相关日志。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[备忘：win7临时分享网络]]></title>
-    <link href="http://odinyu.github.com/blog/memo-temporary-sharing-network-on-win7/"/>
-    <updated>2011-10-09T00:00:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/memo-temporary-sharing-network-on-win7</id>
-    <content type="html"><![CDATA[<p>本来公司在公司里有同事自己用无线路由器分享的无线信号可以用，但这两天他自己家也需要这个无线路由器，因此我的iphone就没法在公司用wifi上网了，有点不大方便。</p>
-
-<p>碰巧在威锋上看帖子的时候看到一个关于如何用pc上的无线网卡分享网络给移动设备使用的教程，而且我手头也正好有一个闲置下来的usb无线网卡，这样正好可以试一下自给自足。</p>
-
-<p>虽说最终总结下来的过程并不是很复杂，但中间也稍稍绕了一点弯路，小小地麻烦了一下。所以，为了以后再有这样的需要时不至于再次失忆，还是在博客上备忘一下。</p>
-
-<p>其实用几张截图就能很好地说明整个流程：</p>
-
-<p><img src="http://public.bay.livefilestore.com/y1pXYjeDhjsDX6ys37shyISivYA3F-JLyTqWWhgQOzYePy8v8o1lRK2tIg-9KkNrUX-DAp86eXxtRP_PDJLW8FQeA/ScreenShot_2011-10-09_141612.jpg" alt="" /></p>
-
-<p><img src="http://public.bay.livefilestore.com/y1p7tU_rqzUDT5jHRIk5yK0SnIIuvq3cZROCCS1gbw7oYmSvFYcWsUlQFoA4-S3bvPuWrtWvMB03e1_fW4nQV0QDQ/ScreenShot_2011-10-09_141652.jpg" alt="" /></p>
-
-<p><img src="http://public.bay.livefilestore.com/y1p7tU_rqzUDT6jML7qfj4VEFxLJ5ylGRMgRKoj-vMN9nCZAw-4jjT4G-i4JwmrAMu2bJDumyDMDNjEwy0zCG_cIQ/ScreenShot_2011-10-09_141728.jpg" alt="" /></p>
-
-<p><img src="http://public.bay.livefilestore.com/y1p7tU_rqzUDT5xJmzijTR5ECuLy2Ttj5pNJC8UHcQyx52BaZKylWAXn3miets6ww0pyTBZ0ehApnMyWNWHNIGk0Q/ScreenShot_2011-10-09_143058.jpg" alt="" /></p>
-
-<p>就是这么简单，不过我自己在试验的过程中有的时候会不成功，需要多试几次，可能和我的usb无线网卡有关。</p>
 ]]></content>
   </entry>
   
