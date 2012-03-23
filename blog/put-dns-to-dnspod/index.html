@@ -3,11 +3,11 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>杂乱的记录 - 我是清都山水郎</title>
+    <title>将DNS解析到dnspod上 - 我是清都山水郎</title>
     <meta name="author" content="sleepy">
 
     
-    <meta name="description" content="杂乱的记录 昨天下载了iphone上的blogpress和wordpress应用，主要的目的就是为了给自己的博客除除草。 现在在用的是blogpress，连接到博客的速度不如wordpress，本身还是个收费应用，目前还看不出有什么过人之处。 估计它的特点是支持自定义图库吧， &hellip;">
+    <meta name="description" content="将DNS解析到dnspod上 昨天晚上无意间发现域名被墙，然后再一查，原来是godaddy又被墙了，害我也受牵连。 之前早就想过要把dns解析到dnspod上去，但一直懒得动，不过这次终于决定要动一下了。 具体过程 先注册dnspod，取得两个dns解析的地址 到godaddy上改成新的地址 &hellip;">
     
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
 
@@ -46,23 +46,28 @@
 </header>
 	
 	<div id="content" class="inner"><article class="post">
-    <h1 class="title">杂乱的记录</h1>
-    <div class="entry"><p>昨天下载了iphone上的blogpress和wordpress应用，主要的目的就是为了给自己的博客除除草。</p>
+    <h1 class="title">将DNS解析到dnspod上</h1>
+    <div class="entry"><p>昨天晚上无意间发现域名被墙，然后再一查，原来是godaddy又被墙了，害我也受牵连。</p>
 
-<p>现在在用的是blogpress，连接到博客的速度不如wordpress，本身还是个收费应用，目前还看不出有什么过人之处。</p>
+<p>之前早就想过要把dns解析到dnspod上去，但一直懒得动，不过这次终于决定要动一下了。</p>
 
-<p>估计它的特点是支持自定义图库吧，这个功能还需要折腾下才能体会到。</p>
+<h2>具体过程</h2>
 
-<p>刚才在吃饭的时候突然有了个想法，就是从今天开始坚持每天看20页纸质书，不限品种更不限语种。不是为了长多少知识，只想试试自己能坚持多久。</p>
+<p>先注册dnspod，取得两个dns解析的地址</p>
 
-<p>很久没逼着自己去做什么事了。</p>
+<p><img src="http://public.bay.livefilestore.com/y1pcOWa97XSVygnCfwMVgwdhOwD4bNjkN99XXSJ2b61KNw5m-QssfQzwn6-36yiZOM_pXFvBIW2jhDRAv7km4HPiQ/ScreenShot_2012-03-23_155217.jpg" alt="dns解析地址" /></p>
 
-<p>贴一张用notica编辑过的照片，测试贴图。</p>
+<p>到godaddy上改成新的地址</p>
 
-<p><img src="http://www.hopes4.me/wp-content/uploads/2012/02/D5D40512-2EE6-472E-9840-F9BD8D9672720.jpg" alt="" /></p>
+<p>再到dnspod上添加A记录，如下图所示</p>
 
-<br>&#8211; 发送自我的 iPhone
+<p><img src="http://public.bay.livefilestore.com/y1pNkYMMZT7cFIalK-S7XPHqXAEJM90kiwhViGBK_NXsFusU9KD3IUDShCrcuZjQ85GR9sSTYhM5XDPLBtNLngJ8w/ScreenShot_2012-03-23_155253.jpg" alt="A记录" /></p>
 
+<p>继续添加CNAME</p>
+
+<p><img src="http://public.bay.livefilestore.com/y1pWwvZbClwynCufLVnQqLB7TZjYjOLDFl2ufIWJ6kRL1PnmPvBj6oD4VKF99UuYA47uTjeicABw0vbrGDAakNRzA/ScreenShot_2012-03-23_155305.jpg" alt="CNAME" /></p>
+
+<p>好像过个10分钟左右，dns解析就会生效，感觉还不错。在天朝就要这样地折腾，唉！</p>
 </div>
     <div class="meta">
         <div class="date">
@@ -77,12 +82,12 @@
   
 
 
-<time datetime="2012-02-20T00:00:00+08:00" pubdate data-updated="true">Feb 20<span>th</span>, 2012</time></div>
+<time datetime="2012-03-23T16:21:00+08:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2012</time></div>
         <div class="tags">
 
 <div class="cat">
   
-    <a class='category' href='/blog/categories/normal-life/'>normal life</a>
+    <a class='category' href='/blog/categories/about-blog/'>about blog</a>
   
 </div>
 
@@ -119,8 +124,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://odinyu.github.com/blog/cluttered-record/';
-        var disqus_url = 'http://odinyu.github.com/blog/cluttered-record/';
+        var disqus_identifier = 'http://odinyu.github.com/blog/put-dns-to-dnspod/';
+        var disqus_url = 'http://odinyu.github.com/blog/put-dns-to-dnspod/';
         var disqus_script = 'embed.js';
       
     (function () {
