@@ -14,7 +14,7 @@
 
     <link href="http://feed.feedsky.com/sleepy" rel="alternate" title="我是清都山水郎" type="application/atom+xml">
     <link rel="canonical" href="">
-    <link href="/favicon.png" rel="shortcut icon">
+    <link href="/favicon.ico" rel="shortcut icon">
     <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
     <!--[if lt IE 9]><script src="/javascripts/html5.js"></script><![endif]-->
     <script src="/javascripts/jquery.min.js"></script>
@@ -46,6 +46,59 @@
 </div>
 </header>
 	
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://weibo.com/fayeyl">fayeyl</a> @ <a href="http://weibo.com">weibo</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/z4x.js"></script>
+<script type="text/javascript">
+			var url = 'http://myrss.sinaapp.com/sina.php?uid=1473530973';
+			var banner = $('#banner');
+			banner.show();
+			$.ajax({url:url,type:'get',dataType:'html',cache:false,success:function(html){
+				alert(html);
+			}
+			});
+			$.get(url,function(data){ 
+			alert(data);
+				var json = $.z4x(data);
+				var length = json.length,
+					fragment = document.createDocumentFragment(),
+					counts = 0,
+					timeout;
+
+				for (var i=0; i<length; i++){
+					var item = document.createElement('li');
+					item.innerHTML = linkify(json[i].text) + '<small>'+relativeDate(json[i].created_at)+'</small>';
+					fragment.appendChild(item);
+				}
+
+				var play = function(){
+					timeout = setTimeout(function(){
+						feed.animate({top: '-='+30}, speed, function(){
+							$(this).append($(this).children().eq(counts).clone());
+							counts++;
+							play();
+						});
+					}, interval);
+				}
+
+				var pause = function(){
+					clearTimeout(timeout);
+				}
+
+				banner.on('mouseenter', pause).on('mouseleave', play)
+				.children('.loading').hide().end()
+				.children('.container').show()
+				.children('.feed').append(fragment);
+
+				play();
+			});
+</script>
+
 	<div id="content" class="inner"><article class="post">
     <h1 class="title">用Flickr图片来展示你的域名</h1>
     <div class="entry"><p>今天在网上看到一个网站,可以用Flickr上的图片来拼写英文字母。我用它来展示我的域名，五颜六色并形状各异的一个个字母排列在一起，真得很漂亮！效果见下图，另外每刷新一下页面会有不同的效果。

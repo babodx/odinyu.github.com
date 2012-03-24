@@ -13,7 +13,7 @@
 
     <link href="http://feed.feedsky.com/sleepy" rel="alternate" title="我是清都山水郎" type="application/atom+xml">
     <link rel="canonical" href="">
-    <link href="/favicon.png" rel="shortcut icon">
+    <link href="/favicon.ico" rel="shortcut icon">
     <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
     <!--[if lt IE 9]><script src="/javascripts/html5.js"></script><![endif]-->
     <script src="/javascripts/jquery.min.js"></script>
@@ -45,6 +45,59 @@
 </div>
 </header>
 	
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://weibo.com/fayeyl">fayeyl</a> @ <a href="http://weibo.com">weibo</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/z4x.js"></script>
+<script type="text/javascript">
+			var url = 'http://myrss.sinaapp.com/sina.php?uid=1473530973';
+			var banner = $('#banner');
+			banner.show();
+			$.ajax({url:url,type:'get',dataType:'html',cache:false,success:function(html){
+				alert(html);
+			}
+			});
+			$.get(url,function(data){ 
+			alert(data);
+				var json = $.z4x(data);
+				var length = json.length,
+					fragment = document.createDocumentFragment(),
+					counts = 0,
+					timeout;
+
+				for (var i=0; i<length; i++){
+					var item = document.createElement('li');
+					item.innerHTML = linkify(json[i].text) + '<small>'+relativeDate(json[i].created_at)+'</small>';
+					fragment.appendChild(item);
+				}
+
+				var play = function(){
+					timeout = setTimeout(function(){
+						feed.animate({top: '-='+30}, speed, function(){
+							$(this).append($(this).children().eq(counts).clone());
+							counts++;
+							play();
+						});
+					}, interval);
+				}
+
+				var pause = function(){
+					clearTimeout(timeout);
+				}
+
+				banner.on('mouseenter', pause).on('mouseleave', play)
+				.children('.loading').hide().end()
+				.children('.container').show()
+				.children('.feed').append(fragment);
+
+				play();
+			});
+</script>
+
 	<div id="content" class="inner"><article class="post">
     <h1 class="title">Pidgin新版本可以下载了，版本号2.4.1</h1>
     <div class="entry"><p>今天打开Pidgin，就弹出提示让我去更新它的最新版。前天我刚下了它的2.4.0版，没发现有什么比2.3版本好的地方，却让我的QQ好友的昵称一个都看不到，全部变成了null。于是怀着有所期待的心情下了2.4.1，刚才装好了一看，QQ好友那还是老样子，真怀疑是不是我有什么地方没设置好。</p>

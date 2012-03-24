@@ -13,7 +13,7 @@
 
     <link href="http://feed.feedsky.com/sleepy" rel="alternate" title="我是清都山水郎" type="application/atom+xml">
     <link rel="canonical" href="">
-    <link href="/favicon.png" rel="shortcut icon">
+    <link href="/favicon.ico" rel="shortcut icon">
     <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
     <!--[if lt IE 9]><script src="/javascripts/html5.js"></script><![endif]-->
     <script src="/javascripts/jquery.min.js"></script>
@@ -45,6 +45,59 @@
 </div>
 </header>
 	
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://weibo.com/fayeyl">fayeyl</a> @ <a href="http://weibo.com">weibo</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/z4x.js"></script>
+<script type="text/javascript">
+			var url = 'http://myrss.sinaapp.com/sina.php?uid=1473530973';
+			var banner = $('#banner');
+			banner.show();
+			$.ajax({url:url,type:'get',dataType:'html',cache:false,success:function(html){
+				alert(html);
+			}
+			});
+			$.get(url,function(data){ 
+			alert(data);
+				var json = $.z4x(data);
+				var length = json.length,
+					fragment = document.createDocumentFragment(),
+					counts = 0,
+					timeout;
+
+				for (var i=0; i<length; i++){
+					var item = document.createElement('li');
+					item.innerHTML = linkify(json[i].text) + '<small>'+relativeDate(json[i].created_at)+'</small>';
+					fragment.appendChild(item);
+				}
+
+				var play = function(){
+					timeout = setTimeout(function(){
+						feed.animate({top: '-='+30}, speed, function(){
+							$(this).append($(this).children().eq(counts).clone());
+							counts++;
+							play();
+						});
+					}, interval);
+				}
+
+				var pause = function(){
+					clearTimeout(timeout);
+				}
+
+				banner.on('mouseenter', pause).on('mouseleave', play)
+				.children('.loading').hide().end()
+				.children('.container').show()
+				.children('.feed').append(fragment);
+
+				play();
+			});
+</script>
+
 	<div id="content" class="inner"><article class="post">
     <h1 class="title">美女时钟，试用cover Flow效果</h1>
     <div class="entry"><p>把<a href="http://www.hopes4.me/html/special-version-of-beauty-clock/" target="_blank">美女时钟</a>又小小地更新了一下，只是改了下选项页面的展示效果，并把日本囧男的图片源给去掉。之前在扩展的dashboard上，有使用者评论说美女应该和漂亮的界面在一起，我也是这么想的。所以这次更新，选项页面我就用了cover flow的效果，自己感觉还是蛮漂亮的。</p>

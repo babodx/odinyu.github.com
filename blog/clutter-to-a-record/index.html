@@ -13,7 +13,7 @@
 
     <link href="http://feed.feedsky.com/sleepy" rel="alternate" title="我是清都山水郎" type="application/atom+xml">
     <link rel="canonical" href="">
-    <link href="/favicon.png" rel="shortcut icon">
+    <link href="/favicon.ico" rel="shortcut icon">
     <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
     <!--[if lt IE 9]><script src="/javascripts/html5.js"></script><![endif]-->
     <script src="/javascripts/jquery.min.js"></script>
@@ -45,6 +45,59 @@
 </div>
 </header>
 	
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://weibo.com/fayeyl">fayeyl</a> @ <a href="http://weibo.com">weibo</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/z4x.js"></script>
+<script type="text/javascript">
+			var url = 'http://myrss.sinaapp.com/sina.php?uid=1473530973';
+			var banner = $('#banner');
+			banner.show();
+			$.ajax({url:url,type:'get',dataType:'html',cache:false,success:function(html){
+				alert(html);
+			}
+			});
+			$.get(url,function(data){ 
+			alert(data);
+				var json = $.z4x(data);
+				var length = json.length,
+					fragment = document.createDocumentFragment(),
+					counts = 0,
+					timeout;
+
+				for (var i=0; i<length; i++){
+					var item = document.createElement('li');
+					item.innerHTML = linkify(json[i].text) + '<small>'+relativeDate(json[i].created_at)+'</small>';
+					fragment.appendChild(item);
+				}
+
+				var play = function(){
+					timeout = setTimeout(function(){
+						feed.animate({top: '-='+30}, speed, function(){
+							$(this).append($(this).children().eq(counts).clone());
+							counts++;
+							play();
+						});
+					}, interval);
+				}
+
+				var pause = function(){
+					clearTimeout(timeout);
+				}
+
+				banner.on('mouseenter', pause).on('mouseleave', play)
+				.children('.loading').hide().end()
+				.children('.container').show()
+				.children('.feed').append(fragment);
+
+				play();
+			});
+</script>
+
 	<div id="content" class="inner"><article class="post">
     <h1 class="title">杂乱地记录着</h1>
     <div class="entry"><p>已经蛮晚了，虽然再过9个小时我还有一门考试，虽然前面看CSI:NY的时候差点要迷糊过去，虽然此刻的我有点想不出要写些什么，可是突然有了要记录点东西的念头，还是实现它吧！  装了windows7已经有2周多了，期间eclipse会经常性地崩溃，个别软件显示中文不正常，其他的用起来还算正常。不过今天上午我想在局域网里装个共享的打印机，HP的1020激打，就是不能用。明明后台打印服务已经开了，还让我开，估计是系统和这个打印机不兼容吧，亦或是打印机需要新的驱动。   <!--more-->  说到了有些软件在win7下中文显示不正常，其实我指的是光影魔术手，不过我已经完美解决了！我放狗搜索到有人说把语言改成新加坡简体中文来代替中国简体中文，这样就OK了，一试果然灵验。可惜，我经常崩溃的eclipse却没有那么好对付了。常常是我刚打开个project，点了下右键，它就刷地一下崩溃消失了，弄得我自己很崩溃。目前我只有在用eclipse的时候，怀着无比地诚惶诚恐的心情，小心翼翼地用，还不敢多开其他的软件，真是作孽！  其实我一直很想把博客好好地经营着，可是工作真地好忙，家里也太多的事情要烦，真是顾不过来。不过，09年的3月份，也就是此刻，我是很用力地在心里对自己说，还是抽点时间在博客上记录点东西吧。不仅是要对得起已经付掉的<a href="http://www.qdssl.com">www.qdssl.com</a>这个域名一年的费用，更是努力为自己有点平淡的生活略微加一点色彩，至少留下点痕迹吧  这个月会很忙！读研的事有一大堆，车子也要修要保养要验车，工作还是一如继往地忙，儿子却是变本加厉地顽皮。希望一切地会很顺利地过去！</p>

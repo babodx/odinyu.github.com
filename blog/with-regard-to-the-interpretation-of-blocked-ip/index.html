@@ -13,7 +13,7 @@
 
     <link href="http://feed.feedsky.com/sleepy" rel="alternate" title="我是清都山水郎" type="application/atom+xml">
     <link rel="canonical" href="">
-    <link href="/favicon.png" rel="shortcut icon">
+    <link href="/favicon.ico" rel="shortcut icon">
     <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
     <!--[if lt IE 9]><script src="/javascripts/html5.js"></script><![endif]-->
     <script src="/javascripts/jquery.min.js"></script>
@@ -45,6 +45,59 @@
 </div>
 </header>
 	
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://weibo.com/fayeyl">fayeyl</a> @ <a href="http://weibo.com">weibo</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/z4x.js"></script>
+<script type="text/javascript">
+			var url = 'http://myrss.sinaapp.com/sina.php?uid=1473530973';
+			var banner = $('#banner');
+			banner.show();
+			$.ajax({url:url,type:'get',dataType:'html',cache:false,success:function(html){
+				alert(html);
+			}
+			});
+			$.get(url,function(data){ 
+			alert(data);
+				var json = $.z4x(data);
+				var length = json.length,
+					fragment = document.createDocumentFragment(),
+					counts = 0,
+					timeout;
+
+				for (var i=0; i<length; i++){
+					var item = document.createElement('li');
+					item.innerHTML = linkify(json[i].text) + '<small>'+relativeDate(json[i].created_at)+'</small>';
+					fragment.appendChild(item);
+				}
+
+				var play = function(){
+					timeout = setTimeout(function(){
+						feed.animate({top: '-='+30}, speed, function(){
+							$(this).append($(this).children().eq(counts).clone());
+							counts++;
+							play();
+						});
+					}, interval);
+				}
+
+				var pause = function(){
+					clearTimeout(timeout);
+				}
+
+				banner.on('mouseenter', pause).on('mouseleave', play)
+				.children('.loading').hide().end()
+				.children('.container').show()
+				.children('.feed').append(fragment);
+
+				play();
+			});
+</script>
+
 	<div id="content" class="inner"><article class="post">
     <h1 class="title">关于IP被封的解释</h1>
     <div class="entry"><p>上一篇日志里我简短地表达了一下自己的喜悦之情，同时好像也惹得众多关心本人的朋友的疑惑：这个人到底说了或做了什么，为什么IP会被封，为什么又被解封。虽然我在一些朋友的留言后也做了些回复，不过貌似单独写一篇日志来专门解释一下比较好一点，所以本日志会很水很无趣，已经知道原因的朋友请绕道吧。

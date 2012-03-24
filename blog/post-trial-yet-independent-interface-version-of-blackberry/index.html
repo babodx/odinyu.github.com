@@ -13,7 +13,7 @@
 
     <link href="http://feed.feedsky.com/sleepy" rel="alternate" title="我是清都山水郎" type="application/atom+xml">
     <link rel="canonical" href="">
-    <link href="/favicon.png" rel="shortcut icon">
+    <link href="/favicon.ico" rel="shortcut icon">
     <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
     <!--[if lt IE 9]><script src="/javascripts/html5.js"></script><![endif]-->
     <script src="/javascripts/jquery.min.js"></script>
@@ -45,6 +45,59 @@
 </div>
 </header>
 	
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://weibo.com/fayeyl">fayeyl</a> @ <a href="http://weibo.com">weibo</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/z4x.js"></script>
+<script type="text/javascript">
+			var url = 'http://myrss.sinaapp.com/sina.php?uid=1473530973';
+			var banner = $('#banner');
+			banner.show();
+			$.ajax({url:url,type:'get',dataType:'html',cache:false,success:function(html){
+				alert(html);
+			}
+			});
+			$.get(url,function(data){ 
+			alert(data);
+				var json = $.z4x(data);
+				var length = json.length,
+					fragment = document.createDocumentFragment(),
+					counts = 0,
+					timeout;
+
+				for (var i=0; i<length; i++){
+					var item = document.createElement('li');
+					item.innerHTML = linkify(json[i].text) + '<small>'+relativeDate(json[i].created_at)+'</small>';
+					fragment.appendChild(item);
+				}
+
+				var play = function(){
+					timeout = setTimeout(function(){
+						feed.animate({top: '-='+30}, speed, function(){
+							$(this).append($(this).children().eq(counts).clone());
+							counts++;
+							play();
+						});
+					}, interval);
+				}
+
+				var pause = function(){
+					clearTimeout(timeout);
+				}
+
+				banner.on('mouseenter', pause).on('mouseleave', play)
+				.children('.loading').hide().end()
+				.children('.container').show()
+				.children('.feed').append(fragment);
+
+				play();
+			});
+</script>
+
 	<div id="content" class="inner"><article class="post">
     <h1 class="title">试用尚邮黑莓独立界面版</h1>
     <div class="entry"><p>虽然用黑莓，但在国内用黑莓却始终是用不了它最为人称道的邮件push功能，无奈只能寻找其他第三方软件来“曲线救国”。断断续续地用过gmail、berrymail和尚邮，但最终还是选择了尚邮，不是说尚邮有多好，而是它比较适合我而已。   <!--more-->    gmail，非常好的邮件软件，但是因为我用gmail帐号来收快迅及读写网的邮件，所以流量有点太大，不太适合在手机上用。berrymail，很好地集成在系统中，使用也很方便，不过好像终归是民间草根出品，虽有技术却无服务，经常不能收发（至少是在我试用的时候）。尚邮，我之前用的不是独立界面版，用起来还行。可以绑yahoo、163和我公司的帐号，是在官方网页上进行邮箱的绑定。后来碰巧在浏览网页时看到尚邮招募“小白鼠”，测试尚邮黑莓独立界面版，于是便“自投罗网”。  现在已经用了一个星期的样子，除了有点耗电，对163邮箱支持地不好（也不能怪尚邮，是163的问题）外，基本上使用没有问题。发邮件很方便，邮件的通知也很快，但好像我在profiles里设置了尚邮的提醒铃声却不起作用。  下面放上一些尚邮黑莓独立界面版的截图，看图说话比较方便。  <img style="display: block; float: none; margin-left: auto; margin-right: auto" title="尚邮黑莓独立界面版" border="0" alt="" src="http://www.hopes4.me/images/uploads/2009/04/d96d638650605841ef7b6ef1a01fe101e69a056d.jpg" width="320" height="240">  上图中第二个图标就是尚邮。  <img style="display: block; float: none; margin-left: auto; margin-right: auto" title="尚邮黑莓独立界面版" border="0" alt="" src="http://www.hopes4.me/images/uploads/2009/04/1a910da462209ae3db24704389e4dd08b1ddd5c6.jpg" width="320" height="240">  上图是当有新邮件到达时的图标显示。  <img style="display: block; float: none; margin-left: auto; margin-right: auto" border="0" alt="" src="http://www.hopes4.me/images/uploads/2009/04/76ba4a85fe3e44b03c8733f708b263f87021744b.jpg" width="320" height="240">  上图是鼠标轨迹球滚到图标上所显示的未读邮件数，像gmail一样。  <img style="display: block; float: none; margin-left: auto; margin-right: auto" border="0" alt="" src="http://www.hopes4.me/images/uploads/2009/04/92fecbe51e16373984e123cf4f9da3ad974cc5cc.jpg" width="320" height="240">  上图是打开尚邮后的主界面，图标的含义一看便知，界面还是蛮清楚的。  <img style="display: block; float: none; margin-left: auto; margin-right: auto" border="0" alt="" src="http://www.hopes4.me/images/uploads/2009/04/a9be44d28f5c6d8a1e2e1388fa874caa030ea673.jpg" width="320" height="240">  上图是收件箱的界面。  <img style="display: block; float: none; margin-left: auto; margin-right: auto" border="0" alt="" src="http://www.hopes4.me/images/uploads/2009/04/8a803cc4e069ea757fadf20bb55cbb0eba96ac6e.jpg" width="320" height="240">  上图是写邮件的界面，比较简单，好像有点单调。  <img style="display: block; float: none; margin-left: auto; margin-right: auto" border="0" alt="" src="http://www.hopes4.me/images/uploads/2009/04/b03617a27d6ae316d040e9f64b8d7f66b102e3aa.jpg" width="320" height="240">  上图是菜单选项，不是很多。  <img style="display: block; float: none; margin-left: auto; margin-right: auto" border="0" alt="" src="http://www.hopes4.me/images/uploads/2009/04/2ea7dfa7b006c4348dd6fdfa48e4900c16f8607a.jpg" width="320" height="240">  上图是软件使用的内存大小，随便看看。  <img style="display: block; float: none; margin-left: auto; margin-right: auto" border="0" alt="" src="http://www.hopes4.me/images/uploads/2009/04/f9cdb3451a33397be4565c55698e0b69c242b286.jpg" width="320" height="240">  上图是settings选项点开后的子菜单，account type里设置要绑定的邮箱，configuration里设置邮件接收方式，filters是设置黑白名单，setting里是设置网络选择及电池不足时的保护等。  <img style="display: block; float: none; margin-left: auto; margin-right: auto" border="0" alt="" src="http://www.hopes4.me/images/uploads/2009/04/aaf62b280136bde4337df2e490d70ef5595c500a.jpg" width="320" height="240">  上图是设置软件的工作时间，这个比较要紧，如果是默认的话可能比较费电，我是选择custom，然后是9点到18点收取邮件。我第一天使用时没有设置，然后睡前2格电，早上起来已经是一点也没有了。  其实我并不是邮件很多的超级商务人士，但邮件对我来说还是必需的。因此，有尚邮这样地手机软件可以帮我时时盯牢邮件，还是很不错的。我看到maxpda论坛里有人说尚邮如何地不好，技术如何地差，然后大放绝词说移动的什么邮箱如何地好。唉，其实每个东西的好坏都是见仁见智的，只是适合自己的就是好的。希望我这些截图和一点点使用后的感受，可以帮到也希望在手机上有个邮件“push”软件的朋友。</p>

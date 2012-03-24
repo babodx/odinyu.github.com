@@ -13,7 +13,7 @@
 
     <link href="http://feed.feedsky.com/sleepy" rel="alternate" title="我是清都山水郎" type="application/atom+xml">
     <link rel="canonical" href="">
-    <link href="/favicon.png" rel="shortcut icon">
+    <link href="/favicon.ico" rel="shortcut icon">
     <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
     <!--[if lt IE 9]><script src="/javascripts/html5.js"></script><![endif]-->
     <script src="/javascripts/jquery.min.js"></script>
@@ -45,6 +45,59 @@
 </div>
 </header>
 	
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://weibo.com/fayeyl">fayeyl</a> @ <a href="http://weibo.com">weibo</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/z4x.js"></script>
+<script type="text/javascript">
+			var url = 'http://myrss.sinaapp.com/sina.php?uid=1473530973';
+			var banner = $('#banner');
+			banner.show();
+			$.ajax({url:url,type:'get',dataType:'html',cache:false,success:function(html){
+				alert(html);
+			}
+			});
+			$.get(url,function(data){ 
+			alert(data);
+				var json = $.z4x(data);
+				var length = json.length,
+					fragment = document.createDocumentFragment(),
+					counts = 0,
+					timeout;
+
+				for (var i=0; i<length; i++){
+					var item = document.createElement('li');
+					item.innerHTML = linkify(json[i].text) + '<small>'+relativeDate(json[i].created_at)+'</small>';
+					fragment.appendChild(item);
+				}
+
+				var play = function(){
+					timeout = setTimeout(function(){
+						feed.animate({top: '-='+30}, speed, function(){
+							$(this).append($(this).children().eq(counts).clone());
+							counts++;
+							play();
+						});
+					}, interval);
+				}
+
+				var pause = function(){
+					clearTimeout(timeout);
+				}
+
+				banner.on('mouseenter', pause).on('mouseleave', play)
+				.children('.loading').hide().end()
+				.children('.container').show()
+				.children('.feed').append(fragment);
+
+				play();
+			});
+</script>
+
 	<div id="content" class="inner"><article class="post">
     <h1 class="title">不出上海外地牌照验车记</h1>
     <div class="entry"><p>先来一个名词解释，外地牌照：相对于上海的沪牌，所有其他省市的机动车辆牌照。然后是为什么我的车要上外地牌照，因为沪牌太贵了，两块薄薄的铁片竟然最高要4万多，不知道发改委是怎么想的。而相对的外地牌照，如我上的无锡牌照当初总共是花费了3000多，两者的取舍我想对于钱包不是很鼓的工薪阶层来说，应该是不言而喻的吧。当然在地方保护主义的大背景下，外地牌照在上海也是有诸多限制和不便的，不过每年还是有那么多的车主上外地牌照的事实，说明外地牌照的性价比还是很吸引人的。   <!--more-->    本篇日志不是想讨论沪牌和外牌哪个好，我是想在此介绍一个可以方便的本地验车的途径。本来上牌两年后必须要到牌照的发放地去验车，也就是说我需要开车到上海的近邻无锡去跑一次。虽然路途不算太远，但毕竟也是要上高速，要出省，还是相当地不方便的。于是我在今年初的时候就已经在网上到处找相关的验车攻略了，无非是想到时候一切顺利。  网上的攻略中都有同一个关键词:黄牛。这个词所代表的人群是广泛存在于我们日常生活中的，虽然我们痛恨或不齿，但有时我们还是“有求于”他们的。几乎大部分的攻略中都提到了要么在外地有熟人，要么就直接找黄牛搞定，不然在人生地不熟的地方，相当官僚的办事机构内想要很顺利地把验车这个不大不小的事办下来还是很需要点运气和实力的。  就在我寻找的过程中，偶然地在某论坛内看到某网友发的无锡牌照在上海本地验车的“作业”，其中提到所花费用也还不是很高，而且车和人都不用去无锡，并一天内可以搞定。这样的好消息对我来说是很需要的，花点小钱图个方便，我等的福音呀。  于是就有了接下来电话咨询，上门交材料，直至上周六驱车到这个检测站把今后每两年要做今年是第一次做的事给干了。  过程很简单，车开过去，交钱交文件，叫到号排队，上流水线检测，领合格证。总共花费RMB585,这个费用和牌照的发放地有关，各不相同，我的是无锡牌。花费时间大概是3个半小时，半天的工夫，应该比去次无锡要少得多了吧。  我的日志不是做广告，但或许有朋友也像我这样有需要，可以去网上搜索下，21检测站，可能需要多翻几页哦。</p>

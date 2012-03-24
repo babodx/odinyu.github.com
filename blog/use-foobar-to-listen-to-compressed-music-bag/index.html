@@ -13,7 +13,7 @@
 
     <link href="http://feed.feedsky.com/sleepy" rel="alternate" title="我是清都山水郎" type="application/atom+xml">
     <link rel="canonical" href="">
-    <link href="/favicon.png" rel="shortcut icon">
+    <link href="/favicon.ico" rel="shortcut icon">
     <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
     <!--[if lt IE 9]><script src="/javascripts/html5.js"></script><![endif]-->
     <script src="/javascripts/jquery.min.js"></script>
@@ -45,6 +45,59 @@
 </div>
 </header>
 	
+<div id="banner" class="inner">
+	<div class="container">
+		<ul class="feed"></ul>
+	</div>
+	<small><a href="http://weibo.com/fayeyl">fayeyl</a> @ <a href="http://weibo.com">weibo</a></small>
+	<div class="loading">Loading...</div>
+</div>
+<script src="/javascripts/z4x.js"></script>
+<script type="text/javascript">
+			var url = 'http://myrss.sinaapp.com/sina.php?uid=1473530973';
+			var banner = $('#banner');
+			banner.show();
+			$.ajax({url:url,type:'get',dataType:'html',cache:false,success:function(html){
+				alert(html);
+			}
+			});
+			$.get(url,function(data){ 
+			alert(data);
+				var json = $.z4x(data);
+				var length = json.length,
+					fragment = document.createDocumentFragment(),
+					counts = 0,
+					timeout;
+
+				for (var i=0; i<length; i++){
+					var item = document.createElement('li');
+					item.innerHTML = linkify(json[i].text) + '<small>'+relativeDate(json[i].created_at)+'</small>';
+					fragment.appendChild(item);
+				}
+
+				var play = function(){
+					timeout = setTimeout(function(){
+						feed.animate({top: '-='+30}, speed, function(){
+							$(this).append($(this).children().eq(counts).clone());
+							counts++;
+							play();
+						});
+					}, interval);
+				}
+
+				var pause = function(){
+					clearTimeout(timeout);
+				}
+
+				banner.on('mouseenter', pause).on('mouseleave', play)
+				.children('.loading').hide().end()
+				.children('.container').show()
+				.children('.feed').append(fragment);
+
+				play();
+			});
+</script>
+
 	<div id="content" class="inner"><article class="post">
     <h1 class="title">用foobar来听压缩包里的音乐</h1>
     <div class="entry"><p>也许有正在用foobar的朋友会嘲笑我，foobar不是本来就支持读取压缩包里的音乐格式的嘛。没错，官方下载的foobar是这样的，使foobar支持读取压缩包的components，foo_unpack.dll，是会打包在官方安装包内的。但好像国外很多优秀软件一样，foobar在国内有很多的所谓的优化版，有时这样的优化版里并没有这个dll。我就遇到了这样的优化版，所以也有了本文。   <!--more-->    其实我原来在用的foobar2000 v0.9.5.x版的用起来很顺手，我需要的功能都能很好地呈现。我要的功能也不多，支持歌词秀即可，之前我是用Lyricist来实现的。这个软件很不错，支持多个播放软件，可以在隐藏foobar的主窗口时显示一个半透明的浮层来动态显示歌词。可惜的是当我更新到9.6之后，该软件却不支持，一直到现在好像也没有更新。  正好同事也在用foobar，能显示歌词，不过是只能在面板上显示的那种。想想总胜过于无，也就拿来用了，谁知在我想把一个压缩包里的音乐放到播放列表时出现了问题，不支持。于是牵出狗来搜索，找来找去，在官网上看到foo_unpack.dll这个是必须的，再看看自己的文件夹里，缺的正是这个。  问题是找到了，可是怎么解决呢，网上到处没有这个dll可以下，官网上也没有。我忽然有个想法，是不是可以在官方的安装包里把那个dll拿出来放到我的安装路径呢。  结果证明是可行的。先用压缩软件，不管是winrar或7zip等，打开foobar的官方安装包。然后应该会看到一个叫components的文件夹，打开就能看到foo_unpack.dll这个找了很久的东西就在那。然后是把这个东西拖出来，当然你可以解压缩再复制，放到已经安装好了的foobar的目录里的components目录内，再重新打开foobar。  要试一下是不是支持压缩包，可以新建一个playlist，然后直接把压缩包拖到playlist内。正常的话，会看到一个压缩包内所有音频文件的列表的，然后就是慢慢戴上耳机享受音乐了。  方法是很简单，解决的也不是什么大问题，但希望能帮到像我一样的朋友，不用像我之前那样放狗到处搜索还找不到东西。</p>
