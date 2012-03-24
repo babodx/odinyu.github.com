@@ -39,65 +39,33 @@
 		
 		
 		
+		<a class="twitter" href="http://twitter.com/fayeyl" title="Twitter">Twitter</a>
+		
 		
 		<a class="rss" href="http://feed.feedsky.com/sleepy" title="RSS">RSS</a>
 		
 	</div>
 </div>
 </header>
-	
+	<!--
 <div id="banner" class="inner">
 	<div class="container">
 		<ul class="feed"></ul>
 	</div>
-	<small><a href="http://weibo.com/fayeyl">fayeyl</a> @ <a href="http://weibo.com">weibo</a></small>
+	<small><a href="http://twitter.com/fayeyl">fayeyl</a> @ <a href="http://twitter.com">Twitter</a></small>
 	<div class="loading">Loading...</div>
 </div>
-<script src="/javascripts/z4x.js"></script>
+<script src="/javascripts/twitter.js"></script>
 <script type="text/javascript">
-			var url = 'http://myrss.sinaapp.com/sina.php?uid=1473530973';
-			var banner = $('#banner');
-			banner.show();
-			$.ajax({url:url,type:'get',dataType:'html',cache:false,success:function(html){
-				alert(html);
-			}
-			});
-			$.get(url,function(data){ 
-			alert(data);
-				var json = $.z4x(data);
-				var length = json.length,
-					fragment = document.createDocumentFragment(),
-					counts = 0,
-					timeout;
-
-				for (var i=0; i<length; i++){
-					var item = document.createElement('li');
-					item.innerHTML = linkify(json[i].text) + '<small>'+relativeDate(json[i].created_at)+'</small>';
-					fragment.appendChild(item);
-				}
-
-				var play = function(){
-					timeout = setTimeout(function(){
-						feed.animate({top: '-='+30}, speed, function(){
-							$(this).append($(this).children().eq(counts).clone());
-							counts++;
-							play();
-						});
-					}, interval);
-				}
-
-				var pause = function(){
-					clearTimeout(timeout);
-				}
-
-				banner.on('mouseenter', pause).on('mouseleave', play)
-				.children('.loading').hide().end()
-				.children('.container').show()
-				.children('.feed').append(fragment);
-
-				play();
-			});
+	(function($){
+		$('#banner').getTwitterFeed('fayeyl', 1, false);
+	})(jQuery);
 </script>
+-->
+	
+<div style="text-align:center;">
+<iframe width="1000" height="160" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=1000&height=160&fansRow=2&ptype=0&speed=0&skin=-1&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=1473530973&verifier=06903df6&colors=d6f3f7,eeeeee,666666,258FB8,ecfbfd&dpc=1"></iframe>
+</div>
 
 	<div id="content" class="inner"><article class="post">
     <h1 class="title">这是用 WordPress for Blackberry写的日志</h1>
