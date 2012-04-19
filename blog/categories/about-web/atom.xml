@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: about web | 我是清都山水郎]]></title>
+  <link href="http://odinyu.github.com/blog/categories/about-web/atom.xml" rel="self"/>
+  <link href="http://odinyu.github.com/"/>
+  <updated>2012-04-19T21:53:23+08:00</updated>
+  <id>http://odinyu.github.com/</id>
+  <author>
+    <name><![CDATA[sleepy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[备忘：win7临时分享网络]]></title>
+    <link href="http://odinyu.github.com/blog/memo-temporary-sharing-network-on-win7/"/>
+    <updated>2011-10-09T00:00:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/memo-temporary-sharing-network-on-win7</id>
+    <content type="html"><![CDATA[<p>本来公司在公司里有同事自己用无线路由器分享的无线信号可以用，但这两天他自己家也需要这个无线路由器，因此我的iphone就没法在公司用wifi上网了，有点不大方便。</p>
+
+<p>碰巧在威锋上看帖子的时候看到一个关于如何用pc上的无线网卡分享网络给移动设备使用的教程，而且我手头也正好有一个闲置下来的usb无线网卡，这样正好可以试一下自给自足。</p>
+
+<p>虽说最终总结下来的过程并不是很复杂，但中间也稍稍绕了一点弯路，小小地麻烦了一下。所以，为了以后再有这样的需要时不至于再次失忆，还是在博客上备忘一下。</p>
+
+<p>其实用几张截图就能很好地说明整个流程：</p>
+
+<p><img src="http://public.bay.livefilestore.com/y1pXYjeDhjsDX6ys37shyISivYA3F-JLyTqWWhgQOzYePy8v8o1lRK2tIg-9KkNrUX-DAp86eXxtRP_PDJLW8FQeA/ScreenShot_2011-10-09_141612.jpg" alt="" /></p>
+
+<p><img src="http://public.bay.livefilestore.com/y1p7tU_rqzUDT5jHRIk5yK0SnIIuvq3cZROCCS1gbw7oYmSvFYcWsUlQFoA4-S3bvPuWrtWvMB03e1_fW4nQV0QDQ/ScreenShot_2011-10-09_141652.jpg" alt="" /></p>
+
+<p><img src="http://public.bay.livefilestore.com/y1p7tU_rqzUDT6jML7qfj4VEFxLJ5ylGRMgRKoj-vMN9nCZAw-4jjT4G-i4JwmrAMu2bJDumyDMDNjEwy0zCG_cIQ/ScreenShot_2011-10-09_141728.jpg" alt="" /></p>
+
+<p><img src="http://public.bay.livefilestore.com/y1p7tU_rqzUDT5xJmzijTR5ECuLy2Ttj5pNJC8UHcQyx52BaZKylWAXn3miets6ww0pyTBZ0ehApnMyWNWHNIGk0Q/ScreenShot_2011-10-09_143058.jpg" alt="" /></p>
+
+<p>就是这么简单，不过我自己在试验的过程中有的时候会不成功，需要多试几次，可能和我的usb无线网卡有关。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[firefox伪装成chrome的简单教程]]></title>
+    <link href="http://odinyu.github.com/blog/simple-tutorial-of-firefox-disguised-as-chrome-3/"/>
+    <updated>2011-09-09T00:00:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/simple-tutorial-of-firefox-disguised-as-chrome-3</id>
+    <content type="html"><![CDATA[<p>其实我的主力浏览器一直是chrome，但因为工作的需要，经常为了调试代码而使用firefox，于是就有了各种的不甘。正巧今天有空想动动手，经过一番搜索加测试，效果还是比较满意的，请参考下图。<br/>
+<img src="http://public.bay.livefilestore.com/y1pZkdB53cm8SerfkBQVkw28F43zRFn5HEq7akf1dYNpw89C-p5ZNV_U-N6H79bEWgz4rBb_J5hUrUhcKH700Cp4g/ScreenShot_2011-09-09_123117.jpg" alt="" /></p>
+
+<p>开始简单教程，其实也真的是很简单。</p>
+
+<ul>
+<li>安装<a href="https://addons.mozilla.org/zh-CN/firefox/addon/fxchrome/" title="FXChrome">https://addons.mozilla.org/zh-CN/firefox/addon/fxchrome/</a>主题。</li>
+<li>安装<a href="https://addons.mozilla.org/zh-CN/firefox/addon/stylish/" title="Stylish">https://addons.mozilla.org/zh-CN/firefox/addon/stylish/</a>扩展。</li>
+<li>重启firefox后访问<a href="http://userstyles.org/styles/51118/fxchrome-firox-button-icons?r=1311430549" title="这个网址">http://userstyles.org/styles/51118/fxchrome-firox-button-icons?r=1311430549</a>来修改左上角profile图标。</li>
+<li>如果附加组件栏打开的话请手动关闭,就是底下的状态栏。</li>
+</ul>
+
+
+<p>OK，做完上述步骤后就一切完成，个人感觉相似度95%以上了，有木有？呵呵！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[继续用FaWave，继续找appkey]]></title>
+    <link href="http://odinyu.github.com/blog/continue-to-use-fawave-keep-looking-appkey/"/>
+    <updated>2011-08-02T00:00:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/continue-to-use-fawave-keep-looking-appkey</id>
+    <content type="html"><![CDATA[<p>chrome上很好用的微博扩展FaWave前几天突然在更新新浪微博的时候报错了，后来google上查了才知道是新浪又发浪了。用惯了FaWave，所以还是根据FaWave作者的提示，用自己的appkey。</p>
+
+<p><img style="display: block; float: none; margin-left: auto; margin-right: auto" src="http://public.bay.livefilestore.com/y1pELVv5ncLDtmz3kQ9DsbzQkkWCyj4Mq0LjZ9eK3zclGRj6tccoz7pajWlQfermoLisLIwfllqeogV7LXMDbAe-A/ScreenShot_2011-08-02_135242.jpg"></p>
+
+<p>还是google上找到一些appkey，不过今天早上一个appkey又不能用了，所以看来今后找appkey好像会变成经常要做的事情了。鄙视新浪！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Momento无法同步新浪微博的暂时解决方案]]></title>
+    <link href="http://odinyu.github.com/blog/temporary-solution-to-synchronize-sina-microblogging-to-momento/"/>
+    <updated>2011-07-25T00:00:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/temporary-solution-to-synchronize-sina-microblogging-to-momento</id>
+    <content type="html"><![CDATA[<p>在天朝，玩新浪微博比twitter要方便得多，但如果要同步新浪微博的内容到其他平台就有点麻烦了。</p>
+
+<p>Momento内虽然可以使用rss feeds，但是却不能同步新浪微博的feeds，所以我的方案就是曲线救国。使用ifttt同步新浪微博的feeds到twitter，然后Momento同步twitter。</p>
+
+<p>这里我只是给个方案，具体的做法也不是很复杂，大家自己搞定吧。</p>
+
+<p>ps:新浪微博的feeds，非官方，请使用如下的形式<a href="http://medcl.net/SinaRss.aspx?uid=123456789">http://medcl.net/SinaRss.aspx?uid=123456789</a>即可。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[我的ifttt]]></title>
+    <link href="http://odinyu.github.com/blog/my-ifttt/"/>
+    <updated>2011-07-21T00:00:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/my-ifttt</id>
+    <content type="html"><![CDATA[<p>拿到ifttt的邀请并注册已经有段时间了，不过一直没怎么在用，今天下午正好想起来了，顺便到博客上除除草兼试验一下ifttt。</p>
+
+<p>不废话，直接上图</p>
+
+<p><img style="display: block; float: none; margin-left: auto; margin-right: auto" src="http://public.bay.livefilestore.com/y1p8KTXvdgR3JxZfCjhYOjqnCmHtvcAK2llWuwRI48diFu9v5xU_U1GlS_9KwV7Lc2qCiL7VeLiMmBxUnNUkzGvaA/ScreenShot_2011-07-21_172559.jpg"></p>
+]]></content>
+  </entry>
+  
+</feed>

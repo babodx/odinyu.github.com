@@ -1,0 +1,161 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>storytlr自动更新的实现 - 我是清都山水郎</title>
+    <meta name="author" content="sleepy">
+
+    
+    <meta name="description" content="Storytlr自动更新的实现 其实我用子域名在空间里建这个lifestream已经有段时间了，也一直能实现自动更新，只是正好有人问我要如何实现，所以才有了此文。 我的空间是cpanel的面板，所以我也只会在cpanel里面弄，下面的截图也是cpanel的。 时钟守护作业，其实就是cron &hellip;">
+    
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+
+    <link href="http://feed.feedsky.com/sleepy" rel="alternate" title="我是清都山水郎" type="application/atom+xml">
+    <link rel="canonical" href="">
+    <link href="http://hopes4.me/favicon.ico" rel="shortcut icon">
+    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]><script src="/javascripts/html5.js"></script><![endif]-->
+    <script src="/javascripts/jquery.min.js"></script>
+    <!-- start Mixpanel --><script type="text/javascript">(function(d,c){var a,b,g,e;a=d.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===d.location.protocol?"https:":"http:")+'//api.mixpanel.com/site_media/js/api/mixpanel.2.js';b=d.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b);c._i=[];c.init=function(a,d,f){var b=c;"undefined"!==typeof f?b=c[f]=[]:f="mixpanel";g="disable track track_links track_forms register register_once unregister identify name_tag set_config".split(" ");for(e=0;e<g.length;e++)(function(a){b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,0)))}})(g[e]);c._i.push([a,d,f])};window.mixpanel=c})(document,[]);mixpanel.init("70c2be43ac727c03913540be97778837");</script><!-- end Mixpanel -->
+    
+
+</head>
+
+<body>
+	<header class="inner"><h1 class="left"><a href="/">我是清都山水郎</a></h1>
+<nav class="menu left"><ul class="main">
+	<li><a href="/">Blog</a></li>
+	<li><a href="/blog/archives">Archives</a></li>
+</ul>
+</nav>
+<div class="right">
+	<form class="search right" action="http://google.com/search" method="get">
+		<input class="left" type="text" name="q" results="0">
+		<input type="hidden" name="q" value="site:odinyu.github.com">
+	</form>
+	<div class="social right">
+		
+		
+		
+		<a class="twitter" href="http://twitter.com/fayeyl" title="Twitter">Twitter</a>
+		
+		
+		<a class="rss" href="http://feed.feedsky.com/sleepy" title="RSS">RSS</a>
+		
+	</div>
+</div>
+</header>
+	
+<div style="text-align:center;display:none;" id="weibo">
+<iframe width="1000" height="90" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=1000&height=90&fansRow=2&ptype=0&speed=0&skin=-1&isTitle=0&noborder=0&isWeibo=0&isFans=0&uid=1473530973&verifier=06903df6&colors=d6f3f7,eeeeee,666666,258FB8,ecfbfd&dpc=1"></iframe>
+</div>
+
+	<div id="content" class="inner"><article class="post">
+    <h1 class="title">Storytlr自动更新的实现</h1>
+    <div class="entry"><p>其实我用子域名在空间里建这个lifestream已经有段时间了，也一直能实现自动更新，只是正好有人问我要如何实现，所以才有了此文。  我的空间是cpanel的面板，所以我也只会在cpanel里面弄，下面的截图也是cpanel的。</p>
+
+<div><img style="display: block; float: none; margin-left: auto; margin-right: auto" title="时钟守护作业" alt="时钟守护作业" src="http://storage.live.com/items/B7436849503DA4DE!912?filename=ScreenShot_2010-06-25_140946.jpg" width="450" height="241"></div>
+
+
+<p></p>
+
+<p>时钟守护作业，其实就是cron job，熟悉linux的人都应该不会陌生。要使得storytlr能自动更新，其实我们要做的就是创建一个cron job，请详细看下面的官方解说：</p>
+
+<p>Updating Your Sources    <br>Storytlr doesn&#8217;t automatically update itself, so you will need to help it out.   The file /protected/tools/update.php is a command line PHP script that will update a single user&#8217;s sources.   To try it, run:   $ php5 protected/tools/update.php admin    <br>To make this update regularly, you&#8217;ll need to set up a cron job, sometimes called a scheduled task by web hosts.   There are various ways to set up a cron job, often your web host will provide a web based interface to create the job.   Here is an example crontab that will run the update script every 15 minutes:   */15 * * * * /usr/bin/php5 /home/jmhobbs/storytlr/protected/tools/update.php admin    <br>Note that your cron job will differ, paths to PHP and your source code are dependent on the host. Please check with your hosting company if you have trouble setting up a cron job.</p>
+
+<p>一切就是这么简单，所以也弄得我的这篇日志也好像很没有营养，再介绍一点何为storytlr来丰富一下内容吧。</p>
+
+<p><strong>Bring your content together</strong>  <ul>
+<li>
+<strong>Import your web 2.0 life:</strong> Pick your sources and they will appear as a lifestream directly on your site. We currently support the following services: <tt>Delicious, Digg, Disqus, Flickr, Google Reader, Identi.ca / Laconi.ca, Last.fm favorites, Picasa, Qik, RSS Feeds, Seesmic, StumbleUpon, Tumblr, Twitpic pictures in Twitter tweets, Twitter, Vimeo, Youtube Favorites</tt> </li>    <li>
+<strong>Post anything you want:</strong> In just a few simple steps you can update your status, share a song you liked, give your opinion or link to an interesting site. </li> </ul>
+<strong>Mashup your data into stories</strong>  <ul>
+<li>
+<strong>Tell your stories in a new way:</strong> Photo albums are old school! Pick your sources, start and end date and your story is good to go. If necessary you can tweak it for a better flow. </li> </ul>
+<strong>Reinvent your homepage</strong>  <ul>
+<li>
+<strong>Choose your own style:</strong> Pick from a range of compelling templates that are easy to customize. </li>    <li>
+<strong>No prominent service branding:</strong> It is all about you, so you will not find big logos or fixed brand colors on storytlr. </li>    <li>
+<strong>Pick or use your own domain name:</strong> You are free to use any domain you want. </li> </ul> </p>
+
+<p>好了，介绍完毕，再顺便给我自己的storytlr广告一下吧 ~ <a href="http://story.hopes4.me" target="_blank"><strong><em><font color="#808000">我的网络生活</font></em></strong></a></p>
+</div>
+    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-06-25T00:00:00+08:00" pubdate data-updated="true">Jun 25<span>th</span>, 2010</time></div>
+        <div class="tags">
+
+<div class="cat">
+  
+    <a class='category' href='/blog/categories/about-blog/'>about blog</a>
+  
+</div>
+
+</div>
+        
+        <div class="comments"><a href="#disqus_thread">Comments</a></div>
+        
+    </div>
+</article>
+<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+	<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4eb4a0c47196e907"></script>
+</div>
+
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+</div>
+	<footer class="inner">Copyright &copy; 2012 我是清都山水郎
+<a href="http://flow.mixpanel.com/f/partner"><img src="http://mixpanel.com/site_media/images/partner/badge_blue.png" alt="Mobile and Web Analytics" /></a>
+<script>
+var host = 'http://'+window.location.host+'/';
+var url = window.location.href;
+if(host==url){
+	$('#weibo').show();
+}
+</script></footer>
+	<script src="/javascripts/jquery.easing.1.3.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script src="/javascripts/slash.js"></script>
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'sleepy';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://odinyu.github.com/blog/make-storytlr-update-automatically/';
+        var disqus_url = 'http://odinyu.github.com/blog/make-storytlr-update-automatically/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+</body>
+</html>

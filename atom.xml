@@ -4,7 +4,7 @@
   <title><![CDATA[我是清都山水郎]]></title>
   <link href="http://odinyu.github.com/atom.xml" rel="self"/>
   <link href="http://odinyu.github.com/"/>
-  <updated>2012-04-18T16:22:14+08:00</updated>
+  <updated>2012-04-19T21:53:23+08:00</updated>
   <id>http://odinyu.github.com/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[今天开始健身]]></title>
+    <link href="http://odinyu.github.com/blog/fitness/"/>
+    <updated>2012-04-19T21:43:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/fitness</id>
+    <content type="html"><![CDATA[<p>终于在老婆不断地对我的严重走样的身材的抱怨下屈服，今天晚上我绕着小区快走了4圈并小跑了1圈，算是全民健身运动的开始。</p>
+
+<p>说实话，结婚后一直在发胖，至少多了20多斤肉。过于庞大的肚子不仅看上去不太雅观，而且也可能是今后各种疾病的诱因。</p>
+
+<p>所以，痛定思痛之下，还是决定开始进行比较简单的健身活动。</p>
+
+<p>第一次的运动下来，感觉快走比较适合自己，而跑步对我的膝盖会是个负担。所以今后还是以快走为主，持之以恒总会有效果的。</p>
+
+<p>目前唯一还不能确定的是晚上运动比较好还是早上，这个有待调整。</p>
+
+<p>希望我能坚持下去，还我原本标准的“身材”。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[不得不惊叹于京东送货的速度]]></title>
@@ -759,114 +778,6 @@
 <p>和同事戏言，是不是公司大规模裁员搞得老天也发怒了？</p>
 
 <p>以上文字是忙了一天后郁闷心情之下的表述，仅此而已。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[在github上用octopress搭建博客过程纪要]]></title>
-    <link href="http://odinyu.github.com/blog/introduce-octopress-on-github/"/>
-    <updated>2012-02-29T01:25:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/introduce-octopress-on-github</id>
-    <content type="html"><![CDATA[<p>几个小时之前刚在github pages上使用octopress搭建了一个博客副本。本来基于本人一贯拖延的作风，是想过几天再记录整个过程的，但是正好在通宵工作但又暂时无事可干中，所以还是趁记忆还比较清晰的时候来搞定它。</p>
-
-<p>在开始写过程之前先要交待一下我为什么要去做这件事，又或者说是这么做有什么好处：</p>
-
-<ul>
-<li>首先这么做需要那么一点点伪技术，所以看上去就会比较geek一点。</li>
-<li>其次这整个服务的搭建是完全免费的，可能对于比较穷困的专业挨踢的我来说会是一个开源节流的渠道。</li>
-<li>然后用octopress来写博客，最后发布的动作很cool。</li>
-</ul>
-
-
-<figure class='code'><figcaption><span>个人感觉很帅气 </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate
-</span><span class='line'>rake preview
-</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>最后则是离线写博客很舒服，拥有纯文本markdown，良好的html支持，不使用数据库，完美的版本控制，静态页面生成等诸多优点。</li>
-</ul>
-
-
-<p>好了，现在开始整个服务搭建过程记录，可能比较长：</p>
-
-<h3>安装Git并进行配置</h3>
-
-<ul>
-<li>先注册一个github账号。</li>
-<li>下载并安装Git。</li>
-<li>到Git的安装目录找到Git Bash.lnk并打开。</li>
-<li>执行<code>ssh-keygen -t rsa -C "your_email@youremail.com"</code>，回车。</li>
-<li>然后输入两遍密码。</li>
-<li>到c:\Users\用户名.ssh\目录找到id_rsa.pub，并用文本软件打开复制全部。</li>
-<li>到github网站选择“Account Settings”>>“SSH Public Keys”>>“Add another public key”，将刚才复制的内容粘贴到key文本框内。</li>
-</ul>
-
-
-<h3>建立github pages</h3>
-
-<ul>
-<li>创建一个新的Repository。这里需要注意的是，如果想要博客的首页是http://yourname.github.com，则Repository的project name就必须是yourname.github.com。</li>
-<li>根据github给出的指导进行一些命令的键入，即可完成pages的建立。</li>
-</ul>
-
-
-<h3>安装Ruby</h3>
-
-<ul>
-<li>这里要指出一点的是，因为我是在windows里安装，所以采用了<a href="http://rubyinstaller.org/">RubyInstaller</a>的方式，下载这个软件需要翻墙。</li>
-<li>另外别忘记在同一个网站上下载<a href="http://rubyinstaller.org/add-ons/devkit/">DevKit</a>，必须安装。</li>
-</ul>
-
-
-<h3>安装octopress</h3>
-
-<ul>
-<li>获取octopress，执行<code>git clone git://github.com/imathis/octopress.git myblog</code>。</li>
-<li>gem install bundler（记得翻墙）</li>
-<li>bundle install（还是要翻墙）</li>
-<li>rake install</li>
-</ul>
-
-
-<p>到了这一步基本上可以开始写日志了，不过这里要给出两个小的tips。</p>
-
-<h3>修改配置</h3>
-
-<ul>
-<li>将octopress的目录内的_config.yml的编码改成UTF-8。</li>
-<li>到Ruby的安装目录\lib\ruby\gems\1.9.1\gems\jekyll-0.11.0\lib\jekyll\找到convertible.rb这个文件，修改<code>self.content = File.read(File.join(base, name))</code>为<code>self.content = File.read(File.join(base, name), :encoding =&gt; "utf-8")</code>。</li>
-<li>修改配置文件_config.yml，修改url、title、subtitle、author等等。</li>
-</ul>
-
-
-<h3>总算到了激动人心的一步了，开始写日志</h3>
-
-<ul>
-<li>执行<code>rake new_post["my first blog"]</code>，这样会在octopress的/source/_post下生成一个markdown文件，可以用文本软件进行编辑</li>
-<li>完成编辑后执行<code>rake generate</code>，生成。</li>
-<li>执行<code>rake preview</code>地，可以在浏览器内以<a href="http://127.0.0.1:4000">这个地址</a>进行预览。</li>
-<li>最后执行<code>rake deploy</code>，将日志提交到github上，完美收工！</li>
-</ul>
-
-
-<h3>补充一点</h3>
-
-<p>最后的但并不最不重要的，我们需要将修改的日志同步到github上，因此下面的3个命令也是必须的。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git add .
-</span><span class='line'>git commit -m 'your message'
-</span><span class='line'>git push origin source</span></code></pre></td></tr></table></div></figure>
-
-
-
 ]]></content>
   </entry>
   
