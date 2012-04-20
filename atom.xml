@@ -4,7 +4,7 @@
   <title><![CDATA[我是清都山水郎]]></title>
   <link href="http://odinyu.github.com/atom.xml" rel="self"/>
   <link href="http://odinyu.github.com/"/>
-  <updated>2012-04-20T15:22:37+08:00</updated>
+  <updated>2012-04-20T16:27:32+08:00</updated>
   <id>http://odinyu.github.com/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[整合Instagram到Octopress，并且很炫！]]></title>
+    <link href="http://odinyu.github.com/blog/integrate-instagram-into-octopress/"/>
+    <updated>2012-04-20T16:06:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/integrate-instagram-into-octopress</id>
+    <content type="html"><![CDATA[<p>其实大概半个多月前就在想如何能把我用instagram拍的照片在octopress上展现出来，期间也参考了网络上几位高手的文章，不过因为种种的原因而不能实现。</p>
+
+<h3>我希望的效果</h3>
+
+<ul>
+<li>能即时显示instagram的照片，不过最初比较傻，居然希望可以即时自动生成一篇带instagram照片的日志，其实并没有这个必要。</li>
+<li>最好可以有比较炫的展示效果，而不只是图片阵列。</li>
+</ul>
+
+
+<h3>目前的效果</h3>
+
+<ul>
+<li>能显示最近的20张照片。</li>
+<li>展示效果很不错（见仁见智），可以参考截图，也可以直接猛击此<a href="http://hopes4.me/instagram/">链接</a>。</li>
+</ul>
+
+
+<p><img src="http://public.bay.livefilestore.com/y1pTrxKSmTRLSgQ_ccKiEhtO6EEISHjV2MxW07-8DdFwq49mLzuREpdjVVeuSnRQj02uxCCkgPfIh-HhM_lbto62g/ScreenShot_2012-04-20_162110.jpg" width="300"/></p>
+
+<p><img src="http://public.bay.livefilestore.com/y1pWRMbzCh5fe1iBz5Eonux9aodJ9WGxWFpEd8sJ5jYtM8dIJFBDl_AF6U8hrxJO8xvHAKQNiVENK-JlCGG0k5KHw/ScreenShot_2012-04-20_162146.jpg" width="300"/></p>
+
+<h3>具体实现</h3>
+
+<p>有基础的朋友可以直接看页面的源代码，修改一下api url的参数即可。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[今天开始健身]]></title>
@@ -763,21 +796,6 @@
 作为小屁民的我，其实也只是希望孩子能早点学会怎么去尊重他可能并不以为然的教条。</p>
 
 <p>我的想法可能很牵强，也必然无人理会，所以就只能记录在这杂草丛生的博客，供自己日后再慢慢端详。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[惊蛰未到，魔都已经打雷了]]></title>
-    <link href="http://odinyu.github.com/blog/thunder-before-jingzhe/"/>
-    <updated>2012-03-01T00:00:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/thunder-before-jingzhe</id>
-    <content type="html"><![CDATA[<p>这两天公司里人心惶惶的，看着一个个部门里的人被裁到只剩个位数，怎么可能让人心情愉快呢。</p>
-
-<p>窗外一片迷雾中，偶尔亮出几道闪电，轰鸣的春雷也应声响起。魔都果然有魔都的风范，惊蛰还没到，老天就开始打雷了。</p>
-
-<p>和同事戏言，是不是公司大规模裁员搞得老天也发怒了？</p>
-
-<p>以上文字是忙了一天后郁闷心情之下的表述，仅此而已。</p>
 ]]></content>
   </entry>
   

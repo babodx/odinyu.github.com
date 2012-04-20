@@ -7,7 +7,7 @@
     <meta name="author" content="sleepy">
 
     
-    <meta name="description" content="这么2的一天，留念一下 今天是2月22日星期2，再加上下班后又参加了一个很2的会议，因此很有必要写个日志留念一下。 其实应该在22点22分22秒让日志自动发布的，不过已经够2的了，算了！ Feb 22nd, 2011 normal life Comments Nook Color十天使用感受 &hellip;">
+    <meta name="description" content="Nook Color破解步骤备忘（for 1.1.0） Nook Color到手已经半个月了，昨晚把它从1.0.1升级到了1.1.0。虽然整个过程无惊无险，但感觉步骤还是蛮多的，老是到论坛上去找帖子也不大方便，索性直接整理一下到自己的博客上。 既然是整理，就要理理清楚，下面正式开始。 &hellip;">
     
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
 
@@ -53,6 +53,157 @@
 </div>
 
 	<div id="content" class="inner">
+
+
+    <article class="post">
+    <h1 class="title"><a href="/blog/memo-for-procedure-of-nook-color-root/">Nook Color破解步骤备忘（for 1.1.0）</a></h1>
+    <div class="entry">
+        <p>Nook Color到手已经半个月了，昨晚把它从1.0.1升级到了1.1.0。虽然整个过程无惊无险，但感觉步骤还是蛮多的，老是到论坛上去找帖子也不大方便，索性直接整理一下到自己的博客上。</p>
+
+<p>既然是整理，就要理理清楚，下面正式开始。</p>
+
+<p><strong><font style="background-color: #9bbb59">需要准备的工具和下载的资源：</font></strong></p>
+
+<p><a href="http://http://reviews.imp3.net/bn/nookcolor/winima85.zip" target="_blank">WinImage 8.50</a>，制作破解卡的软件。</p>
+
+<p><a href="http://reviews.imp3.net/bn/nookcolor/sdformatter.rar" target="_blank">SD卡格式化工具</a>，恢复破解卡原始容量，直接格式化是无法恢复容量的。</p>
+
+<p><a href="http://images.barnesandnoble.com/presources/download/nookcolor/v1.0.1/Sideload_update.zip" target="_blank">官方1.0.1ROM</a>，最早一批机器是1.0.0的ROM。</p>
+
+<p><a href="http://images.barnesandnoble.com/presources/download/nookcolor/v1.1/Sideload_update.zip" target="_blank">官方1.1.0ROM</a>，我自己的机器是1.0.1的ROM。</p>
+
+<p><a href="http://reviews.imp3.net/bn/nookcolor/pbpai.com-nookcolor-rom1.1.0-v0.9.5-20110219.rar" target="_blank">Nook Color 破解集成包 v0.9.5</a>，bbs.imp3.net上嘟嘟在auto_rooter 3.0.0基础上的修改版,比较适合国人使用，只针对1.1.0的ROM。</p>
+
+<p><a href="http://reviews.imp3.net/bn/nookcolor/pbpai.com-nookcolor-rom1.0.1-v0.9.3-20110125.rar" target="_blank">Nook Color 破解集成包 v0.9.3</a>，bbs.imp3.net上嘟嘟在auto_rooter 2.12.25基础上的修改版,比较适合国人使用，针对1.0.1的ROM。</p>
+
+<p><a href="http://u.115.com/file/f6ef59a905" target="_blank">auto_rooter 3.0.0</a>，国外高手制作的破解文件，同样只针对1.1.0的ROM。</p>
+
+<p><a href="http://http://reviews.imp3.net/bn/nookcolor/adb.rar" target="_blank">USB驱动和adb程序包</a>，用于解决电脑上设备管理器无法找到 Nook 设备的情况。</p>
+
+<p>需要有WIFI网络。</p>
+
+<p>需要一张MicroSD卡（TF卡），并最好有一个读卡器，据说笔记本自带的那种读卡器会有问题。</p>
+
+<p><font style="background-color: #9bbb59"><strong>判断自己的Nook Color是什么情况：</strong></font></p>
+
+<p>情况一：新机器但不是最新的ROM（最新的ROM是1.1.0），先注册或者登录 B&amp;N 账号并进入到桌面，然后升级到最新的ROM。</p>
+
+<p>情况二：新机器且已经是最新的ROM（最新的ROM是1.1.0），先注册或者登录 B&amp;N 账号并进入到桌面。</p>
+
+<p>情况三：已经破解过的机器，先恢复到出厂状态（本文最后有详细的恢复到出厂状态步骤），然后升级到最新的ROM（最新的ROM是1.1.0）,再注册或者登录 B&amp;N 账号并进入到桌面。</p>
+
+<p><font style="background-color: #9bbb59"><strong>下面开始正式破解：</strong></font></p>
+
+<p>1、将上述的那些下载的东西全部解压，备用。</p>
+
+<p>2、制作破解卡</p>
+
+<p><a href="http://www.hopes4.me/wp-content/uploads/2011/03/0001.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto; padding-top: 0px" title="0001" border="0" alt="0001" src="http://www.hopes4.me/wp-content/uploads/2011/03/0001_thumb.png" width="454" height="345"></a></p>
+
+<p><a href="http://www.hopes4.me/wp-content/uploads/2011/03/0002.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto; padding-top: 0px" title="0002" border="0" alt="0002" src="http://www.hopes4.me/wp-content/uploads/2011/03/0002_thumb.png" width="454" height="345"></a></p>
+
+<p>打开映像文件，如看不到img格式的映像文件，请在“打开”按钮上面选择 all files(<em>.</em>)。</p>
+
+<p><a href="http://www.hopes4.me/wp-content/uploads/2011/03/0003.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto; padding-top: 0px" title="0003" border="0" alt="0003" src="http://www.hopes4.me/wp-content/uploads/2011/03/0003_thumb.png" width="454" height="345"></a></p>
+
+<p><a href="http://www.hopes4.me/wp-content/uploads/2011/03/0004.png"><img style="border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto; padding-top: 0px" title="0004" border="0" alt="0004" src="http://www.hopes4.me/wp-content/uploads/2011/03/0004_thumb.png" width="454" height="345"></a></p>
+
+<p><a href="http://www.hopes4.me/wp-content/uploads/2011/03/0005.png"><img style="border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto; padding-top: 0px" title="0005" border="0" alt="0005" src="http://www.hopes4.me/wp-content/uploads/2011/03/0005_thumb.png" width="454" height="345"></a></p>
+
+<p>制作好的破解卡只能看到一个容量为40M左右的磁盘，实际还有个隐藏的磁盘无法看到。破解卡用完后直接格式化是无法恢复容量的，需要使用上文提到的<a href="http://reviews.imp3.net/bn/nookcolor/sdformatter.rar" target="_blank">SD卡格式化工具</a>才能恢复容量。</p>
+
+<p>3、彻底关闭Nook Color，长按电源键，然后选择power off。</p>
+
+<p>4、将破解卡放到卡槽内。</p>
+
+<p>5、用随机自带的数据线连接Nook Color和电脑，此时Nook Color依然保持黑屏，但实际上已经开始自动进行破解，电脑上会提示找到一个新的usb device并会提示说找不到驱动，不用管。</p>
+
+<p>6、大约2分钟左右，Nook Color会自动重启，这样破解就宣告成功！</p>
+
+<p>7、在欢呼的同时可以断开Nook Color和电脑，并进行下面的一些设置工作。</p>
+
+<p>8、具体的一些破解后的设置：</p>
+
+<p>1）、进入系统后，会有提示设置google账号，选择跳过。</p>
+
+<p>2）、选择ADW进入桌面，找到Nook Color Tools。</p>
+
+<p>3）、打开Nook Color Tools，可以看到Allow Non-Market Apps（允许安装非官方电子市场应用软件） 的默认状态是勾选的，但实际并未生效，需要先去掉勾选再重新勾选一下。</p>
+
+<p>4）、Nook Color Tools 里面的键盘默认是英文的，可以点 Choose Keyboard 来选择百度输入法。</p>
+
+<p>5）、打开gmail，提示设置google账号，此时再进行设置。</p>
+
+<p>9、再次彻底关闭Nook Color，并取出破解卡，否则再次重启时会造成不明影响。</p>
+
+<p><strong><font style="background-color: #9bbb59">附录一、恢复出厂状态：</font></strong></p>
+
+<p>2种方法，请自己选择</p>
+
+<p>1、用数据线连接电脑，在DOS窗口，执行以下命令（电脑要安装好adb驱动）：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>adb shell    
+</span><span class='line'>echo -n -e "\x08\x00\x00\x00" > /rom/devconf/BootCnt     
+</span><span class='line'>reboot</span></code></pre></td></tr></table></div></figure>
+
+
+<p>执行完上面的命令，Nook Color 会自动重启并开始刷出厂时自带的ROM，等待刷完ROM后会自动重启。</p>
+
+<p>2、使用GScript</p>
+
+<p>1）、先下载<a href="http://reviews.imp3.net/software/android/gscript/gscript.rar" target="_blank">GScript</a>（内含常用的脚本）。</p>
+
+<p>2）、装入相应的脚本，恢复出厂ROM.sh。</p>
+
+<p>3）、执行即可。</p>
+
+<p><strong><font style="background-color: #9bbb59">附录二、ROM升级方法：</font></strong></p>
+
+<p>1、电量保持 20% 以上，取下TF卡，USB数据线连接电脑，Nook Color 解除锁屏。</p>
+
+<p>2、将下载好的ROM文件 Sideload_update.zip 拷贝到盘符是 MyNOOKcolor 的可移动磁盘中，ROM文件不要解压，不要改名，也不要做任何修改。</p>
+
+<p>3、在电脑上安全弹出盘符是 MyNOOKcolor 的可移动磁盘，这时不要做任何操作，也不要关机，等待 Nook Color 自动重启。</p>
+
+<ol>
+<li>重启后 Nook Color 会开始刷ROM，完成后会自动重启，重启后 ROM 升级就完成了。</li>
+</ol>
+
+
+        
+        
+    </div>
+    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-03-04T00:00:00+08:00" pubdate data-updated="true">Mar 4<span>th</span>, 2011</time></div>
+        <div class="tags">
+
+<div class="cat">
+  
+    <a class='category' href='/blog/categories/android/'>android</a>
+  
+</div>
+
+</div>
+        
+        <div class="comments"><a href="/blog/memo-for-procedure-of-nook-color-root/#disqus_thread">Comments</a></div>
+        
+    </div>
+</article>
 
 
     <article class="post">
@@ -582,54 +733,6 @@
 </div>
         
         <div class="comments"><a href="/blog/a-bug-of-php-speedy/#disqus_thread">Comments</a></div>
-        
-    </div>
-</article>
-
-
-    <article class="post">
-    <h1 class="title"><a href="/blog/little-alter-on-blog/">博客的一点小修改</a></h1>
-    <div class="entry">
-        <p>在工硕的论文终于可以开题后，我也终于有了那么一点时间来对自己博客进行一点小修改。</p>
-
-<p>首先是外观上的修改，直接换了一个更适合夏天的主题，感觉更清爽一点。除了比较喜欢这个主题的设计之外，更喜欢它默认已经集成了12个比较主流的web2.0分享服务。还有值得一提的是这个主题标签云的设计，在页面的最下方用不同颜色和字体大小来显示所有的标签，很整齐且不觉得啰嗦。</p>
-
-<p>换了个主题很自然地要将主题进行一番修改，换掉默认的logo和favicon，一些样式上的小改动，重新加上广告（没广告感觉不专业，哈哈！）等等。</p>
-
-<p>另外在管理后台稍稍增加了一点安全性，把原来如果用户名密码填错会提示的信息给屏蔽掉了，即不会提示任何东西。</p>
-
-<p>wordpress3.0我还是没敢升级，因为空间租用快要到期了，还没想好是不是要继续用下去，所以万一升级了要有什么问题可是很麻烦的。  最后说一点不相干的东西，关于世界杯。今天凌晨德国vs西班牙是我很久以来的第一次熬夜看球，虽然整场比赛只进了一个球，但我感觉还是很值。不管是西班牙那行云流水地短传渗透还是德国快速凌厉的反击，都让人觉得不管是哪个队赢都是很正常的事。</p>
-
-<p>不过个人还是更喜欢西班牙华丽的踢法，几个中场的脚法太好了，德国人基本上都不怎么能抢到球。几乎可以这么说，西班牙以完美的控球牢牢地把德国人玩弄于股掌这中。看好西班牙夺冠！</p>
-
-        
-        
-    </div>
-    <div class="meta">
-        <div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-07-08T00:00:00+08:00" pubdate data-updated="true">Jul 8<span>th</span>, 2010</time></div>
-        <div class="tags">
-
-<div class="cat">
-  
-    <a class='category' href='/blog/categories/about-blog/'>about blog</a>
-  
-</div>
-
-</div>
-        
-        <div class="comments"><a href="/blog/little-alter-on-blog/#disqus_thread">Comments</a></div>
         
     </div>
 </article>
