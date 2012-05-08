@@ -4,7 +4,7 @@
   <title><![CDATA[我是清都山水郎]]></title>
   <link href="http://odinyu.github.com/atom.xml" rel="self"/>
   <link href="http://odinyu.github.com/"/>
-  <updated>2012-04-20T16:27:32+08:00</updated>
+  <updated>2012-05-08T16:55:57+08:00</updated>
   <id>http://odinyu.github.com/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[正在用Phonegap做一个Android应用]]></title>
+    <link href="http://odinyu.github.com/blog/android-app/"/>
+    <updated>2012-05-08T16:39:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/android-app</id>
+    <content type="html"><![CDATA[<p>因为本身是做java开发的，所有一直有做一个android应用的想法，只是始终是拖延的毛病在作祟，所以迟迟没有行动。不过最近这一周终于是借助Phonegap这个号称能开发跨平台移动应用的开源框架，结合之前chrome上做过的美女时钟，做出了我的第一个android应用的demo版。</p>
+
+<p>目前应用的主要功能基本已经实现，虚拟机和真机都测试过，运行还算流畅。接下来除了保证应用的稳定性，还会继续增加一些新功能，并调整一下UI。</p>
+
+<p>用了这一段时间的Phonegap和android，感觉和原生的应用相比效率是有点低下，不过胜在开发起来相对简单，尤其适合web应用。</p>
+
+<p>刚才忽然想到也可以用这个框架来做一下电子书的单行本，有空了继续练练手。</p>
+
+<p>希望不久的将来可以把我的应用提交到google play上去，那也就算是没有白做一回。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[整合Instagram到Octopress，并且很炫！]]></title>
@@ -780,22 +797,6 @@
 
 
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[纯粹瞎想]]></title>
-    <link href="http://odinyu.github.com/blog/chun-cui-xia-xiang/"/>
-    <updated>2012-03-02T00:00:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/chun-cui-xia-xiang</id>
-    <content type="html"><![CDATA[<p>躺下了却睡不着，刚才和老婆因为该如何教育儿子有点意见分歧。</p>
-
-<p>儿子很顽皮，小孩的天性如此，但我觉得也需要让他知道一点规矩。虽然我很乐意接受自由，也希望孩子可以自由得成长，但如今的中国社会自由两字的代价又何其之大！</p>
-
-<p>不知道在哪里看到过的一句话，深以为然。“不能游离于制度之外，而应该了解并掌握制度，然后再决定是否需要摧毁制度或是重建制度。”
-作为小屁民的我，其实也只是希望孩子能早点学会怎么去尊重他可能并不以为然的教条。</p>
-
-<p>我的想法可能很牵强，也必然无人理会，所以就只能记录在这杂草丛生的博客，供自己日后再慢慢端详。</p>
 ]]></content>
   </entry>
   
