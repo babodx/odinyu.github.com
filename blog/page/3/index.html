@@ -7,7 +7,7 @@
     <meta name="author" content="sleepy">
 
     
-    <meta name="description" content="在第二台电脑上配置github Octopress的本地环境 本来倒是没想在家里的本本上也进行配置，不过一颗geek的心却始终骚动着，最终还是google了出来具体的方法，当然也是综合了多方建议，所以有必要在还没有忘记之时记录一下。 安装Ruby 还是通过http://rubyinstaller &hellip;">
+    <meta name="description" content="从Wordpress迁移到Octopress 既然已经建了octopress，又把公司和家里的两台电脑的环境都配置好，那就没有理由不从Wordpress迁移到Octopress。通过网络上高手给出的脚本和指导，整个过程比较顺利，现记录之。 导出Wordpress里的内容 &hellip;">
     
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
 
@@ -53,6 +53,78 @@
 </div>
 
 	<div id="content" class="inner">
+
+
+    <article class="post">
+    <h1 class="title"><a href="/blog/migrate-from-wordpress-to-octopress/">从Wordpress迁移到Octopress</a></h1>
+    <div class="entry">
+        <p>既然已经建了octopress，又把公司和家里的两台电脑的环境都配置好，那就没有理由不从Wordpress迁移到Octopress。通过网络上高手给出的脚本和指导，整个过程比较顺利，现记录之。</p>
+
+<h3>导出Wordpress里的内容</h3>
+
+<p>我用的是Wordpress导出的xml文件，而不是数据库的备份。</p>
+
+<h3>转换xml到md文档</h3>
+
+<p>使用高手给出的脚本,<a href="https://github.com/odinyu/odinyu.github.com/blob/source/md.rb" title="下载">下载</a>。</p>
+
+<p>重命名Wordpress导出的文件为wordpress.xml，然后放到<code>～/octopress/source/_post</code>下，再执行下面的代码</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd octopress/source/_post
+</span><span class='line'>ruby md.rb wordpress.xml</span></code></pre></td></tr></table></div></figure>
+
+
+<p>可能会提示少包，可以这样安装</p>
+
+<p><code>gem install ya2yaml</code></p>
+
+<p>注意，如果是windows环境下，hpricot这个包需要这样安装，不然会一直不成功</p>
+
+<p><code>gem install hpricot --platform=mswin32</code></p>
+
+<h3>细节处理</h3>
+
+<p>脚本生成的是每篇wordpress上日志的md文档，未能完全按markdown语法格式化，还需要人工调整一下。另外就是原先的图片，如果是外链的还好，对于直接上传到wordpress上的需要修改一下路径。</p>
+
+<p>当然，有些日志可能不再需要，适当的再进行一些清理工作。</p>
+
+<h3>记录很重要</h3>
+
+<p>虽然网络上需要的资讯一般都能找到，但是每次要用的时候再找总是很麻烦，记录在自己的手边才是王道！</p>
+
+        
+        
+    </div>
+    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-06T14:54:00+08:00" pubdate data-updated="true">Mar 6<span>th</span>, 2012</time></div>
+        <div class="tags">
+
+<div class="cat">
+  
+    <a class='category' href='/blog/categories/octopress/'>Octopress</a>
+  
+</div>
+
+</div>
+        
+        <div class="comments"><a href="/blog/migrate-from-wordpress-to-octopress/#disqus_thread">Comments</a></div>
+        
+    </div>
+</article>
 
 
     <article class="post">
@@ -694,57 +766,6 @@
 </div>
         
         <div class="comments"><a href="/blog/memo-temporary-sharing-network-on-win7/#disqus_thread">Comments</a></div>
-        
-    </div>
-</article>
-
-
-    <article class="post">
-    <h1 class="title"><a href="/blog/simple-tutorial-of-firefox-disguised-as-chrome-3/">Firefox伪装成chrome的简单教程</a></h1>
-    <div class="entry">
-        <p>其实我的主力浏览器一直是chrome，但因为工作的需要，经常为了调试代码而使用firefox，于是就有了各种的不甘。正巧今天有空想动动手，经过一番搜索加测试，效果还是比较满意的，请参考下图。<br/>
-<img src="http://public.bay.livefilestore.com/y1pZkdB53cm8SerfkBQVkw28F43zRFn5HEq7akf1dYNpw89C-p5ZNV_U-N6H79bEWgz4rBb_J5hUrUhcKH700Cp4g/ScreenShot_2011-09-09_123117.jpg" alt="" /></p>
-
-<p>开始简单教程，其实也真的是很简单。</p>
-
-<ul>
-<li>安装<a href="https://addons.mozilla.org/zh-CN/firefox/addon/fxchrome/" title="FXChrome">https://addons.mozilla.org/zh-CN/firefox/addon/fxchrome/</a>主题。</li>
-<li>安装<a href="https://addons.mozilla.org/zh-CN/firefox/addon/stylish/" title="Stylish">https://addons.mozilla.org/zh-CN/firefox/addon/stylish/</a>扩展。</li>
-<li>重启firefox后访问<a href="http://userstyles.org/styles/51118/fxchrome-firox-button-icons?r=1311430549" title="这个网址">http://userstyles.org/styles/51118/fxchrome-firox-button-icons?r=1311430549</a>来修改左上角profile图标。</li>
-<li>如果附加组件栏打开的话请手动关闭,就是底下的状态栏。</li>
-</ul>
-
-
-<p>OK，做完上述步骤后就一切完成，个人感觉相似度95%以上了，有木有？呵呵！</p>
-
-        
-        
-    </div>
-    <div class="meta">
-        <div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-09-09T00:00:00+08:00" pubdate data-updated="true">Sep 9<span>th</span>, 2011</time></div>
-        <div class="tags">
-
-<div class="cat">
-  
-    <a class='category' href='/blog/categories/about-web/'>about web</a>
-  
-</div>
-
-</div>
-        
-        <div class="comments"><a href="/blog/simple-tutorial-of-firefox-disguised-as-chrome-3/#disqus_thread">Comments</a></div>
         
     </div>
 </article>

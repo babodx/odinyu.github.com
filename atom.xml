@@ -4,7 +4,7 @@
   <title><![CDATA[我是清都山水郎]]></title>
   <link href="http://odinyu.github.com/atom.xml" rel="self"/>
   <link href="http://odinyu.github.com/"/>
-  <updated>2012-05-17T14:36:43+08:00</updated>
+  <updated>2012-05-18T17:40:23+08:00</updated>
   <id>http://odinyu.github.com/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[女人]]></title>
+    <link href="http://odinyu.github.com/blog/woman/"/>
+    <updated>2012-05-18T17:22:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/woman</id>
+    <content type="html"><![CDATA[<p>对于正常性取向的男人来说，女人应该永远是男人比较关注的。</p>
+
+<p>记得好像是《红楼梦》里有这样的对于女人的看法，大意是女人在少女的时候大多是美好的，而到了中年后便开始渐渐让人觉得不堪。</p>
+
+<p>结合现实生活来看，上述的看法相当地正确。下面举几个工作环境中遇到的妇女的某些行为以示佐证吧。</p>
+
+<ul>
+<li>她让同事帮忙从外面带吃的，买来后绝口不提要给钱。</li>
+<li>她说请同事一起去吃饭，吃完了却由别的同事买单。</li>
+<li>印象中她从未请属于喝过一次下午茶</li>
+<li>印象中本人从未被她请过一次吃饭</li>
+</ul>
+
+
+<p>很多小事已经忘记了，唉！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[美女时钟android版的开发小结]]></title>
@@ -683,49 +706,6 @@
 <p>今天早上又重新启用了Belvedere这个小软件，用途是当dropbox内某文件夹有txt文件存在，就改后缀名为markdown，然后移动到octopress/source/_post文件夹内。目前这个功能已经测试成功，也就是说打开电脑后不多会就可直接使用命令来发布日志到octopress了，而无需手动复制内容。</p>
 
 <p>接下来考虑通过执行脚本来发布文章，不过目前看来还是有点困难，因为本人不是很懂Ruby，这个需要慢慢研究了。不过至少移动端记录并同步到云端已经ok，已经减少了很多与写作无关的步骤，心情大好！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[从Wordpress迁移到Octopress]]></title>
-    <link href="http://odinyu.github.com/blog/migrate-from-wordpress-to-octopress/"/>
-    <updated>2012-03-06T14:54:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/migrate-from-wordpress-to-octopress</id>
-    <content type="html"><![CDATA[<p>既然已经建了octopress，又把公司和家里的两台电脑的环境都配置好，那就没有理由不从Wordpress迁移到Octopress。通过网络上高手给出的脚本和指导，整个过程比较顺利，现记录之。</p>
-
-<h3>导出Wordpress里的内容</h3>
-
-<p>我用的是Wordpress导出的xml文件，而不是数据库的备份。</p>
-
-<h3>转换xml到md文档</h3>
-
-<p>使用高手给出的脚本,<a href="https://github.com/odinyu/odinyu.github.com/blob/source/md.rb" title="下载">下载</a>。</p>
-
-<p>重命名Wordpress导出的文件为wordpress.xml，然后放到<code>～/octopress/source/_post</code>下，再执行下面的代码</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>cd octopress/source/_post
-</span><span class='line'>ruby md.rb wordpress.xml</span></code></pre></td></tr></table></div></figure>
-
-
-<p>可能会提示少包，可以这样安装</p>
-
-<p><code>gem install ya2yaml</code></p>
-
-<p>注意，如果是windows环境下，hpricot这个包需要这样安装，不然会一直不成功</p>
-
-<p><code>gem install hpricot --platform=mswin32</code></p>
-
-<h3>细节处理</h3>
-
-<p>脚本生成的是每篇wordpress上日志的md文档，未能完全按markdown语法格式化，还需要人工调整一下。另外就是原先的图片，如果是外链的还好，对于直接上传到wordpress上的需要修改一下路径。</p>
-
-<p>当然，有些日志可能不再需要，适当的再进行一些清理工作。</p>
-
-<h3>记录很重要</h3>
-
-<p>虽然网络上需要的资讯一般都能找到，但是每次要用的时候再找总是很麻烦，记录在自己的手边才是王道！</p>
 ]]></content>
   </entry>
   
