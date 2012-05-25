@@ -4,7 +4,7 @@
   <title><![CDATA[我是清都山水郎]]></title>
   <link href="http://odinyu.github.com/atom.xml" rel="self"/>
   <link href="http://odinyu.github.com/"/>
-  <updated>2012-05-18T17:40:23+08:00</updated>
+  <updated>2012-05-25T17:58:55+08:00</updated>
   <id>http://odinyu.github.com/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
@@ -12,6 +12,33 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[android开发环境上的小问题]]></title>
+    <link href="http://odinyu.github.com/blog/small-problem-in-android-develop-environment/"/>
+    <updated>2012-05-25T17:48:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/small-problem-in-android-develop-environment</id>
+    <content type="html"><![CDATA[<p>昨天休息了一天，今天打开eclipse然后顺手点开Android SDK Manager并升级了一下，结果就出问题了。</p>
+
+<p>首先是eclipse提示我当前的ADT版本太低，需要升级到17或以上。貌似之前也遇到过这个问题，所以也有点准备。直接eclipse里install new software，然后add一个并从本地选择从网上下载回来的ADT升级压缩包，再一路安装。</p>
+
+<p>本来以为安装成功后就没问题了，可是一运行虚拟机却又报了一个错。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>The connection to adb is down, and a severe error has occured</span></code></pre></td></tr></table></div></figure>
+
+
+<p>还好有万能的google，总算找来下面的两个命令，然后重启eclipse，搞定！</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>adb kill-server
+</span><span class='line'>adb start-server</span></code></pre></td></tr></table></div></figure>
+
+
+<p>自己记录一下，免得以后再找麻烦。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[女人]]></title>
@@ -672,40 +699,6 @@
 <p>通过脚本将原先需要分多次手打的命令整合到一起，这样方便操作，更适合懒人。</p>
 
 <p>脚本方面可能还需要调整和测试，不过暂时能凑合着用了。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[从iphone上发布日志到octopress]]></title>
-    <link href="http://odinyu.github.com/blog/post-from-iphone/"/>
-    <updated>2012-03-07T11:20:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/post-from-iphone</id>
-    <content type="html"><![CDATA[<h3>昨天在被窝里的记录</h3>
-
-<p>在iphone上试了几个号称支持markdown并能同步到dropbox的应用，结果都不尽如人意，最后还是选择用evernote来进行移动终端的日志记录。</p>
-
-<p>其实移动终端的记录有其一定的意义，比如我现在就是躺在被窝里单手写日志，准备明天公司里从evernote里复制到文本再发到线上博客。</p>
-
-<p>感觉整个过程有点曲折，所以明天有必要去网上找一下能更方便的方法。</p>
-
-<p>最好是能向iphone上的wordpress那样 ，写完直接发布就一切OK。</p>
-
-<p>罗列一下明天需要做的一些事情</p>
-
-<ul>
-<li>继续修改从wordpress迁移过来的日志</li>
-<li>将本篇日志发出去</li>
-<li>寻找更方便的移动日志发布手段</li>
-</ul>
-
-
-<h3>之后睡前的神奇发现</h3>
-
-<p>突然在google上看到有人说goodreader可以同步txt到dropbox，报着最后试一下不行就睡的想法试了一把，居然goodreader真的完成了这个本来是不可能完成的任务。</p>
-
-<p>今天早上又重新启用了Belvedere这个小软件，用途是当dropbox内某文件夹有txt文件存在，就改后缀名为markdown，然后移动到octopress/source/_post文件夹内。目前这个功能已经测试成功，也就是说打开电脑后不多会就可直接使用命令来发布日志到octopress了，而无需手动复制内容。</p>
-
-<p>接下来考虑通过执行脚本来发布文章，不过目前看来还是有点困难，因为本人不是很懂Ruby，这个需要慢慢研究了。不过至少移动端记录并同步到云端已经ok，已经减少了很多与写作无关的步骤，心情大好！</p>
 ]]></content>
   </entry>
   
