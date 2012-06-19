@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | 我是清都山水郎]]></title>
   <link href="http://odinyu.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://odinyu.github.com/"/>
-  <updated>2012-05-25T17:58:55+08:00</updated>
+  <updated>2012-06-19T18:11:55+08:00</updated>
   <id>http://odinyu.github.com/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
@@ -12,6 +12,36 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[终于又可以更新博客了]]></title>
+    <link href="http://odinyu.github.com/blog/i-can-post-again/"/>
+    <updated>2012-06-19T17:59:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/i-can-post-again</id>
+    <content type="html"><![CDATA[<p>好久没有更新我的博客了，这次的主要原因可不是我又怎么犯懒，而是公司的电脑不争气地挂了，而后我更换了一台。</p>
+
+<p>而新电脑需要重新搭建octopress所需要的环境，碰巧我的vpn也不怎么地不能用了，于是耽搁到今天。</p>
+
+<p>今天终于有时间来搞octopress相关的环境，在终于成功之际还是要记录一下，以备今后再用到。</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>修改Rubygems镜像 </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem sources --remove http://rubygems.org/
+</span><span class='line'>gem sources -a http://ruby.taobao.org/
+</span><span class='line'>gem sources -l
+</span><span class='line'>gem install bundler --pre</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>安装完之后，修改octopress路径下gemfile的Rubygems镜像，同样是改成http://ruby.taobao.org/。</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>bundle install
+</span><span class='line'>rake install</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[整合Instagram到Octopress，并且很炫！]]></title>
@@ -120,26 +150,6 @@
 <p><code>@ =&gt; 207.97.227.245</code></p>
 
 <h4>今天游戏上线还算比较平稳，所以终于不用加班到很晚，抚额庆幸</h4>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[安装octopress主题slash]]></title>
-    <link href="http://odinyu.github.com/blog/install-octopress-theme-slash/"/>
-    <updated>2012-03-07T21:45:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/install-octopress-theme-slash</id>
-    <content type="html"><![CDATA[<p>还是对于octopress折腾的记录，年纪大了记不住那么多的命令。</p>
-
-<p>这个slash主题就是我现在用的这个，很简洁大方，同时还很喜欢它的灰色调。</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>cd octopress
-</span><span class='line'>git clone git@github.com:tommy351/Octopress-Theme-Slash.git .themes/slash
-</span><span class='line'>rake install['slash']
-</span><span class='line'>rake generate</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 ]]></content>
   </entry>
   
