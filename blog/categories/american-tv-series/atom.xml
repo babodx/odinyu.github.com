@@ -4,7 +4,7 @@
   <title><![CDATA[Category: American TV series | 我是清都山水郎]]></title>
   <link href="http://odinyu.github.com/blog/categories/american-tv-series/atom.xml" rel="self"/>
   <link href="http://odinyu.github.com/"/>
-  <updated>2012-06-19T18:11:55+08:00</updated>
+  <updated>2012-06-20T13:47:56+08:00</updated>
   <id>http://odinyu.github.com/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
@@ -21,38 +21,23 @@
     <content type="html"><![CDATA[<p>在经历了漫长的等待，美剧秋季档不仅有几部新剧值得一看，更有多部老剧又能继续追着看了，怎么一个爽字了得！
 先贴上我最期待的一些美剧的开播时间，自己再好好开心一把：</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;p>9月10日
-</span><span class='line'>《吸血鬼日记》（The Vampire Diaries），第一季
-</span><span class='line'>9月21日
-</span><span class='line'>《英雄》（Heroes），第四季
-</span><span class='line'>9月23日
-</span><span class='line'>《犯罪心理》（Criminal Minds），第五季
-</span><span class='line'>《犯罪现场调查：纽约》（CSI: NY），第六季
-</span><span class='line'>9月24日
-</span><span class='line'>《犯罪现场调查》（CSI: Crime Scene Investigation） 第十季
-</span><span class='line'>《未来闪影》（Flash Forward），第一季
-</span><span class='line'>9月27日
-</span><span class='line'>《绝望主妇》（Desperate Housewives），第六季
-</span><span class='line'>9月28日
-</span><span class='line'>《别对我撒谎》（Lie to Me），第二季</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}</p>
+
+<p>9月10日
+《吸血鬼日记》（The Vampire Diaries），第一季
+9月21日
+《英雄》（Heroes），第四季
+9月23日
+《犯罪心理》（Criminal Minds），第五季
+《犯罪现场调查：纽约》（CSI: NY），第六季
+9月24日
+《犯罪现场调查》（CSI: Crime Scene Investigation） 第十季
+《未来闪影》（Flash Forward），第一季
+9月27日
+《绝望主妇》（Desperate Housewives），第六季
+9月28日
+《别对我撒谎》（Lie to Me），第二季
+{% endcodeblock %}</p>
 
 <p>《绝望主妇》目前还只看到第二季，看来要加快速度了，主妇们太强了！</p>
 ]]></content>
