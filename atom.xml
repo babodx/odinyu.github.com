@@ -4,7 +4,7 @@
   <title><![CDATA[我是清都山水郎]]></title>
   <link href="http://odinyu.github.com/atom.xml" rel="self"/>
   <link href="http://odinyu.github.com/"/>
-  <updated>2012-06-20T13:46:51+08:00</updated>
+  <updated>2012-06-25T18:31:15+08:00</updated>
   <id>http://odinyu.github.com/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[今天我又登上城墙啦]]></title>
+    <link href="http://odinyu.github.com/blog/over-the-wall-again/"/>
+    <updated>2012-06-25T18:18:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/over-the-wall-again</id>
+    <content type="html"><![CDATA[<p>今天终于又搞定了goagent，比想你中的简单多了，而且速度很快，很不错！</p>
+
+<p>马上要下班了，就简单地记录一下吧。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[终于又可以更新博客了]]></title>
@@ -441,29 +452,6 @@
 <p>另外有的美剧并不是很热门，那么要等它的翻译字幕就更是有点悬了，而要等好的字幕那就想都别想了。</p>
 
 <p>暂时就先吐槽这些，美剧还是要继续看下去的。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[安装octopress主题slash]]></title>
-    <link href="http://odinyu.github.com/blog/install-octopress-theme-slash/"/>
-    <updated>2012-03-07T21:45:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/install-octopress-theme-slash</id>
-    <content type="html"><![CDATA[<p>还是对于octopress折腾的记录，年纪大了记不住那么多的命令。</p>
-
-<p>这个slash主题就是我现在用的这个，很简洁大方，同时还很喜欢它的灰色调。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>cd octopress
-</span><span class='line'>git clone git@github.com:tommy351/Octopress-Theme-Slash.git .themes/slash
-</span><span class='line'>rake install['slash']
-</span><span class='line'>rake generate</span></code></pre></td></tr></table></div></figure>
-
-
-
 ]]></content>
   </entry>
   
