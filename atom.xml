@@ -4,7 +4,7 @@
   <title><![CDATA[我是清都山水郎]]></title>
   <link href="http://odinyu.github.com/atom.xml" rel="self"/>
   <link href="http://odinyu.github.com/"/>
-  <updated>2012-06-26T16:24:56+08:00</updated>
+  <updated>2012-07-02T18:07:07+08:00</updated>
   <id>http://odinyu.github.com/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[生活琐事]]></title>
+    <link href="http://odinyu.github.com/blog/life-trivia/"/>
+    <updated>2012-07-02T17:22:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/life-trivia</id>
+    <content type="html"><![CDATA[<p>只是记录一下生活琐事，不过还不算是吐槽。</p>
+
+<p>老婆和我都打算下周去看下专家门诊，她是心肌缺血，虽然现在感觉没什么，但不注意的话以后问题可能会比较大。我则是2年前骑电动车摔跤导致膝盖受伤，本来以为半月板受损伴少量积液应该能自己好，可是这两天却分外地不舒服起来。</p>
+
+<p>看专家门诊需要先预约，还好有了一个医联网可以网上挂号，而且能挂到专家也还蛮多的。今天早上7点半龙华医院放号，我帮老妈第一时间挂了一个，搞得自己很紧张生怕挂不到，呵呵。准备下周一零点先看下是不是放号，然后秒杀之。</p>
+
+<p>儿子昨天送去了崇明，算是让他过暑假。郊区除了蚊虫多点，可是有新鲜的蔬菜吃，还有比城市凉爽的天气，另外还有城市里很难享受到的宁夏。不过老婆怕小猪在崇明会无聊，所以还是准备过两个星期就再接他出来上海住个几天，目前还没想好是不是要带他去哪玩一玩。</p>
+
+<p>最近忽然想入一条稍好一点的耳塞，虽然自认不是hifi迷，也不是音乐爱好者，可身边的几条耳机都太差了，让我激不起一点欣赏音乐的想法。目前在舒尔的es215和天龙的ah-c560拿不定主意，前者贵一点且不确定佩带是否舒服，后者便宜点但外形一般且不确定效果如何。唉，好无奈啊。</p>
+
+<p>今天又再次考虑理财的问题，唉，没钱人的苦恼！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[最近要做的一些事]]></title>
@@ -427,23 +446,6 @@
 <p>还有同事因为样式问题周末加班到凌晨，然后周日晚上再次加班。</p>
 
 <p>真是很不明白，一个网页游戏的团队居然没有一个重构。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[一周心情总结]]></title>
-    <link href="http://odinyu.github.com/blog/one-week-mood-summary/"/>
-    <updated>2012-03-09T18:13:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/one-week-mood-summary</id>
-    <content type="html"><![CDATA[<p>这周总的来说心情一般，一是因为天气一直不是很好，二是工作依然忙乱。</p>
-
-<p>总算是有时间来折腾octopress，其实也只是给自己一点写日志的动力，同时也让自己能稍稍动点脑筋。</p>
-
-<p>接下来准备调整一下octopress的样式，并再加上一些必须的功能，虽然简单是美但也不能一点功能都没有。</p>
-
-<p>这几天itunes的下载速度又不怎么样了，难道Apple又抽风了？还是在想念lumia 800，可是想想老婆应该是不会同意我买，看来也只能暂时想想罢了。</p>
-
-<p>我们的重构要走了，想不到今后没有重构的工作要怎么去做。应该会新招人来，所以还是希望新来的不要太菜！</p>
 ]]></content>
   </entry>
   
