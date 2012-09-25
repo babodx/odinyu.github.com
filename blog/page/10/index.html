@@ -7,7 +7,7 @@
     <meta name="author" content="sleepy">
 
     
-    <meta name="description" content="自己做的一个chrome的扩展 最近工作上和生活里都有好多的事要做，所以也就不自觉地放任博客上杂草丛生了。不过今天还是要借加班的一点时间来更新一下，小小地秀秀我自己做的chrome的扩展，希望有用chrome的朋友可以装上给我点意见和建议。 简单地介绍下我这个扩展吧， &hellip;">
+    <meta name="description" content="Chrome上用第三方API来twitter 最近一直试着研究chrome的扩展，自己也尝试地做了一个，而今天的主题同样也是和chrome的扩展有关。 关键词： twitter，主要的目的就是要在chrome上用这个。 第三方twitter API，使用这个就可以不用VPN，不用代理， &hellip;">
     
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
 
@@ -53,6 +53,92 @@
 </div>
 
 	<div id="content" class="inner">
+
+
+    <article class="post">
+    <h1 class="title"><a href="/blog/twitter-with-third-part-api-on-chrome/">Chrome上用第三方API来twitter</a></h1>
+    <div class="entry">
+        <p>最近一直试着研究chrome的扩展，自己也尝试地做了一个，而今天的主题同样也是和chrome的扩展有关。  <span class="inner_title">关键词：</span>  twitter，主要的目的就是要在chrome上用这个。  第三方twitter API，使用这个就可以不用VPN，不用代理，不用设置hosts而担心什么时候又不能用了。  chrome扩展，因为是要在chrome上用，所以离不开扩展。介绍两个扩展，<a href="https://chrome.google.com/extensions/detail/aefaeloiencfjnaljicdoieoekoecmha" target="_blank">Metrist</a>和<a href="https://chrome.google.com/extensions/detail/ffcbeckjmgmgigkmnhmgjplmomcpfall" target="_blank">Chrowety</a>，需要翻墙才能安装。  <span class="inner_title">使用Metrist</span>  <a href="https://chrome.google.com/extensions/detail/aefaeloiencfjnaljicdoieoekoecmha" target="_blank">Metrist</a>，这个是国人开发的一个扩展，它的强大之处在于支持自定义第三方API以及很好地还原了twitter的原始样式（我是这样看的），缺点是没有短网址生成的功能，打开链接是前台而不是后台等等。  至于Metrist如何使用第三方API，它的作者有官方的解释，我给出链接而不再越俎代庖了，链接：<a href="http://code.google.com/p/chrome-metrist/wiki/API_HOWTO_ZH" target="_blank">Metrist 的第三方 API 设置说明</a>  <a name="%E8%AE%BE%E7%BD%AE%E7%AC%AC%E4%B8%89%E6%96%B9_API"></a></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>在插件初次安装或者点击相应的设置按钮后，会弹出设置页面。在此页面中，您可以设置您的第三方 API 地址，例如原 Twitter 获取 timeline 地址为：    
+</span><span class='line'>
+</span><span class='line'>&lt;div class='bogus-wrapper'>&lt;notextile>&lt;figure class='code'>&lt;div class="highlight">&lt;table>&lt;tr>&lt;td class="gutter">&lt;pre class="line-numbers">&lt;span class='line-number'>1&lt;/span>
+</span><span class='line'>&lt;/pre>&lt;/td>&lt;td class='code'>&lt;pre>&lt;code class=''>&lt;span class='line'>http://twitter.com/statuses/user_timeline/feelinglucky.json&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>&lt;/div>&lt;/figure>&lt;/notextile>&lt;/div>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>  同时您的第三方对应的 API 地址为
+</span><span class='line'>
+</span><span class='line'>  
+</span><span class='line'>
+</span><span class='line'>&lt;div class='bogus-wrapper'>&lt;notextile>&lt;figure class='code'>&lt;div class="highlight">&lt;table>&lt;tr>&lt;td class="gutter">&lt;pre class="line-numbers">&lt;span class='line-number'>1&lt;/span>
+</span><span class='line'>&lt;/pre>&lt;/td>&lt;td class='code'>&lt;pre>&lt;code class=''>&lt;span class='line'>http://twitter.com/statuses/user_timeline/feelinglucky.json&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>&lt;/div>&lt;/figure>&lt;/notextile>&lt;/div></span></code></pre></td></tr></table></div></figure>
+
+
+<p>摘抄作者的原话，目的是为下面要介绍的<a href="https://chrome.google.com/extensions/detail/ffcbeckjmgmgigkmnhmgjplmomcpfall" target="_blank">Chrowety</a>服务。</p>
+
+<p><span class="inner_title">使用Chrowety</span></p>
+
+<p><a href="https://chrome.google.com/extensions/detail/ffcbeckjmgmgigkmnhmgjplmomcpfall" target="_blank">Chrowety</a>，估计作者可能是个巴西人，因为它的代码里的文字看上去像巴西葡语。它的优点是支持多种短网址的生成（包括刚出炉的goo.gl），有新的推会主动弹出层来alert以及链接是在后台打开。</p>
+
+<p>我个人是比较倾向于用Chrowety的，但它默认是用twitter自己的API，于是就有了本文存在的理由，怎么修改成第三方API。</p>
+
+<p>过程很简单，大家慢慢跟我来试。</p>
+
+<p>首先，找到你的chrome的扩展的安装路径，一般来说总是C盘，我给出我的路径以供参考，c:\Users&lt;font color=&#8221;#ff0000&#8221;>XXX</font>\AppData\Local\Google\Chrome\User Data\Default\Extensions\，<font color="#ff0000">XXX</font>代表你的系统的登陆名。</p>
+
+<p>然后，在chrome的地址栏输入<a href="chrome://extensions/">chrome://extensions/</a>，应该会看到如下图的文字。
+<img style="width: 326px; display: block; float: none; margin-left: auto; margin-right: auto" src="https://pcl9ea.bay.livefilestore.com/y1pQshZGa3hDCeu5tZqk8IUWB8LeYOj4sidP5RLLgXiyI-QZgsWfj8MPWqhGgxpzKbBWhvj0cOtAvrvSVSQpga5BBrmpS1fSydm/ScreenShot_2009-12-24_133623.jpg/" height="102">上图中的ID后面的字符串就是插件所在路径中的文件夹名，进入这个文件夹，找到background.html。打开background.html，把第13行到第27行中的<font color="#0000ff">https://twitter.com</font>替换成第三方API的链接，也就是上文已经摘抄的那段文字里的<font color="#0000ff">http://foo.com/api</font>这样。像我是用google的App Engine架的birdnest的API，我的链接就像这样<font color="#0000ff">http://myid.appspot.com/api</font>。</p>
+
+<p>修改好后可能需要重启一下chrome，之后你应该就可以很畅快地使用Chrowety来发推了。如果以后这个插件的作者依然没有引入第三方API自定义的功能的话，可能每次扩展有更新都需要像刚才那样修改一下API的链接，不过聪明如你的读者，有了第一次以后应该也就不会觉得这是个麻烦了吧。</p>
+
+<p>最后，仅以此文献给平安夜，愿大家一生平安！</p>
+
+        
+        
+    </div>
+    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-12-24T00:00:00+08:00" pubdate data-updated="true">Dec 24<span>th</span>, 2009</time></div>
+        <div class="tags">
+
+<div class="cat">
+  
+    <a class='category' href='/blog/categories/about-soft/'>about soft</a>
+  
+</div>
+
+</div>
+        
+        <div class="comments"><a href="/blog/twitter-with-third-part-api-on-chrome/#disqus_thread">Comments</a></div>
+        
+		<a class="bshareDiv" href="http://www.bshare.cn/share">share</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#uuid=&amp;style=10&amp;bgcolor=Orange&amp;ssc=false"></script>
+    </div>
+</article>
 
 
     <article class="post">
@@ -399,45 +485,6 @@
 </div>
         
         <div class="comments"><a href="/blog/directly-twitter-on-msn/#disqus_thread">Comments</a></div>
-        
-		<a class="bshareDiv" href="http://www.bshare.cn/share">share</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#uuid=&amp;style=10&amp;bgcolor=Orange&amp;ssc=false"></script>
-    </div>
-</article>
-
-
-    <article class="post">
-    <h1 class="title"><a href="/blog/with-regard-to-the-interpretation-of-blocked-ip/">关于IP被封的解释</a></h1>
-    <div class="entry">
-        <p>上一篇日志里我简短地表达了一下自己的喜悦之情，同时好像也惹得众多关心本人的朋友的疑惑：这个人到底说了或做了什么，为什么IP会被封，为什么又被解封。虽然我在一些朋友的留言后也做了些回复，不过貌似单独写一篇日志来专门解释一下比较好一点，所以本日志会很水很无趣，已经知道原因的朋友请绕道吧。
-先说一下为什么会被封IP,以及封的是什么IP,并且后果是什么。起因是我自己瞎折腾（所以说折腾也是有代价的），想弄个自己域名的邮箱，于是直接在没有任何指导和借鉴的情况下弄了起来。期间，我还很天真地用outlook设置邮箱，并发出了测试邮件，结果是没成功。虽然没成功，不过我也没当一回事，不过现在想想可能就是这个操作导致IP被封的吧。
-        
-        <a href="/blog/with-regard-to-the-interpretation-of-blocked-ip/" class="more-link">Read on &rarr;</a>
-    </div>
-    <div class="meta">
-        <div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-10-28T00:00:00+08:00" pubdate data-updated="true">Oct 28<span>th</span>, 2009</time></div>
-        <div class="tags">
-
-<div class="cat">
-  
-    <a class='category' href='/blog/categories/about-blog/'>about blog</a>
-  
-</div>
-
-</div>
-        
-        <div class="comments"><a href="/blog/with-regard-to-the-interpretation-of-blocked-ip/#disqus_thread">Comments</a></div>
         
 		<a class="bshareDiv" href="http://www.bshare.cn/share">share</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#uuid=&amp;style=10&amp;bgcolor=Orange&amp;ssc=false"></script>
     </div>
