@@ -4,7 +4,7 @@
   <title><![CDATA[我是清都山水郎]]></title>
   <link href="http://odinyu.github.com/atom.xml" rel="self"/>
   <link href="http://odinyu.github.com/"/>
-  <updated>2012-10-19T15:32:40+08:00</updated>
+  <updated>2012-12-21T21:54:45+08:00</updated>
   <id>http://odinyu.github.com/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[失业中]]></title>
+    <link href="http://odinyu.github.com/blog/being-unemployed/"/>
+    <updated>2012-12-21T21:43:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/being-unemployed</id>
+    <content type="html"><![CDATA[<p>这周二我正式失业，工作了2年多的公司结束了一切业务，包括我所在的部门。</p>
+
+<p>虽然说再找一份工作不会太难，但是这种感觉却并不怎么美好，尤其是刚失业的这几天我又患了感冒，整个人一点都不舒服！</p>
+
+<p>昨天和老同事聊天，有些感触，有些心动。所以心里做了一个小小的决定，准备在接下来的一个多月里暂时不找工作，而是先充实一下自己。平时忙于上班，一直没有时间，这次正应该好好利用这段时间，然后再次上路。</p>
+
+<p>准备拟定一个计划，主要是作为时间上安排的一个参考，其实感觉在家里时间过得还真是很快，所以浪费时间变得很容易。</p>
+
+<p>明天大学同寝室的同学结婚，有必要借这个机会和老同学碰碰头，拾回一点点人脉。</p>
+
+<p>一会还要去接老婆，计划晚上床上再定，就这样！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[差点被偷]]></title>
@@ -458,21 +477,6 @@
 <p>自己的身体好像越来越容易出问题，不过还好我已经开始注意，平时上下班尽量少开车多走路，争取以后工作时能经常站起来动动手脚，久坐伤身啊！</p>
 
 <p>好像吐得不多，也算是先吐为快吧，下次继续。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[disqus回复评论超方便]]></title>
-    <link href="http://odinyu.github.com/blog/disqus-is-very-convenience/"/>
-    <updated>2012-03-19T18:20:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/disqus-is-very-convenience</id>
-    <content type="html"><![CDATA[<p>disqus用下来感觉还不错，昨天又发现了一个很方便的功能，就是可以直接在disqus的通知邮件里回复评论者，很sweet!</p>
-
-<blockquote><p>You can moderate through email. Respond in the body with &#8220;Delete&#8221;. Respond in the body to post a reply comment.</p></blockquote>
-
-<p>上面是disqus通知邮件里的提示，我按提示回复了一下，果然直接在原评论后嵌套了我的回复，相当地方便，超好用!</p>
-
-<p>ps，刚才试用了一个和友言差不多的国内的社会化评论产品&#8211;评论啦，能导入wordpress，但却不能在新的网页上显示评论，也就是无法关联评论。所以现在还是继续用disqus，虽然很国外。</p>
 ]]></content>
   </entry>
   
