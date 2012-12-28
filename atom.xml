@@ -4,7 +4,7 @@
   <title><![CDATA[我是清都山水郎]]></title>
   <link href="http://odinyu.github.com/atom.xml" rel="self"/>
   <link href="http://odinyu.github.com/"/>
-  <updated>2012-12-21T21:54:45+08:00</updated>
+  <updated>2012-12-28T12:37:34+08:00</updated>
   <id>http://odinyu.github.com/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[10刀搞定godaddy2年me域名续费]]></title>
+    <link href="http://odinyu.github.com/blog/renew-host/"/>
+    <updated>2012-12-28T12:17:00+08:00</updated>
+    <id>http://odinyu.github.com/blog/renew-host</id>
+    <content type="html"><![CDATA[<p>今天一个人在家，把我自己的域名续费了2年，这下可以直接用到2015年了。</p>
+
+<p>话说godaddy上me域名续费可真是贵，竟然要19.98一年！原来去年续费的时候是利用了godaddy的一个规则，用了不到7刀成功续费1年，不过今年却不再有这等好事了。</p>
+
+<p>在网上寻寻觅觅想看下是否有其他途径可以便宜一点，终于是让我有所收获，最终只用了10刀续费2年，比较地爽！具体步骤如下：</p>
+
+<p>首先去美国的groupon（也就是团购的鼻祖）买10刀抵30刀的godaddy credit，具体方法去这个<a href="http://www.tz100.com/event/392/" title="页面">页面</a>看。</p>
+
+<p>然后我是先把域名续费加入到购物车，填上网上找来的可以省30%的优惠码“BB2086D15&#8221;,最后结账价钱变为27.98刀。</p>
+
+<p>最后就是用godaddy credit来付账，还省下了2.02刀，于是最终只是用了10刀就搞定了2年的续费。</p>
+
+<p>过日子不容易，精打细算还是需要的，呵呵。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[失业中]]></title>
@@ -458,25 +479,6 @@
 <p><img src="http://pcly6g.bay.livefilestore.com/y1pSOJncjLGuVIho6E017E8r7qlLnOHJSdIYEkGbh3qcLLzeO0ljLaU0UeO1VYLRCVq49JGsKDJrMKfLb1Lsmh3KHU972V7xTKD/ScreenShot_2012-03-23_155305%201.jpg" width="300" alt="CNAME" orihref="http://public.bay.livefilestore.com/y1pWwvZbClwynCufLVnQqLB7TZjYjOLDFl2ufIWJ6kRL1PnmPvBj6oD4VKF99UuYA47uTjeicABw0vbrGDAakNRzA/ScreenShot_2012-03-23_155305.jpg"/></p>
 
 <p>好像过个10分钟左右，dns解析就会生效，感觉还不错。在天朝就要这样地折腾，唉！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[吐槽]]></title>
-    <link href="http://odinyu.github.com/blog/tucao/"/>
-    <updated>2012-03-20T21:53:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/tucao</id>
-    <content type="html"><![CDATA[<p>在我的理解中吐槽就是抱怨的意思，虽然知道抱怨并没有什么用，不过还是要吐一下，不然憋得不舒服。</p>
-
-<p>汽油又涨了，93号直接进入8元区间，从我刚开车时2007年的5元不到涨到5年后的8元，国人的消费能力还是很值得鼓舞的。</p>
-
-<p>老婆的医院依然是那么地忙，昨天晚上10点多了还有10多个人在浑浊并充斥着病菌的空气中排队等着吊针，而我的美女只能埋头工作，还常常要担心某个脑子也需要吊水的病人的谩骂。</p>
-
-<p>工作团队的一个产品貌似社会反响还不错，不过团队中某些人的工作能力实在是不得不让人抓狂，既愤怒于他们的呆板兼麻木，又悲哀于他们的无脑兼脑残。</p>
-
-<p>自己的身体好像越来越容易出问题，不过还好我已经开始注意，平时上下班尽量少开车多走路，争取以后工作时能经常站起来动动手脚，久坐伤身啊！</p>
-
-<p>好像吐得不多，也算是先吐为快吧，下次继续。</p>
 ]]></content>
   </entry>
   

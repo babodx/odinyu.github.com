@@ -7,7 +7,7 @@
     <meta name="author" content="sleepy">
 
     
-    <meta name="description" content="Android开发环境上的小问题 昨天休息了一天，今天打开eclipse然后顺手点开Android SDK Manager并升级了一下，结果就出问题了。 首先是eclipse提示我当前的ADT版本太低，需要升级到17或以上。貌似之前也遇到过这个问题，所以也有点准备。 &hellip;">
+    <meta name="description" content="终于又可以更新博客了 好久没有更新我的博客了，这次的主要原因可不是我又怎么犯懒，而是公司的电脑不争气地挂了，而后我更换了一台。 而新电脑需要重新搭建octopress所需要的环境，碰巧我的vpn也不怎么地不能用了，于是耽搁到今天。 今天终于有时间来搞octopress相关的环境， &hellip;">
     
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
 
@@ -53,6 +53,68 @@
 </div>
 
 	<div id="content" class="inner">
+
+
+    <article class="post">
+    <h1 class="title"><a href="/blog/i-can-post-again/">终于又可以更新博客了</a></h1>
+    <div class="entry">
+        <p>好久没有更新我的博客了，这次的主要原因可不是我又怎么犯懒，而是公司的电脑不争气地挂了，而后我更换了一台。</p>
+
+<p>而新电脑需要重新搭建octopress所需要的环境，碰巧我的vpn也不怎么地不能用了，于是耽搁到今天。</p>
+
+<p>今天终于有时间来搞octopress相关的环境，在终于成功之际还是要记录一下，以备今后再用到。</p>
+
+<figure class='code'><figcaption><span>修改Rubygems镜像 </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem sources --remove http://rubygems.org/ 
+</span><span class='line'>gem sources -a http://ruby.taobao.org/
+</span><span class='line'>gem sources -l
+</span><span class='line'>gem install bundler --pre</span></code></pre></td></tr></table></div></figure>
+
+
+<p>安装完之后，修改octopress路径下gemfile的Rubygems镜像，同样是改成http://ruby.taobao.org/。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>bundle install
+</span><span class='line'>rake install</span></code></pre></td></tr></table></div></figure>
+
+
+        
+        
+    </div>
+    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-06-19T17:59:00+08:00" pubdate data-updated="true">Jun 19<span>th</span>, 2012</time></div>
+        <div class="tags">
+
+<div class="cat">
+  
+    <a class='category' href='/blog/categories/octopress/'>Octopress</a>
+  
+</div>
+
+</div>
+        
+        <div class="comments"><a href="/blog/i-can-post-again/#disqus_thread">Comments</a></div>
+        
+		<a class="bshareDiv" href="http://www.bshare.cn/share">share</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#uuid=&amp;style=10&amp;bgcolor=Orange&amp;ssc=false"></script>
+    </div>
+</article>
 
 
     <article class="post">
@@ -518,55 +580,6 @@
 </div>
         
         <div class="comments"><a href="/blog/put-dns-to-dnspod/#disqus_thread">Comments</a></div>
-        
-		<a class="bshareDiv" href="http://www.bshare.cn/share">share</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#uuid=&amp;style=10&amp;bgcolor=Orange&amp;ssc=false"></script>
-    </div>
-</article>
-
-
-    <article class="post">
-    <h1 class="title"><a href="/blog/tucao/">吐槽</a></h1>
-    <div class="entry">
-        <p>在我的理解中吐槽就是抱怨的意思，虽然知道抱怨并没有什么用，不过还是要吐一下，不然憋得不舒服。</p>
-
-<p>汽油又涨了，93号直接进入8元区间，从我刚开车时2007年的5元不到涨到5年后的8元，国人的消费能力还是很值得鼓舞的。</p>
-
-<p>老婆的医院依然是那么地忙，昨天晚上10点多了还有10多个人在浑浊并充斥着病菌的空气中排队等着吊针，而我的美女只能埋头工作，还常常要担心某个脑子也需要吊水的病人的谩骂。</p>
-
-<p>工作团队的一个产品貌似社会反响还不错，不过团队中某些人的工作能力实在是不得不让人抓狂，既愤怒于他们的呆板兼麻木，又悲哀于他们的无脑兼脑残。</p>
-
-<p>自己的身体好像越来越容易出问题，不过还好我已经开始注意，平时上下班尽量少开车多走路，争取以后工作时能经常站起来动动手脚，久坐伤身啊！</p>
-
-<p>好像吐得不多，也算是先吐为快吧，下次继续。</p>
-
-        
-        
-    </div>
-    <div class="meta">
-        <div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-03-20T21:53:00+08:00" pubdate data-updated="true">Mar 20<span>th</span>, 2012</time></div>
-        <div class="tags">
-
-<div class="cat">
-  
-    <a class='category' href='/blog/categories/normal-life/'>normal life</a>
-  
-</div>
-
-</div>
-        
-        <div class="comments"><a href="/blog/tucao/#disqus_thread">Comments</a></div>
         
 		<a class="bshareDiv" href="http://www.bshare.cn/share">share</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#uuid=&amp;style=10&amp;bgcolor=Orange&amp;ssc=false"></script>
     </div>
