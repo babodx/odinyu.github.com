@@ -7,7 +7,7 @@
     <meta name="author" content="sleepy">
 
     
-    <meta name="description" content="从iphone上发布日志到octopress 昨天在被窝里的记录 在iphone上试了几个号称支持markdown并能同步到dropbox的应用，结果都不尽如人意，最后还是选择用evernote来进行移动终端的日志记录。 其实移动终端的记录有其一定的意义，比如我现在就是躺在被窝里单手写日志， &hellip;">
+    <meta name="description" content="使用脚本发布octopress日志 经过本人不断的努力和尝试，终于可以比较舒服地并不受打扰地发布日志到octopress，这下终于爽了！哈哈！ 此举的目的 可以毫不避讳地说，是为了偷懒。 准备工作 不过为了长期地偷懒，先期还是需要做一些准备工作的。 首先是在网上找到高手写的sh脚本。 &hellip;">
     
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
 
@@ -53,6 +53,303 @@
 </div>
 
 	<div id="content" class="inner">
+
+
+    <article class="post">
+    <h1 class="title"><a href="/blog/post-octopress-via-sh-script/">使用脚本发布octopress日志</a></h1>
+    <div class="entry">
+        <p>经过本人不断的努力和尝试，终于可以比较舒服地并不受打扰地发布日志到octopress，这下终于爽了！哈哈！</p>
+
+<h3>此举的目的</h3>
+
+<p>可以毫不避讳地说，是为了偷懒。</p>
+
+<h3>准备工作</h3>
+
+<p>不过为了长期地偷懒，先期还是需要做一些准备工作的。</p>
+
+<ul>
+<li>首先是在网上找到高手写的sh脚本。</li>
+<li>然后对脚本进行修改，也就是自定义。</li>
+<li>下载并安装mktemp for windows。</li>
+</ul>
+
+
+<h3>贴出脚本</h3>
+
+<p>脚本需要放在octopress的安装目录。</p>
+
+<figure class='code'><figcaption><span> (blog.sh)</span> <a href='/downloads/code/blog.sh'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="c">#!/bin/bash</span>
+</span><span class='line'><span class="c"># Author: Hsin-Yi Chen &lt;ossug.hychen AT gmail.com&gt;</span>
+</span><span class='line'><span class="c"># Alter: Odin Yu &lt;qdssly AT gmail.com&gt;</span>
+</span><span class='line'><span class="nv">ERRMSG_WRONGDIR</span><span class="o">=</span><span class="s1">&#39;You are not under octopress directory&#39;</span>
+</span><span class='line'><span class="o">[</span> ! -f _config.yml <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="k">${</span><span class="nv">ERRMSG_WRONGDIR</span><span class="k">}</span> <span class="o">&amp;&amp;</span> <span class="nb">exit</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">BLOGDIR</span><span class="o">=</span><span class="k">${</span><span class="nv">PWD</span><span class="k">}</span>
+</span><span class='line'>
+</span><span class='line'>submit<span class="o">(){</span>
+</span><span class='line'>  <span class="nb">local </span><span class="nv">message</span><span class="o">=</span><span class="k">${</span><span class="nv">1</span><span class="p">?</span><span class="s2">&quot;requires message&quot;</span><span class="k">}</span>
+</span><span class='line'>  git add .
+</span><span class='line'>  git commit -m <span class="k">${</span><span class="nv">message</span><span class="k">}</span>
+</span><span class='line'>  git push origin <span class="nb">source</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>update<span class="o">(){</span>
+</span><span class='line'>  <span class="nb">cd </span>_deploy
+</span><span class='line'>  git pull origin master
+</span><span class='line'>  <span class="nb">cd</span> ..
+</span><span class='line'>  git pull origin <span class="nb">source</span>
+</span><span class='line'><span class="nb"> </span>rake generate
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>generate<span class="o">(){</span>
+</span><span class='line'>  rake generate
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>deploy<span class="o">(){</span>
+</span><span class='line'>  rake deploy
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>update_octopress<span class="o">(){</span>
+</span><span class='line'>  <span class="nb">echo</span> <span class="s1">&#39;upgrading octopress source&#39;</span>
+</span><span class='line'>  git pull octopress master     <span class="c"># Get the latest Octopress</span>
+</span><span class='line'>  bundle install                <span class="c"># Keep gems updated</span>
+</span><span class='line'>  rake update_source            <span class="c"># update the template&#39;s source</span>
+</span><span class='line'>  rake update_style             <span class="c"># update the template&#39;s style</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>preview<span class="o">(){</span>
+</span><span class='line'>  rake preview &amp;
+</span><span class='line'>  sleep 1
+</span><span class='line'>  ff http://127.0.0.1:4000
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>upgrade<span class="o">(){</span>
+</span><span class='line'>  update_octopress
+</span><span class='line'>  generate
+</span><span class='line'>  deploy
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># start to write new post</span>
+</span><span class='line'><span class="c"># @param: post title</span>
+</span><span class='line'>post<span class="o">(){</span>
+</span><span class='line'>  <span class="nb">local </span><span class="nv">title</span><span class="o">=</span><span class="k">${</span><span class="nv">1</span><span class="p">?</span><span class="s2">&quot;requires title&quot;</span><span class="k">}</span>
+</span><span class='line'>  _new_item post <span class="k">${</span><span class="nv">title</span><span class="k">}</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># start to write new page</span>
+</span><span class='line'><span class="c"># @param: page title</span>
+</span><span class='line'>page<span class="o">(){</span>
+</span><span class='line'>  _new_item page <span class="nv">$1</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>_new_item<span class="o">(){</span>
+</span><span class='line'>  <span class="nb">local </span><span class="nv">tmpfile</span><span class="o">=</span><span class="sb">`</span>mktemp<span class="sb">`</span>
+</span><span class='line'>  <span class="nb">local </span><span class="nv">item_name</span><span class="o">=</span><span class="k">${</span><span class="nv">1</span><span class="p">?</span><span class="s2">&quot;requires item name&quot;</span><span class="k">}</span>
+</span><span class='line'>  <span class="nb">local </span><span class="nv">title</span><span class="o">=</span><span class="k">${</span><span class="nv">2</span><span class="p">?</span><span class="s2">&quot;requires title&quot;</span><span class="k">}</span>
+</span><span class='line'>  rake new_<span class="k">${</span><span class="nv">item_name</span><span class="k">}</span><span class="o">[</span><span class="s2">&quot;${title}&quot;</span><span class="o">]</span> | tee <span class="k">${</span><span class="nv">tmpfile</span><span class="k">}</span>
+</span><span class='line'>  <span class="nb">local </span><span class="nv">file</span><span class="o">=</span><span class="sb">`</span>cat <span class="k">${</span><span class="nv">tmpfile</span><span class="k">}</span> | awk -F: <span class="s1">&#39;{print $2}&#39;</span> | sed -e <span class="s1">&#39;s/ //&#39;</span><span class="sb">`</span>
+</span><span class='line'>  md <span class="k">${</span><span class="nv">BLOGDIR</span><span class="k">}</span>/<span class="nv">$file</span>
+</span><span class='line'>  rm <span class="k">${</span><span class="nv">tmpfile</span><span class="k">}</span>
+</span><span class='line'>  <span class="c"># return file name</span>
+</span><span class='line'>  <span class="nv">RET</span><span class="o">=</span><span class="k">${</span><span class="nv">file</span><span class="k">}</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># Main</span>
+</span><span class='line'><span class="c"># ----</span>
+</span><span class='line'><span class="nv">actions</span><span class="o">=</span><span class="s2">&quot;post upgrade preview deploy&quot;</span>
+</span><span class='line'><span class="nv">action</span><span class="o">=</span><span class="k">${</span><span class="nv">1</span><span class="p">?</span><span class="s2">&quot;requirs action!, avaliabl actions are ${actions}&quot;</span><span class="k">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c"># run action</span>
+</span><span class='line'><span class="nb">shift</span>
+</span><span class='line'><span class="k">${</span><span class="nv">action</span><span class="k">}</span> <span class="nv">$@</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>我的自定义</h3>
+
+<p>上面的脚本里提到的两个我自己加的程序调用的代码如下</p>
+
+<figure class='code'><figcaption><span>md </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#!/bin/sh
+</span><span class='line'>
+</span><span class='line'>exec "c:\Users\Administrator\AppData\Local\Apps\2.0\W8LVT3AZ.YHR\5O9LMMDL.270\mark..tion_12329825c85e214b_0001.0001_aee1d4f50dc5492c\MarkdownPad" "$@"
+</span><span class='line'># 上面的路径需要自己修改</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>ff </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#!/bin/sh
+</span><span class='line'>
+</span><span class='line'>exec "d:\Program Files\Mozilla Firefox\firefox" "$@"
+</span><span class='line'># 上面的路径需要自己修改</span></code></pre></td></tr></table></div></figure>
+
+
+<p>这两个文件不要有后缀名，并放到Git安装目录里的bin目录下</p>
+
+<h3>整个日志发布的工作流</h3>
+
+<figure class='code'><figcaption><span>日志发布的步骤 </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>blog.sh update
+</span><span class='line'># 如果有多台电脑同时编辑博客的话，可能需要先更新到最新的状态
+</span><span class='line'>blog.sh post this-is-the-test-title        
+</span><span class='line'># blog.sh是我对脚本的命名
+</span><span class='line'># post是命令
+</span><span class='line'># this-is-the-test-title是日志的title，同时也是markdown文件的名字
+</span><span class='line'># 执行这条命令后我的电脑上会打开MarkdownPad来编辑新创建的markdown文件
+</span><span class='line'>blog.sh deploy
+</span><span class='line'># 执行这条命令后，会进行rake genarate和rake deploy操作，如果有发布密码则会提示
+</span><span class='line'>blog.sh submit this is work for XXX
+</span><span class='line'># 执行这条命令，即提交所有的修改到github上去</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>小结</h3>
+
+<p>通过脚本将原先需要分多次手打的命令整合到一起，这样方便操作，更适合懒人。</p>
+
+<p>脚本方面可能还需要调整和测试，不过暂时能凑合着用了。</p>
+
+        
+        
+    </div>
+    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-07T13:31:00+08:00" pubdate data-updated="true">Mar 7<span>th</span>, 2012</time></div>
+        <div class="tags">
+
+<div class="cat">
+  
+    <a class='category' href='/blog/categories/octopress/'>Octopress</a>
+  
+</div>
+
+</div>
+        
+        <div class="comments"><a href="/blog/post-octopress-via-sh-script/#disqus_thread">Comments</a></div>
+        
+		<a class="bshareDiv" href="http://www.bshare.cn/share">share</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#uuid=&amp;style=10&amp;bgcolor=Orange&amp;ssc=false"></script>
+    </div>
+</article>
 
 
     <article class="post">
@@ -721,69 +1018,6 @@
 </div>
         
         <div class="comments"><a href="/blog/first-day-of-4-days-3-nights-in-hongkong/#disqus_thread">Comments</a></div>
-        
-		<a class="bshareDiv" href="http://www.bshare.cn/share">share</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#uuid=&amp;style=10&amp;bgcolor=Orange&amp;ssc=false"></script>
-    </div>
-</article>
-
-
-    <article class="post">
-    <h1 class="title"><a href="/blog/prepare-of-4-days-3-nights-in-hongkong/">香港4天3晚自由行游记&#8211;准备篇</a></h1>
-    <div class="entry">
-        <p>10月30日-11月2日，我们一家三口终于圆满完成为期4天3晚的香港自由行旅程。整个旅程虽然有点累，不过一路充满着欢乐，所以一定要趁记忆还没有完全淡忘之时快点记录下来。</p>
-
-<p>因为不想跟团，所以一切的准备工作都要自己来做，老婆对于这些是完全不管的，美其名曰是能我完全放心，其实是她懒，呵呵。</p>
-
-<p>计划出行是在国庆之前，一家三口去申请办理了港澳通行证，20元拍照+120办证/每人。因为国庆放假，通行证是10月13日到手，总共用了20天，这个效率！</p>
-
-<p>自由行主要需要解决的是机票加酒店，对于平时基本不出上海的我来说，对这两样的预订什么的完全不懂。在拿到通行证后，在网络上参考多家旅游网站的报价后，还是选择了携程的香港4天3晚自由行，用建行单币信用卡支付立减800，总价7100。包括港龙航空2大1小往返机票和铜锣湾智选假日酒店3晚住宿，然后我在淘宝上花6元钱买了个200元的优惠码，最后实际支付了6900元。</p>
-
-<p>去的时候是个小飞机，早上8点半起飞，因为我们带小孩，可以优先登机，并且起降都很平稳，体验很好！飞机餐一般，忘记拍照了。回的时候本来应该也是同样的小飞机，不过最后坐的是个中型机，而且人很多。因为我们需要3个人坐在一起，只能坐到倒数第二排，事实证明绝对是个失误。飞机降落前15分钟开始就感觉耳朵难受，落地前俯冲的时候更是让人感觉恶心想吐，我家的小朋友直接把刚吃的全吐了，郁闷！不过回程的飞机餐还不错，味道蛮好，也如同论坛上的人所说的那样有HD冰淇淋吃。</p>
-
-<p>铜锣湾智选假日酒店的地理位置绝佳，在时代广场车库入口对面，也就是说从房间到时代广场电梯通畅的话只要3分钟！走到稍远的崇光也就6、7分钟，周边购物吃饭都超级方便。房间就香港这个超拥挤的环境来说还算是大的，1个1.5大床，卫生间干湿分离，房间内设施一应俱全。另外有一点很爽，就是可以免费无线或者有线上网，貌似香港的大部分酒店还没这个条件吧。</p>
-
-<p>补充一下，因为本身没有建行的信用卡，所以在确定这个度假产品的时候就去申请建行的信用卡，先是在网上填下表格，然后等短信通知面签，最后等卡送上门。具体花了多少时间想不起来了，不过效率应该比办通行证要高一点的。</p>
-
-<p>然后在淘宝上购买迪斯尼门票+餐券，成人235元<em>2+小童193元，美心午餐A套+晚餐E套205元</em>2。这个买得很值，我们早上到迪斯尼的时候看到排队的人挺多的，而我们直接就可以进入，且还便宜。餐券更是满意，本来还担心量少可能吃不饱，事实上我们一家三口正好都能吃饱而不撑，味道还很不错，完全不是国内什么什么乐园内的垃圾套餐可比。</p>
-
-<p>海洋公园门票，合家欢443元。八达通，成人136元*2+小童110元。行程紧张没有去，正在网上转让。</p>
-
-<p>香港手机sim卡，100港币面额38元，可上网。非常好用！因为我们电话不多，这个卡主要就是给我的iphone上网用，方便在外面看google map找路。</p>
-
-<p>其他的准备就是行程的规划了，整个过程主要使用了google、google map和evernote，然后同步到iphone和ipad上。</p>
-
-<p>最后，也是最重要的，就是换港币。我是在中国银行换的，2000人民币不到，换了2400港币。事实证明换少了，后来在香港直接东亚银行取款机上取了500港币，还在街边小店换了300多港币。</p>
-
-<p>上面就是大致的准备情况，包含少许评论，具体的评论请参考随后的相关日志。</p>
-
-        
-        
-    </div>
-    <div class="meta">
-        <div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-11-03T00:00:00+08:00" pubdate data-updated="true">Nov 3<span>rd</span>, 2011</time></div>
-        <div class="tags">
-
-<div class="cat">
-  
-    <a class='category' href='/blog/categories/normal-life/'>normal life</a>
-  
-</div>
-
-</div>
-        
-        <div class="comments"><a href="/blog/prepare-of-4-days-3-nights-in-hongkong/#disqus_thread">Comments</a></div>
         
 		<a class="bshareDiv" href="http://www.bshare.cn/share">share</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#uuid=&amp;style=10&amp;bgcolor=Orange&amp;ssc=false"></script>
     </div>
