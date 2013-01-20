@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: WordPress | 我是清都山水郎]]></title>
-  <link href="http://odinyu.github.com/blog/categories/wordpress/atom.xml" rel="self"/>
-  <link href="http://odinyu.github.com/"/>
-  <updated>2013-01-19T22:47:06+08:00</updated>
-  <id>http://odinyu.github.com/</id>
+  <link href="http://hopes4.me/blog/categories/wordpress/atom.xml" rel="self"/>
+  <link href="http://hopes4.me/"/>
+  <updated>2013-01-20T09:27:27+08:00</updated>
+  <id>http://hopes4.me/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[10秒钟完成个性化wordpress主题制作]]></title>
-    <link href="http://odinyu.github.com/blog/build-wordpress-theme-in-10-second/"/>
+    <link href="http://hopes4.me/blog/build-wordpress-theme-in-10-second/"/>
     <updated>2010-04-14T00:00:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/build-wordpress-theme-in-10-second</id>
+    <id>http://hopes4.me/blog/build-wordpress-theme-in-10-second</id>
     <content type="html"><![CDATA[<p>你绝对没有看错，的确只需要10秒钟就可以完成一个质量上乘的wordpress主题。</p>
 
 <p>一定需要的条件：会用鼠标左键。</p>
@@ -54,9 +54,9 @@
   
   <entry>
     <title type="html"><![CDATA[换了一个主题]]></title>
-    <link href="http://odinyu.github.com/blog/change-a-new-theme/"/>
+    <link href="http://hopes4.me/blog/change-a-new-theme/"/>
     <updated>2010-04-01T00:00:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/change-a-new-theme</id>
+    <id>http://hopes4.me/blog/change-a-new-theme</id>
     <content type="html"><![CDATA[<p>终于还是审美疲劳了，在整整有半年多没换主题后，今天还是没有忍住<a href="http://www.ndesign-studio.com/blog/koi-theme-release" target="_blank">Koi</a>这个主题的诱惑,把原来用的<a href="http://designdisease.com/portfolio/dilectio_wordpress_theme/" target="_blank">Dilectio</a>换了下来。</p>
 
 <p>这个<a href="http://www.ndesign-studio.com/blog/koi-theme-release" target="_blank">Koi</a>是<a href="http://www.ndesign-studio.com/" target="_blank">ndesign-studio</a>这个网站所用主题的简化版，不过还是一样的华丽，也有一个后台选项页面。</p>
@@ -73,9 +73,9 @@
   
   <entry>
     <title type="html"><![CDATA[翻译：15个非常有用的杀手级WordPress技巧]]></title>
-    <link href="http://odinyu.github.com/blog/translation-15-very-useful-tips-wordpress-killer/"/>
+    <link href="http://hopes4.me/blog/translation-15-very-useful-tips-wordpress-killer/"/>
     <updated>2009-08-13T00:00:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/translation-15-very-useful-tips-wordpress-killer</id>
+    <id>http://hopes4.me/blog/translation-15-very-useful-tips-wordpress-killer</id>
     <content type="html"><![CDATA[<p>原文作者：www.wpbeginner.com
 原文链接：<a href="http://www.wpbeginner.com/wp-tutorials/15-killer-hacks-for-wordpress-that-are-extremely-useful/" target="_blank">15 Killer Hacks for WordPress that Are Extremely Useful</a>
 <span class="alert_font">友情提示：请想尝试以下技巧的朋友在复制相关代码的时候注意单引号的全角半角问题，本人在应用过程中曾遇到过类似问题。</span>
@@ -1172,18 +1172,18 @@ WordPress有些时候博客主想要在博客上显示关于其他网站的RSS�
   
   <entry>
     <title type="html"><![CDATA[修复“日志服务不支持图片上载”的问题]]></title>
-    <link href="http://odinyu.github.com/blog/repair-log-service-does-not-support-image-upload-problem/"/>
+    <link href="http://hopes4.me/blog/repair-log-service-does-not-support-image-upload-problem/"/>
     <updated>2009-08-01T00:00:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/repair-log-service-does-not-support-image-upload-problem</id>
+    <id>http://hopes4.me/blog/repair-log-service-does-not-support-image-upload-problem</id>
     <content type="html"><![CDATA[<p>其实这个问题的产生是因为我的博客搬家的缘故，搬家的原因见<a href="http://www.hopes4.me/2009/08/01/for-a-host-i-feel-a-quick-visit-to-the-speed-of/" target="_blank">《换了个主机，感觉访问速度快点了》</a>。发现这个问题是因为我想在日志<a href="http://www.hopes4.me/2009/08/01/lomo-style-pig/" target="_blank">《LOMO风格的小猪》</a>里放一张小猪的照片，可是原来没搬家前wlw（windows live writer）支持直接上传日志里的图片到服务器上，可这次却提示“日志服务不支持图片上载”的错。  对wordpress真的是不熟，我天真地以为直接到后台的media里去上传总可以了吧，然后看到的是两行红字： <!--more-->  <font color="#ff0000">无法建立目录 /home/qdssl/public-html/../../images/uploads/2009/08。</font>  <font color="#ff0000">是否上级目录没有写权限？</font>  <font color="#000000">这下我没办法了，只能又去麻烦<a href="http://hugege.com/" target="_blank">胡戈戈</a>。据他的指引，我看到了《解决WordPress搬家后无法上传文件问题》这篇博文。这篇日志里也谈到了这个问题，作者的解决方法是直接修改数据库。</font>  <font color="#000000">我也到数据库看了下，的确是上传的路径因为搬家的关系有了改变，而数据库是直接移过来的没有作相应的修改所致。突然我想起来我好像在后台里看到有个地方是可以修改文件上传路径的，而后台的修改其实也就是在修改数据库，相比我直接去改数据库要安全得多。</font>  <font color="#000000">于是最终我在杂项里找到了修改默认上传路径的功能，修改完成后，wlw点发布即没有之前所出现的问题了。</font>  ps：搬家后wp-super-cache不能正常使用，只能停用，删除时报错，目前还是无解。另外有一段JS目前在FF、chrome、opera、safari里都能正常工作，但ie7、ie8都不行，而原先都是可以的，maybe和升级到2.8.2有关？</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[换了个主机，感觉访问速度快点了]]></title>
-    <link href="http://odinyu.github.com/blog/for-a-host-i-feel-a-quick-visit-to-the-speed-of/"/>
+    <link href="http://hopes4.me/blog/for-a-host-i-feel-a-quick-visit-to-the-speed-of/"/>
     <updated>2009-08-01T00:00:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/for-a-host-i-feel-a-quick-visit-to-the-speed-of</id>
+    <id>http://hopes4.me/blog/for-a-host-i-feel-a-quick-visit-to-the-speed-of</id>
     <content type="html"><![CDATA[<p>这两天在改博客的侧边栏的ajax调用，在改的过程中越来越感觉自己博客的访问速度好慢，ping了一下平均要340多毫秒。本来博客的访问量就不大，如果访问速度再慢，估计就更没人光顾了。  我的主机方案是购买的<a href="http://hugege.com/" target="_blank">胡戈戈</a>的site5的主机，3月份买的，当时速度还挺快的。于是直接上gtalk询问了下<a href="http://hugege.com/" target="_blank">胡戈戈</a>，得到的回答是我所在的线给天朝给干掉了，所以很慢。不过<a href="http://hugege.com/" target="_blank">胡戈戈</a>说可以帮我换个主机，而且只要花半个小时，这当然让我心动，一定是要换的。  晚上9点半多开始换，中间我出去了1小时，等我回来的时候已经一切都OK了。映射了hosts文件后再访问我的博客，速度可是比以前快得多喽！  在这里要严重地表扬一下<a href="http://hugege.com/" target="_blank">胡戈戈</a>的耐心和诚意，只要能维持目前的访问速度，我想以后我仍然还是会到他这来购买主机的。目前在考虑什么时候也把在万网注册的域名转到国外去，到时候还要去麻烦<a href="http://hugege.com/" target="_blank">胡戈戈</a>，希望他一如际往地耐心哦。</p>
 ]]></content>
   </entry>

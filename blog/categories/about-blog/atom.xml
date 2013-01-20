@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: about blog | 我是清都山水郎]]></title>
-  <link href="http://odinyu.github.com/blog/categories/about-blog/atom.xml" rel="self"/>
-  <link href="http://odinyu.github.com/"/>
-  <updated>2013-01-19T22:47:06+08:00</updated>
-  <id>http://odinyu.github.com/</id>
+  <link href="http://hopes4.me/blog/categories/about-blog/atom.xml" rel="self"/>
+  <link href="http://hopes4.me/"/>
+  <updated>2013-01-20T09:27:27+08:00</updated>
+  <id>http://hopes4.me/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[试着用ipad来写博客]]></title>
-    <link href="http://odinyu.github.com/blog/post-with-ipad/"/>
+    <link href="http://hopes4.me/blog/post-with-ipad/"/>
     <updated>2013-01-18T21:50:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/post-with-ipad</id>
+    <id>http://hopes4.me/blog/post-with-ipad</id>
     <content type="html"><![CDATA[<p>前天终于在折腾了3个小时后，于凌晨1点把家里的ipad2从原来的4.3.3并越狱升级到5.1.1，当然也是顺手就越了。</p>
 
 <p>之所以花那么多时间，主要还是我在操作的过程中恢复了备份，以及下载固件花去了不少时间。其实5.1.1也已经是好久之前的版本了，但胜在相比6.0.1不能越狱而4.3.3太多应用已不在支持，所以果然断升级！</p>
@@ -38,9 +38,9 @@
   
   <entry>
     <title type="html"><![CDATA[10刀搞定godaddy2年me域名续费]]></title>
-    <link href="http://odinyu.github.com/blog/renew-host/"/>
+    <link href="http://hopes4.me/blog/renew-host/"/>
     <updated>2012-12-28T12:17:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/renew-host</id>
+    <id>http://hopes4.me/blog/renew-host</id>
     <content type="html"><![CDATA[<p>今天一个人在家，把我自己的域名续费了2年，这下可以直接用到2015年了。</p>
 
 <p>话说godaddy上me域名续费可真是贵，竟然要19.98一年！原来去年续费的时候是利用了godaddy的一个规则，用了不到7刀成功续费1年，不过今年却不再有这等好事了。</p>
@@ -59,9 +59,9 @@
   
   <entry>
     <title type="html"><![CDATA[将DNS解析到dnspod上]]></title>
-    <link href="http://odinyu.github.com/blog/put-dns-to-dnspod/"/>
+    <link href="http://hopes4.me/blog/put-dns-to-dnspod/"/>
     <updated>2012-03-23T16:21:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/put-dns-to-dnspod</id>
+    <id>http://hopes4.me/blog/put-dns-to-dnspod</id>
     <content type="html"><![CDATA[<p>昨天晚上无意间发现域名被墙，然后再一查，原来是godaddy又被墙了，害我也受牵连。</p>
 
 <p>之前早就想过要把dns解析到dnspod上去，但一直懒得动，不过这次终于决定要动一下了。</p>
@@ -88,9 +88,9 @@
   
   <entry>
     <title type="html"><![CDATA[鼎力支持拿福能千人挑战！]]></title>
-    <link href="http://odinyu.github.com/blog/thousands-challenges/"/>
+    <link href="http://hopes4.me/blog/thousands-challenges/"/>
     <updated>2011-05-24T00:00:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/thousands-challenges</id>
+    <id>http://hopes4.me/blog/thousands-challenges</id>
     <content type="html"><![CDATA[<p>相信已经有很多博主放上了关于拿福能的软文，同我一样在支持这个千人挑战的活动。其实我在上周就收到了拿福能的邮件，只是一忙起来就忘记处理了。</p>
 
 <p>简单介绍一下什么是拿福能吧。拿福能是个博客广吿社区.，他们的广告每天在18万个博客发布,受1千万网民游览。</p>
@@ -105,9 +105,9 @@
   
   <entry>
     <title type="html"><![CDATA[备忘：更换主题需要进行的修改]]></title>
-    <link href="http://odinyu.github.com/blog/checklist-of-something-to-do-when-change-theme/"/>
+    <link href="http://hopes4.me/blog/checklist-of-something-to-do-when-change-theme/"/>
     <updated>2010-07-09T00:00:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/checklist-of-something-to-do-when-change-theme</id>
+    <id>http://hopes4.me/blog/checklist-of-something-to-do-when-change-theme</id>
     <content type="html"><![CDATA[<p>前天换了下主题，换了之后发觉要修改的东西还是真不少，幸好我也不是很经常地在换，不过还是很有必要记下一个checklist来备忘，就直接放博客上吧。</p>
 
 <p>index.php    <br>加广告     <br>修改时间样式（视情况）     <br>增加显示被查看次数代码     <br>修改导航（视情况）     <br>修改链接到评论的锚点（视情况）</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Octopress | 我是清都山水郎]]></title>
-  <link href="http://odinyu.github.com/blog/categories/octopress/atom.xml" rel="self"/>
-  <link href="http://odinyu.github.com/"/>
-  <updated>2013-01-19T22:47:06+08:00</updated>
-  <id>http://odinyu.github.com/</id>
+  <link href="http://hopes4.me/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://hopes4.me/"/>
+  <updated>2013-01-20T09:27:27+08:00</updated>
+  <id>http://hopes4.me/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[终于又可以更新博客了]]></title>
-    <link href="http://odinyu.github.com/blog/i-can-post-again/"/>
+    <link href="http://hopes4.me/blog/i-can-post-again/"/>
     <updated>2012-06-19T17:59:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/i-can-post-again</id>
+    <id>http://hopes4.me/blog/i-can-post-again</id>
     <content type="html"><![CDATA[<p>好久没有更新我的博客了，这次的主要原因可不是我又怎么犯懒，而是公司的电脑不争气地挂了，而后我更换了一台。</p>
 
 <p>而新电脑需要重新搭建octopress所需要的环境，碰巧我的vpn也不怎么地不能用了，于是耽搁到今天。</p>
@@ -45,9 +45,9 @@
   
   <entry>
     <title type="html"><![CDATA[整合Instagram到Octopress，并且很炫！]]></title>
-    <link href="http://odinyu.github.com/blog/integrate-instagram-into-octopress/"/>
+    <link href="http://hopes4.me/blog/integrate-instagram-into-octopress/"/>
     <updated>2012-04-20T16:06:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/integrate-instagram-into-octopress</id>
+    <id>http://hopes4.me/blog/integrate-instagram-into-octopress</id>
     <content type="html"><![CDATA[<p>其实大概半个多月前就在想如何能把我用instagram拍的照片在octopress上展现出来，期间也参考了网络上几位高手的文章，不过因为种种的原因而不能实现。</p>
 
 <h3>我希望的效果</h3>
@@ -78,9 +78,9 @@
   
   <entry>
     <title type="html"><![CDATA[disqus回复评论超方便]]></title>
-    <link href="http://odinyu.github.com/blog/disqus-is-very-convenience/"/>
+    <link href="http://hopes4.me/blog/disqus-is-very-convenience/"/>
     <updated>2012-03-19T18:20:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/disqus-is-very-convenience</id>
+    <id>http://hopes4.me/blog/disqus-is-very-convenience</id>
     <content type="html"><![CDATA[<p>disqus用下来感觉还不错，昨天又发现了一个很方便的功能，就是可以直接在disqus的通知邮件里回复评论者，很sweet!</p>
 
 <blockquote><p>You can moderate through email. Respond in the body with "Delete". Respond in the body to post a reply comment.</p></blockquote>
@@ -93,9 +93,9 @@
   
   <entry>
     <title type="html"><![CDATA[用mklink把octopress直接放到dropbox同步文件夹内]]></title>
-    <link href="http://odinyu.github.com/blog/mklink-octopress-to-dropbox/"/>
+    <link href="http://hopes4.me/blog/mklink-octopress-to-dropbox/"/>
     <updated>2012-03-19T15:53:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/mklink-octopress-to-dropbox</id>
+    <id>http://hopes4.me/blog/mklink-octopress-to-dropbox</id>
     <content type="html"><![CDATA[<p>之前准备把博客迁移到octopress在google上找参考的时候，就看到有人说将octopress直接放到dropbox同步文件夹里，这样方便在多个环境内修改日志，而避免用git去pull再push的麻烦。不过那么大神没有给出解决文案，不过至少也给了一个好的思路。</p>
 
 <p>很久以前曾经看到过dropbox的使用技巧里如何将多个文件夹都能同步，在win7环境下使用mklink就能解决。然后我再次上google进行了一番查询，下面给出我自己所使用的代码。</p>
@@ -122,9 +122,9 @@
   
   <entry>
     <title type="html"><![CDATA[将我的域名指向到github上的octopress]]></title>
-    <link href="http://odinyu.github.com/blog/direct-domain-to-octopress-at-equals-github/"/>
+    <link href="http://hopes4.me/blog/direct-domain-to-octopress-at-equals-github/"/>
     <updated>2012-03-15T17:58:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/direct-domain-to-octopress-at-equals-github</id>
+    <id>http://hopes4.me/blog/direct-domain-to-octopress-at-equals-github</id>
     <content type="html"><![CDATA[<p>经过了一周时间不断加班的摧残，今天终于有空来折腾octopress了。</p>
 
 <p>想着将disqus换成友言的，希望更适合中文环境。将评论导入的过程比较麻烦，先是想在wordpress装上友言的插件，然后导出所有评论，以为这样可能会比较好导入。可是打开一看，日志的url不正确，不是我需要的那种。</p>

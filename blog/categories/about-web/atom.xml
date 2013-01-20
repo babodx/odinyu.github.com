@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: about web | 我是清都山水郎]]></title>
-  <link href="http://odinyu.github.com/blog/categories/about-web/atom.xml" rel="self"/>
-  <link href="http://odinyu.github.com/"/>
-  <updated>2013-01-19T22:47:06+08:00</updated>
-  <id>http://odinyu.github.com/</id>
+  <link href="http://hopes4.me/blog/categories/about-web/atom.xml" rel="self"/>
+  <link href="http://hopes4.me/"/>
+  <updated>2013-01-20T09:27:27+08:00</updated>
+  <id>http://hopes4.me/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[今天我又登上城墙啦]]></title>
-    <link href="http://odinyu.github.com/blog/over-the-wall-again/"/>
+    <link href="http://hopes4.me/blog/over-the-wall-again/"/>
     <updated>2012-06-25T18:18:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/over-the-wall-again</id>
+    <id>http://hopes4.me/blog/over-the-wall-again</id>
     <content type="html"><![CDATA[<p>今天终于又搞定了goagent，比想你中的简单多了，而且速度很快，很不错！</p>
 
 <p>马上要下班了，就简单地记录一下吧。</p>
@@ -26,9 +26,9 @@
   
   <entry>
     <title type="html"><![CDATA[备忘：win7临时分享网络]]></title>
-    <link href="http://odinyu.github.com/blog/memo-temporary-sharing-network-on-win7/"/>
+    <link href="http://hopes4.me/blog/memo-temporary-sharing-network-on-win7/"/>
     <updated>2011-10-09T00:00:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/memo-temporary-sharing-network-on-win7</id>
+    <id>http://hopes4.me/blog/memo-temporary-sharing-network-on-win7</id>
     <content type="html"><![CDATA[<p>本来公司在公司里有同事自己用无线路由器分享的无线信号可以用，但这两天他自己家也需要这个无线路由器，因此我的iphone就没法在公司用wifi上网了，有点不大方便。</p>
 
 <p>碰巧在威锋上看帖子的时候看到一个关于如何用pc上的无线网卡分享网络给移动设备使用的教程，而且我手头也正好有一个闲置下来的usb无线网卡，这样正好可以试一下自给自足。</p>
@@ -51,9 +51,9 @@
   
   <entry>
     <title type="html"><![CDATA[firefox伪装成chrome的简单教程]]></title>
-    <link href="http://odinyu.github.com/blog/simple-tutorial-of-firefox-disguised-as-chrome-3/"/>
+    <link href="http://hopes4.me/blog/simple-tutorial-of-firefox-disguised-as-chrome-3/"/>
     <updated>2011-09-09T00:00:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/simple-tutorial-of-firefox-disguised-as-chrome-3</id>
+    <id>http://hopes4.me/blog/simple-tutorial-of-firefox-disguised-as-chrome-3</id>
     <content type="html"><![CDATA[<p>其实我的主力浏览器一直是chrome，但因为工作的需要，经常为了调试代码而使用firefox，于是就有了各种的不甘。正巧今天有空想动动手，经过一番搜索加测试，效果还是比较满意的，请参考下图。<br/>
 <img src="http://public.bay.livefilestore.com/y1pZkdB53cm8SerfkBQVkw28F43zRFn5HEq7akf1dYNpw89C-p5ZNV_U-N6H79bEWgz4rBb_J5hUrUhcKH700Cp4g/ScreenShot_2011-09-09_123117.jpg" alt="" /></p>
 
@@ -73,9 +73,9 @@
   
   <entry>
     <title type="html"><![CDATA[继续用FaWave，继续找appkey]]></title>
-    <link href="http://odinyu.github.com/blog/continue-to-use-fawave-keep-looking-appkey/"/>
+    <link href="http://hopes4.me/blog/continue-to-use-fawave-keep-looking-appkey/"/>
     <updated>2011-08-02T00:00:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/continue-to-use-fawave-keep-looking-appkey</id>
+    <id>http://hopes4.me/blog/continue-to-use-fawave-keep-looking-appkey</id>
     <content type="html"><![CDATA[<p>chrome上很好用的微博扩展FaWave前几天突然在更新新浪微博的时候报错了，后来google上查了才知道是新浪又发浪了。用惯了FaWave，所以还是根据FaWave作者的提示，用自己的appkey。</p>
 
 <p><img style="display: block; float: none; margin-left: auto; margin-right: auto" src="http://public.bay.livefilestore.com/y1pELVv5ncLDtmz3kQ9DsbzQkkWCyj4Mq0LjZ9eK3zclGRj6tccoz7pajWlQfermoLisLIwfllqeogV7LXMDbAe-A/ScreenShot_2011-08-02_135242.jpg"></p>
@@ -86,9 +86,9 @@
   
   <entry>
     <title type="html"><![CDATA[Momento无法同步新浪微博的暂时解决方案]]></title>
-    <link href="http://odinyu.github.com/blog/temporary-solution-to-synchronize-sina-microblogging-to-momento/"/>
+    <link href="http://hopes4.me/blog/temporary-solution-to-synchronize-sina-microblogging-to-momento/"/>
     <updated>2011-07-25T00:00:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/temporary-solution-to-synchronize-sina-microblogging-to-momento</id>
+    <id>http://hopes4.me/blog/temporary-solution-to-synchronize-sina-microblogging-to-momento</id>
     <content type="html"><![CDATA[<p>在天朝，玩新浪微博比twitter要方便得多，但如果要同步新浪微博的内容到其他平台就有点麻烦了。</p>
 
 <p>Momento内虽然可以使用rss feeds，但是却不能同步新浪微博的feeds，所以我的方案就是曲线救国。使用ifttt同步新浪微博的feeds到twitter，然后Momento同步twitter。</p>

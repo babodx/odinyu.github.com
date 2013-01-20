@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: about soft | 我是清都山水郎]]></title>
-  <link href="http://odinyu.github.com/blog/categories/about-soft/atom.xml" rel="self"/>
-  <link href="http://odinyu.github.com/"/>
-  <updated>2013-01-19T22:47:06+08:00</updated>
-  <id>http://odinyu.github.com/</id>
+  <link href="http://hopes4.me/blog/categories/about-soft/atom.xml" rel="self"/>
+  <link href="http://hopes4.me/"/>
+  <updated>2013-01-20T09:27:27+08:00</updated>
+  <id>http://hopes4.me/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[备忘：win7临时分享网络]]></title>
-    <link href="http://odinyu.github.com/blog/memo-temporary-sharing-network-on-win7/"/>
+    <link href="http://hopes4.me/blog/memo-temporary-sharing-network-on-win7/"/>
     <updated>2011-10-09T00:00:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/memo-temporary-sharing-network-on-win7</id>
+    <id>http://hopes4.me/blog/memo-temporary-sharing-network-on-win7</id>
     <content type="html"><![CDATA[<p>本来公司在公司里有同事自己用无线路由器分享的无线信号可以用，但这两天他自己家也需要这个无线路由器，因此我的iphone就没法在公司用wifi上网了，有点不大方便。</p>
 
 <p>碰巧在威锋上看帖子的时候看到一个关于如何用pc上的无线网卡分享网络给移动设备使用的教程，而且我手头也正好有一个闲置下来的usb无线网卡，这样正好可以试一下自给自足。</p>
@@ -40,9 +40,9 @@
   
   <entry>
     <title type="html"><![CDATA[美女时钟2010年底送福利]]></title>
-    <link href="http://odinyu.github.com/blog/benefits-of-beauty-clock/"/>
+    <link href="http://hopes4.me/blog/benefits-of-beauty-clock/"/>
     <updated>2010-12-27T00:00:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/benefits-of-beauty-clock</id>
+    <id>http://hopes4.me/blog/benefits-of-beauty-clock</id>
     <content type="html"><![CDATA[<p>好久没有空去弄这个chrome的扩展，主要原因是感觉扩展本身没有什么大的发展空间，想不出有什么可以再加进去的功能。</p>
 
 <p>不过上了一下小日本的“美女时钟”网站，发觉突然增加了10多个美女的来源。也别说，日本美女的质量还真是不赖，所以就利用一点点的空余时间把这些美女当成年底的福利送给还在用我这个扩展的朋友。</p>
@@ -59,9 +59,9 @@
   
   <entry>
     <title type="html"><![CDATA[最新版的windows live messenger]]></title>
-    <link href="http://odinyu.github.com/blog/use-new-version-of-windows-live-messenger/"/>
+    <link href="http://hopes4.me/blog/use-new-version-of-windows-live-messenger/"/>
     <updated>2010-07-16T00:00:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/use-new-version-of-windows-live-messenger</id>
+    <id>http://hopes4.me/blog/use-new-version-of-windows-live-messenger</id>
     <content type="html"><![CDATA[<p>之前已经介绍了<a href="http://www.hopes4.me/html/use-new-version-windows-live-writer/" target="_blank">最新版的windows live writer</a>，而和wlw一同安装的msn同样也有蛮多地方是与以前大不相同的，还是蛮不错的。</p>
 
 <div><img style="border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto" title="" border="0" alt="紧凑模式" src="http://public.bay.livefilestore.com/y1pTI-K2A-8SRbDEO0mo9Vht_bADMUxQhPHzsEd7H3yeDo2d1T3gamADOAjuuMkbYjJ_4hlGTxyTbuL4o8AHLbMGg"></div>
@@ -122,9 +122,9 @@
   
   <entry>
     <title type="html"><![CDATA[最新版的windows live writer]]></title>
-    <link href="http://odinyu.github.com/blog/use-new-version-windows-live-writer/"/>
+    <link href="http://hopes4.me/blog/use-new-version-windows-live-writer/"/>
     <updated>2010-07-15T00:00:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/use-new-version-windows-live-writer</id>
+    <id>http://hopes4.me/blog/use-new-version-windows-live-writer</id>
     <content type="html"><![CDATA[<p>windows live新的软件包应该是早几天就发布了的，里面我唯一需要的也就是windows live writer(下面简称wlw)。方便大家下载，我这直接放出链接，<a href="http://explore.live.com/windows-live-essentials-beta" target="_blank">Windows Live Essentials beta</a>，可以选择简体中文版，大小是1.1M。</p>
 
 <p>双击下载好的安装文件，会出现如下图</p>
@@ -175,9 +175,9 @@
   
   <entry>
     <title type="html"><![CDATA[轻松解决dedecms5.6发布文章后空白的bug]]></title>
-    <link href="http://odinyu.github.com/blog/handle-the-bug-of-dedecms56-easily/"/>
+    <link href="http://hopes4.me/blog/handle-the-bug-of-dedecms56-easily/"/>
     <updated>2010-07-14T00:00:00+08:00</updated>
-    <id>http://odinyu.github.com/blog/handle-the-bug-of-dedecms56-easily</id>
+    <id>http://hopes4.me/blog/handle-the-bug-of-dedecms56-easily</id>
     <content type="html"><![CDATA[<p>这两天在用dedecms5.6做一个项目，上传好了模板添加文档，填好内容后点击保存，页面上是一片空白，等很久也没有反应。然后可以在“网站栏目管理”那看到文档数增加，但却看不到新增的文档，在相应的路径里也看不到新生成的文档。</p>
 
 <p>放狗搜索后终于找到答案，解决起来也很方便，因此留下此日志以备忘。解决方法：</p>
