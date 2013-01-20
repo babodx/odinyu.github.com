@@ -4,8 +4,36 @@
 		<description><![CDATA[我是清都山水郎]]></description>
 		<title><![CDATA[我是清都山水郎]]></title>
 		<link>http://hopes4.me/</link>
-		<pubDate>2013-01-20T09:27:27+08:00</pubDate>
+		<pubDate>2013-01-20T09:52:41+08:00</pubDate>
 
+		
+		<item>
+			<description>
+				<![CDATA[
+				<p>昨天也是忽然想起来到自己的博客上看看，发觉disqus居然不显示了，第一感觉是不是给屏蔽了，用代理一上果然又可以显示了。</p>
+
+<p>考虑到国情使然，想着是不是换成之前也试用过的友言或者多说，不过再试之下还是很失望。</p>
+
+<p>先说友言吧，因为之前已经试用过，所以再次使用没什么困难，唯一要做的就是导入已有的评论。友言仅支持json格式导入，我试着用官网上提供的模板想测试一下导入，可惜怎么也不能成功，只能放弃。</p>
+
+<p>再看多说吧，我明明之前注册使用过，如今却面临没法登录的问题，因为多说现在只支持用第三方账号来登录而根本不支持自身的注册用户。好吧我用百度账号登录上去，新建网站却提示我要建的网站已经存在，也就是说我之前注册的账号还是存在而我却无法使用，也只能放弃。</p>
+
+<p>然后又搜索到同样是社会化评论的评论吧和灯鹭，看了下评论吧已经和友言合并，而灯鹭没有评论导入功能，同样都不适合我。</p>
+
+<p>休息了一会，突然想到是不是别人的博客是不是也不能用disqus，因为好像之前没有听说disqus给墙的消息。终于在别人的博客上看到disqus显示很正常，这样也就是说是我的disqus的设置有问题。经过仔细地查找，终于发现我的octopress的_config.yml上的url填写的不对，应该是我现在的域名，而我却错误地填成了gihub page的地址，这应该是之前博客刚建立时域名还没有绑定时填写的。</p>
+
+<p>问题找到并解决后，我的disqus也终于可以显示了，搞定！</p>
+
+				Included file &#8216;post/copyright.html&#8217; not found in _includes directory
+				]]>
+			</description>
+			<title><![CDATA[搞定博客上disqus不显示的问题]]></title>
+			<link>http://hopes4.me/blog/handle-disqus/</link>
+			<pubDate>2013-01-20T09:31:00+08:00</pubDate>
+			<guid isPermaLink="false">http://hopes4.me/blog/handle-disqus</guid>
+
+			<source url="http://hopes4.me/rss.xml"><![CDATA[我是清都山水郎]]></source>
+		</item>
 		
 		<item>
 			<description>
@@ -574,38 +602,6 @@
 			<link>http://hopes4.me/blog/bad-luck/</link>
 			<pubDate>2012-04-17T15:18:00+08:00</pubDate>
 			<guid isPermaLink="false">http://hopes4.me/blog/bad-luck</guid>
-
-			<source url="http://hopes4.me/rss.xml"><![CDATA[我是清都山水郎]]></source>
-		</item>
-		
-		<item>
-			<description>
-				<![CDATA[
-				<p>其实老婆一直很想换个手机，只是她因为目前那个手机还没有坏而有点不太舍得。不过在我三番五次地劝说加诱惑下，上周日终于同意入手一个新手机。</p>
-
-<p>因为我在用iphone4，而她的老手机是android系统，之前我们又都用过一段时间的黑莓，所以这次就直接考虑windows phone系统了。看了一下目前已经出口的windows phone手机，适合我老婆用的也就lumia 800了。</p>
-
-<p>于是周日一早就直接到不夜城，原来想入一个白的，可是白的要比红的贵至少200元，想想也没太大意思就入了品红的。网上卖的lumia 800都说自己的是港行，可其实港行又有何优势呢。所以也没管入手的哪个版本的，只要不是翻新或问题机就行。</p>
-
-<p>2800元，手机+充电器+贴膜+套，后来查下来是台湾版。买来是11501的固件，现在已经刷到12070，目前用下来没什么问题，只是操作习惯需要适应。</p>
-
-<p>写完日志才想起来还没给新手机拍照，呵呵，晚上回去有空补拍了再上传。</p>
-
-<p>iphone4拍的，随便看看吧</p>
-
-<p><img src="http://pcly6g.bay.livefilestore.com/y1pS3GCBrNIwD-R2fAUJDRZzND36AG2oteZ6XhA7JLGgX_GJ4T9B6GB9SgnBhh_77ZpTc3JCWhZzlzf2mDlY1JAIQK92KIWSzhk/IMG_3687%201.JPG" width="300" alt="正侧面" orihref="http://public.bay.livefilestore.com/y1pDCWkCRPpY0yGXZulOguh1Z3lfHr-BMaZOVsEU3X-VRHUOo1htUeOzw0pl9a6rT74NLOuyw6LD1TFp9FYCb9HDQ/IMG_3687.JPG"/></p>
-
-<p><img src="http://pcly6g.bay.livefilestore.com/y1p9te7uAqEuzc1Q1MGYLu_-5g3LD3XwpoFCapHLMM9wJ8f9b5DTRSRHaOMdLPI237RKSuW5cvuZFvZ8KXH5ZboKdM-bZYFPQ0t/IMG_3688%201.JPG" width="300" alt="侧面" orihref="http://public.bay.livefilestore.com/y1pGEe0Js6F0L6qQu3EqK0CNMBQSATUP2vydBPzAre1frsau6lT4MRkoqOmG2uQGtpGN0T8_oH4vnX-EUhppskX3g/IMG_3688.JPG"/></p>
-
-<p><img src="http://pcly6g.bay.livefilestore.com/y1pLASrgBYeH_XoVrU9UAYu8QHDsjOk3-zPSQ9xH66-2JaO12R-jbKn3Th9kIjIZHqsAdE0mrJW8Q5NIQ0DsS3O_LxVNCi5SrlE/IMG_3689%201.JPG" width="300" alt="背面" orihref="http://public.bay.livefilestore.com/y1p8se1qgUT1ckhgZ-D7Y3k6_fvkyU6YF4dfn_UlbonM-tU7F0vPCq75AYF22Z0fxULnQKnmjt6FOJJlXOTLugghg/IMG_3689.JPG"/></p>
-
-				Included file &#8216;post/copyright.html&#8217; not found in _includes directory
-				]]>
-			</description>
-			<title><![CDATA[lumia 800]]></title>
-			<link>http://hopes4.me/blog/lumia-800/</link>
-			<pubDate>2012-04-13T16:54:00+08:00</pubDate>
-			<guid isPermaLink="false">http://hopes4.me/blog/lumia-800</guid>
 
 			<source url="http://hopes4.me/rss.xml"><![CDATA[我是清都山水郎]]></source>
 		</item>

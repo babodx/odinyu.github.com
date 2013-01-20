@@ -4,7 +4,7 @@
   <title><![CDATA[Category: about blog | 我是清都山水郎]]></title>
   <link href="http://hopes4.me/blog/categories/about-blog/atom.xml" rel="self"/>
   <link href="http://hopes4.me/"/>
-  <updated>2013-01-20T09:27:27+08:00</updated>
+  <updated>2013-01-20T09:52:41+08:00</updated>
   <id>http://hopes4.me/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[搞定博客上disqus不显示的问题]]></title>
+    <link href="http://hopes4.me/blog/handle-disqus/"/>
+    <updated>2013-01-20T09:31:00+08:00</updated>
+    <id>http://hopes4.me/blog/handle-disqus</id>
+    <content type="html"><![CDATA[<p>昨天也是忽然想起来到自己的博客上看看，发觉disqus居然不显示了，第一感觉是不是给屏蔽了，用代理一上果然又可以显示了。</p>
+
+<p>考虑到国情使然，想着是不是换成之前也试用过的友言或者多说，不过再试之下还是很失望。</p>
+
+<p>先说友言吧，因为之前已经试用过，所以再次使用没什么困难，唯一要做的就是导入已有的评论。友言仅支持json格式导入，我试着用官网上提供的模板想测试一下导入，可惜怎么也不能成功，只能放弃。</p>
+
+<p>再看多说吧，我明明之前注册使用过，如今却面临没法登录的问题，因为多说现在只支持用第三方账号来登录而根本不支持自身的注册用户。好吧我用百度账号登录上去，新建网站却提示我要建的网站已经存在，也就是说我之前注册的账号还是存在而我却无法使用，也只能放弃。</p>
+
+<p>然后又搜索到同样是社会化评论的评论吧和灯鹭，看了下评论吧已经和友言合并，而灯鹭没有评论导入功能，同样都不适合我。</p>
+
+<p>休息了一会，突然想到是不是别人的博客是不是也不能用disqus，因为好像之前没有听说disqus给墙的消息。终于在别人的博客上看到disqus显示很正常，这样也就是说是我的disqus的设置有问题。经过仔细地查找，终于发现我的octopress的_config.yml上的url填写的不对，应该是我现在的域名，而我却错误地填成了gihub page的地址，这应该是之前博客刚建立时域名还没有绑定时填写的。</p>
+
+<p>问题找到并解决后，我的disqus也终于可以显示了，搞定！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[试着用ipad来写博客]]></title>
@@ -100,35 +121,6 @@
 <p>我估计我应该可以跻身前1000名，同时我也希望看到这篇日志同时也想参加的朋友也能如愿。</p>
 
 <p>最后，当然是要加上这次活动的链接啦，<a href="http://www.nuffnang.com.cn/blog/2011/05/23/challenge-1000" target="_blank">请猛击</a>！</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[备忘：更换主题需要进行的修改]]></title>
-    <link href="http://hopes4.me/blog/checklist-of-something-to-do-when-change-theme/"/>
-    <updated>2010-07-09T00:00:00+08:00</updated>
-    <id>http://hopes4.me/blog/checklist-of-something-to-do-when-change-theme</id>
-    <content type="html"><![CDATA[<p>前天换了下主题，换了之后发觉要修改的东西还是真不少，幸好我也不是很经常地在换，不过还是很有必要记下一个checklist来备忘，就直接放博客上吧。</p>
-
-<p>index.php    <br>加广告     <br>修改时间样式（视情况）     <br>增加显示被查看次数代码     <br>修改导航（视情况）     <br>修改链接到评论的锚点（视情况）</p>
-
-<p>single.php    <br>加广告     <br>修改时间样式（视情况）     <br>增加显示被查看次数代码     <br>修改导航（视情况）     <br>修改链接到评论的锚点（视情况）</p>
-
-<p>comments.php    <br>增加锚点（视情况）</p>
-
-<p>function.php    <br>增加需要的函数</p>
-
-<p>style.css    <br>去掉logo图片后保持原有的高度     <br>修改日志标题的字体大小     <br>段首空两格     <br>侧边栏增加相应的栏位     <br>博客标题样式     <br>读者墙样式</p>
-
-<p>sidebar.php    <br>增加或减少栏位     <br>设置在首页和内页不同的显示</p>
-
-<p>archive.php    <br>移动导航的位置</p>
-
-<p>search.php    <br>移动导航的位置</p>
-
-<p>header.php    <br>修改favicon     <br>修改rss链接     <br>修改logo</p>
-
-<p>footer.php    <br>增加需要的js和google跟踪代码</p>
 ]]></content>
   </entry>
   
