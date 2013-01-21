@@ -4,7 +4,7 @@
   <title><![CDATA[我是清都山水郎]]></title>
   <link href="http://hopes4.me/atom.xml" rel="self"/>
   <link href="http://hopes4.me/"/>
-  <updated>2013-01-21T10:26:20+08:00</updated>
+  <updated>2013-01-21T10:41:06+08:00</updated>
   <id>http://hopes4.me/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
@@ -22,7 +22,50 @@
 
 <p>经过网上搜索别人博客上贴出的脚本，根据自己服务的情况进行了一下修改，下面贴出脚本：</p>
 
-<p>Liquid error: No such file or directory - python -c &#8220;import sys; print sys.executable&#8221;</p>
+<figure class='code'><figcaption><span>自动重启tomcat脚本 </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>echo ========================================
+</span><span class='line'>date
+</span><span class='line'>cd /root/script
+</span><span class='line'>rm -f index.html
+</span><span class='line'>wget -T 10 -t 3 -q http://127.0.0.1:8080/
+</span><span class='line'>if [ ! -e index.html ]; then
+</span><span class='line'>export JAVA_HOME=/usr/java/jdk1.6.0_38
+</span><span class='line'>export CLASSPATH=.:$JAVA_HOME/lib/tools.jar
+</span><span class='line'>export CATALINA_HOME=/usr/local/tomcat
+</span><span class='line'>export PATH=$JAVA_HOME/bin:$PATH
+</span><span class='line'>
+</span><span class='line'>echo "restart tomcat."
+</span><span class='line'>${CATALINA_HOME}/bin/shutdown.sh
+</span><span class='line'>sleep 150
+</span><span class='line'>kill -9 `ps aux|grep java|grep -v grep|awk '{print $2}'`
+</span><span class='line'>sleep 5
+</span><span class='line'>${CATALINA_HOME}/bin/startup.sh
+</span><span class='line'>sleep 5
+</span><span class='line'>else
+</span><span class='line'>echo "checked."
+</span><span class='line'>fi</span></code></pre></td></tr></table></div></figure>
+
 
 <p>经过本人的测试，应该是没什么问题，也总算是暂时解决了这个问题。</p>
 ]]></content>
