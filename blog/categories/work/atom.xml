@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: work | 我是清都山水郎]]></title>
+  <link href="http://hopes4.me/blog/categories/work/atom.xml" rel="self"/>
+  <link href="http://hopes4.me/"/>
+  <updated>2013-01-21T10:26:20+08:00</updated>
+  <id>http://hopes4.me/</id>
+  <author>
+    <name><![CDATA[sleepy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[linux上自动重启tomcat的脚本]]></title>
+    <link href="http://hopes4.me/blog/auto-restart-tomcat/"/>
+    <updated>2013-01-21T10:15:00+08:00</updated>
+    <id>http://hopes4.me/blog/auto-restart-tomcat</id>
+    <content type="html"><![CDATA[<p>这两天正在做的一个项目，tomcat老是会无故自己停掉，而且没有报错信息所以也无从修复。无奈之下，只能想是不是可以用定时脚本去监测tomcat是不是还在运行，然后重启tomcat。</p>
+
+<p>经过网上搜索别人博客上贴出的脚本，根据自己服务的情况进行了一下修改，下面贴出脚本：</p>
+
+<p>Liquid error: undefined method `Py_IsInitialized' for RubyPython::Python:Module</p>
+
+<p>经过本人的测试，应该是没什么问题，也总算是暂时解决了这个问题。</p>
+]]></content>
+  </entry>
+  
+</feed>

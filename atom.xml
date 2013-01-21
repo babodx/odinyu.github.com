@@ -4,7 +4,7 @@
   <title><![CDATA[我是清都山水郎]]></title>
   <link href="http://hopes4.me/atom.xml" rel="self"/>
   <link href="http://hopes4.me/"/>
-  <updated>2013-01-20T13:40:56+08:00</updated>
+  <updated>2013-01-21T10:26:20+08:00</updated>
   <id>http://hopes4.me/</id>
   <author>
     <name><![CDATA[sleepy]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[linux上自动重启tomcat的脚本]]></title>
+    <link href="http://hopes4.me/blog/auto-restart-tomcat/"/>
+    <updated>2013-01-21T10:15:00+08:00</updated>
+    <id>http://hopes4.me/blog/auto-restart-tomcat</id>
+    <content type="html"><![CDATA[<p>这两天正在做的一个项目，tomcat老是会无故自己停掉，而且没有报错信息所以也无从修复。无奈之下，只能想是不是可以用定时脚本去监测tomcat是不是还在运行，然后重启tomcat。</p>
+
+<p>经过网上搜索别人博客上贴出的脚本，根据自己服务的情况进行了一下修改，下面贴出脚本：</p>
+
+<p>Liquid error: No such file or directory - python -c &#8220;import sys; print sys.executable&#8221;</p>
+
+<p>经过本人的测试，应该是没什么问题，也总算是暂时解决了这个问题。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[这次是从iphone上写博客]]></title>
@@ -450,19 +465,6 @@
 <p>目前唯一还不能确定的是晚上运动比较好还是早上，这个有待调整。</p>
 
 <p>希望我能坚持下去，还我原本标准的“身材”。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[不得不惊叹于京东送货的速度]]></title>
-    <link href="http://hopes4.me/blog/360buy/"/>
-    <updated>2012-04-18T15:48:00+08:00</updated>
-    <id>http://hopes4.me/blog/360buy</id>
-    <content type="html"><![CDATA[<p>虽然一直在用京东买东西，也一直觉得京东送货的速度很不错，不过今天还是给震惊了一下。</p>
-
-<p>今天上午9点45左右下的订单，下午3点左右就送到了，这个速度真是让人不得不赞叹。可能是我太大惊小怪了一点，或许电子商务就应该有这样的反应速度吧，不过京东在这方面还是走在了行业的前面。</p>
-
-<p>我今天买的是一包咖啡和韩寒的《光明和磊落》，其中《光明》很让我惊奇，《磊落》又让我惊喜，很期待这本据说是亏本出售的书接下来的阅读体验。</p>
 ]]></content>
   </entry>
   
