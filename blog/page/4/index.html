@@ -7,7 +7,7 @@
     <meta name="author" content="sleepy">
 
     
-    <meta name="description" content="一周心情总结 这周总的来说心情一般，一是因为天气一直不是很好，二是工作依然忙乱。 总算是有时间来折腾octopress，其实也只是给自己一点写日志的动力，同时也让自己能稍稍动点脑筋。 接下来准备调整一下octopress的样式，并再加上一些必须的功能，虽然简单是美但也不能一点功能都没有。 &hellip;">
+    <meta name="description" content="没有重构的日子 今天我们的团队开始没有重构，也意味着痛苦的日子真正开始。 整整一天，为了一个问卷弹出框的样式搞得晕头转向，最后草草收工。 看着同事被页面上的样式问题困扰，而因为没有重构的协助只能继续痛苦。 还有同事因为样式问题周末加班到凌晨，然后周日晚上再次加班。 真是很不明白， &hellip;">
     
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
 
@@ -53,6 +53,53 @@
 </div>
 
 	<div id="content" class="inner">
+
+
+    <article class="post">
+    <h1 class="title"><a href="/blog/without-rconstruction-day/">没有重构的日子</a></h1>
+    <div class="entry">
+        <p>今天我们的团队开始没有重构，也意味着痛苦的日子真正开始。</p>
+
+<p>整整一天，为了一个问卷弹出框的样式搞得晕头转向，最后草草收工。</p>
+
+<p>看着同事被页面上的样式问题困扰，而因为没有重构的协助只能继续痛苦。</p>
+
+<p>还有同事因为样式问题周末加班到凌晨，然后周日晚上再次加班。</p>
+
+<p>真是很不明白，一个网页游戏的团队居然没有一个重构。</p>
+
+        
+        
+    </div>
+    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-12T18:15:00+08:00" pubdate data-updated="true">Mar 12<span>th</span>, 2012</time></div>
+        <div class="tags">
+
+<div class="cat">
+  
+    <a class='category' href='/blog/categories/normal-life/'>normal life</a>
+  
+</div>
+
+</div>
+        
+        <div class="comments"><a href="/blog/without-rconstruction-day/#disqus_thread">Comments</a></div>
+        
+		<a class="bshareDiv" href="http://www.bshare.cn/share">share</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#uuid=&amp;style=10&amp;bgcolor=Orange&amp;ssc=false"></script>
+    </div>
+</article>
 
 
     <article class="post">
@@ -849,144 +896,6 @@
 </div>
         
         <div class="comments"><a href="/blog/thunder-before-jingzhe/#disqus_thread">Comments</a></div>
-        
-		<a class="bshareDiv" href="http://www.bshare.cn/share">share</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#uuid=&amp;style=10&amp;bgcolor=Orange&amp;ssc=false"></script>
-    </div>
-</article>
-
-
-    <article class="post">
-    <h1 class="title"><a href="/blog/introduce-octopress-on-github/">在github上用octopress搭建博客过程纪要</a></h1>
-    <div class="entry">
-        <p>几个小时之前刚在github pages上使用octopress搭建了一个博客副本。本来基于本人一贯拖延的作风，是想过几天再记录整个过程的，但是正好在通宵工作但又暂时无事可干中，所以还是趁记忆还比较清晰的时候来搞定它。</p>
-
-<p>在开始写过程之前先要交待一下我为什么要去做这件事，又或者说是这么做有什么好处：</p>
-
-<ul>
-<li>首先这么做需要那么一点点伪技术，所以看上去就会比较geek一点。</li>
-<li>其次这整个服务的搭建是完全免费的，可能对于比较穷困的专业挨踢的我来说会是一个开源节流的渠道。</li>
-<li>然后用octopress来写博客，最后发布的动作很cool。</li>
-</ul>
-
-
-<figure class='code'><figcaption><span>个人感觉很帅气 </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate
-</span><span class='line'>rake preview
-</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>最后则是离线写博客很舒服，拥有纯文本markdown，良好的html支持，不使用数据库，完美的版本控制，静态页面生成等诸多优点。</li>
-</ul>
-
-
-<p>好了，现在开始整个服务搭建过程记录，可能比较长：</p>
-
-<h3>安装Git并进行配置</h3>
-
-<ul>
-<li>先注册一个github账号。</li>
-<li>下载并安装Git。</li>
-<li>到Git的安装目录找到Git Bash.lnk并打开。</li>
-<li>执行<code>ssh-keygen -t rsa -C "your_email@youremail.com"</code>，回车。</li>
-<li>然后输入两遍密码。</li>
-<li>到c:\Users\用户名.ssh\目录找到id_rsa.pub，并用文本软件打开复制全部。</li>
-<li>到github网站选择“Account Settings”>>“SSH Public Keys”>>“Add another public key”，将刚才复制的内容粘贴到key文本框内。</li>
-</ul>
-
-
-<h3>建立github pages</h3>
-
-<ul>
-<li>创建一个新的Repository。这里需要注意的是，如果想要博客的首页是http://yourname.github.com，则Repository的project name就必须是yourname.github.com。</li>
-<li>根据github给出的指导进行一些命令的键入，即可完成pages的建立。</li>
-</ul>
-
-
-<h3>安装Ruby</h3>
-
-<ul>
-<li>这里要指出一点的是，因为我是在windows里安装，所以采用了<a href="http://rubyinstaller.org/">RubyInstaller</a>的方式，下载这个软件需要翻墙。</li>
-<li>另外别忘记在同一个网站上下载<a href="http://rubyinstaller.org/add-ons/devkit/">DevKit</a>，必须安装。</li>
-</ul>
-
-
-<h3>安装octopress</h3>
-
-<ul>
-<li>获取octopress，执行<code>git clone git://github.com/imathis/octopress.git myblog</code>。</li>
-<li>gem install bundler（记得翻墙）</li>
-<li>bundle install（还是要翻墙）</li>
-<li>rake install</li>
-</ul>
-
-
-<p>到了这一步基本上可以开始写日志了，不过这里要给出两个小的tips。</p>
-
-<h3>修改配置</h3>
-
-<ul>
-<li>将octopress的目录内的_config.yml的编码改成UTF-8。</li>
-<li>到Ruby的安装目录\lib\ruby\gems\1.9.1\gems\jekyll-0.11.0\lib\jekyll\找到convertible.rb这个文件，修改<code>self.content = File.read(File.join(base, name))</code>为<code>self.content = File.read(File.join(base, name), :encoding =&gt; "utf-8")</code>。</li>
-<li>修改配置文件_config.yml，修改url、title、subtitle、author等等。</li>
-</ul>
-
-
-<h3>总算到了激动人心的一步了，开始写日志</h3>
-
-<ul>
-<li>执行<code>rake new_post["my first blog"]</code>，这样会在octopress的/source/_post下生成一个markdown文件，可以用文本软件进行编辑</li>
-<li>完成编辑后执行<code>rake generate</code>，生成。</li>
-<li>执行<code>rake preview</code>地，可以在浏览器内以<a href="http://127.0.0.1:4000">这个地址</a>进行预览。</li>
-<li>最后执行<code>rake deploy</code>，将日志提交到github上，完美收工！</li>
-</ul>
-
-
-<h3>补充一点</h3>
-
-<p>最后的但并不最不重要的，我们需要将修改的日志同步到github上，因此下面的3个命令也是必须的。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git add .
-</span><span class='line'>git commit -m 'your message'
-</span><span class='line'>git push origin source</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-        
-        
-    </div>
-    <div class="meta">
-        <div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-02-29T01:25:00+08:00" pubdate data-updated="true">Feb 29<span>th</span>, 2012</time></div>
-        <div class="tags">
-
-<div class="cat">
-  
-    <a class='category' href='/blog/categories/octopress/'>octopress</a>
-  
-</div>
-
-</div>
-        
-        <div class="comments"><a href="/blog/introduce-octopress-on-github/#disqus_thread">Comments</a></div>
         
 		<a class="bshareDiv" href="http://www.bshare.cn/share">share</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#uuid=&amp;style=10&amp;bgcolor=Orange&amp;ssc=false"></script>
     </div>

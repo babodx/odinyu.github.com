@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ios | 我是清都山水郎]]></title>
+  <link href="http://hopes4.me/blog/categories/ios/atom.xml" rel="self"/>
+  <link href="http://hopes4.me/"/>
+  <updated>2013-01-21T21:42:19+08:00</updated>
+  <id>http://hopes4.me/</id>
+  <author>
+    <name><![CDATA[sleepy]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[选择IA Writer还是byword]]></title>
+    <link href="http://hopes4.me/blog/iawriter-or-byword/"/>
+    <updated>2013-01-21T15:30:00+08:00</updated>
+    <id>http://hopes4.me/blog/iawriter-or-byword</id>
+    <content type="html"><![CDATA[<p>虽然ios文字上文字输入的需求并不是很急迫，但是我还是在网上寻找了一些相关的评论。有喜欢IA Writer简洁优美的，也有喜欢byword在markdown方面功能较强的。因为两个应用都不是免费应用，所以选择一个入手并好好地使用对我来说还是比较重要的。</p>
+
+<p>不过我之前使用IA Writer写博客的体验过程中，基本上感觉良好，配合百度五笔输入法，还是很有效率的。IA Writer唯一有点让我感觉比不过byword的就是没有markdown标签的快捷输入，不过我想这个问题或许可以通过自己将markdown语法再好好熟悉一下就应该能解决的。</p>
+
+<p>另外，我相如果之前在网上诟病IA Writer没有黑白主题可选、不能预览markdown效果的朋友，在去它家官网仔细看一下使用说明后应该也会紧紧地闭上嘴的吧。</p>
+
+<p>所以，我准备先入手IA Writer，然后等待它家的不断更新(好像它家上次更新已经是去年10月底的时候了)，同时用着越狱后“免费”安装的byword，再做深度比较。</p>
+]]></content>
+  </entry>
+  
+</feed>

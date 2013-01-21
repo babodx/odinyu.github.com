@@ -4,8 +4,30 @@
 		<description><![CDATA[我是清都山水郎]]></description>
 		<title><![CDATA[我是清都山水郎]]></title>
 		<link>http://hopes4.me/</link>
-		<pubDate>2013-01-21T10:41:06+08:00</pubDate>
+		<pubDate>2013-01-21T21:42:19+08:00</pubDate>
 
+		
+		<item>
+			<description>
+				<![CDATA[
+				<p>虽然ios文字上文字输入的需求并不是很急迫，但是我还是在网上寻找了一些相关的评论。有喜欢IA Writer简洁优美的，也有喜欢byword在markdown方面功能较强的。因为两个应用都不是免费应用，所以选择一个入手并好好地使用对我来说还是比较重要的。</p>
+
+<p>不过我之前使用IA Writer写博客的体验过程中，基本上感觉良好，配合百度五笔输入法，还是很有效率的。IA Writer唯一有点让我感觉比不过byword的就是没有markdown标签的快捷输入，不过我想这个问题或许可以通过自己将markdown语法再好好熟悉一下就应该能解决的。</p>
+
+<p>另外，我相如果之前在网上诟病IA Writer没有黑白主题可选、不能预览markdown效果的朋友，在去它家官网仔细看一下使用说明后应该也会紧紧地闭上嘴的吧。</p>
+
+<p>所以，我准备先入手IA Writer，然后等待它家的不断更新(好像它家上次更新已经是去年10月底的时候了)，同时用着越狱后“免费”安装的byword，再做深度比较。</p>
+
+				Included file &#8216;post/copyright.html&#8217; not found in _includes directory
+				]]>
+			</description>
+			<title><![CDATA[选择IA Writer还是byword]]></title>
+			<link>http://hopes4.me/blog/iawriter-or-byword/</link>
+			<pubDate>2013-01-21T15:30:00+08:00</pubDate>
+			<guid isPermaLink="false">http://hopes4.me/blog/iawriter-or-byword</guid>
+
+			<source url="http://hopes4.me/rss.xml"><![CDATA[我是清都山水郎]]></source>
+		</item>
 		
 		<item>
 			<description>
@@ -615,32 +637,6 @@
 			<link>http://hopes4.me/blog/integrate-instagram-into-octopress/</link>
 			<pubDate>2012-04-20T16:06:00+08:00</pubDate>
 			<guid isPermaLink="false">http://hopes4.me/blog/integrate-instagram-into-octopress</guid>
-
-			<source url="http://hopes4.me/rss.xml"><![CDATA[我是清都山水郎]]></source>
-		</item>
-		
-		<item>
-			<description>
-				<![CDATA[
-				<p>终于在老婆不断地对我的严重走样的身材的抱怨下屈服，今天晚上我绕着小区快走了4圈并小跑了1圈，算是全民健身运动的开始。</p>
-
-<p>说实话，结婚后一直在发胖，至少多了20多斤肉。过于庞大的肚子不仅看上去不太雅观，而且也可能是今后各种疾病的诱因。</p>
-
-<p>所以，痛定思痛之下，还是决定开始进行比较简单的健身活动。</p>
-
-<p>第一次的运动下来，感觉快走比较适合自己，而跑步对我的膝盖会是个负担。所以今后还是以快走为主，持之以恒总会有效果的。</p>
-
-<p>目前唯一还不能确定的是晚上运动比较好还是早上，这个有待调整。</p>
-
-<p>希望我能坚持下去，还我原本标准的“身材”。</p>
-
-				Included file &#8216;post/copyright.html&#8217; not found in _includes directory
-				]]>
-			</description>
-			<title><![CDATA[今天开始健身]]></title>
-			<link>http://hopes4.me/blog/fitness/</link>
-			<pubDate>2012-04-19T21:43:00+08:00</pubDate>
-			<guid isPermaLink="false">http://hopes4.me/blog/fitness</guid>
 
 			<source url="http://hopes4.me/rss.xml"><![CDATA[我是清都山水郎]]></source>
 		</item>
