@@ -4,8 +4,36 @@
 		<description><![CDATA[我是清都山水郎]]></description>
 		<title><![CDATA[我是清都山水郎]]></title>
 		<link>http://hopes4.me/</link>
-		<pubDate>2013-01-21T21:42:19+08:00</pubDate>
+		<pubDate>2013-01-26T10:24:38+08:00</pubDate>
 
+		
+		<item>
+			<description>
+				<![CDATA[
+				<p>今天去一家公司面试了，早到了半个多小时，想想太早上去也不是很好，于是就在楼下的街心花园里小坐了一会。</p>
+
+<p>进了公司支会了前台便在一边等着被面，期间看了会公司的内部刊物。一会就有个女生，应该是HR吧，给我表格和题目，让我半小时内填写完毕。</p>
+
+<p>唉，想想一把岁数了，面试居然还要做题，真是有点搞笑。不过，我题做到一半的时候，面试我的人就进来了。他倒主动和我打招呼，说以我的资历应该是不需要做题目的，然后就开始和我聊了起来。</p>
+
+<p>其实聊的内容主要还是之前做过的项目，经历过的公司，自身的发展情况，以及未来的愿景。感觉和这位主管聊得还是蛮开心的，只是不知道我是不是他所需要的人。</p>
+
+<p>在家休息了一个月后出来面试了一次，有点不大适应，不仅是感觉累，还有说不出的味道，看来是不能再休息下去了，再这样骨头要松掉了。</p>
+
+<p>回家后继续外快的事，虽然是基于现成的项目进行修改，可是要改动的东西比我相像中的要多得多。目前还剩下一些，争取明天可以搞定它。</p>
+
+<p>现在是坐在床上用ipad在完成这篇日志，老婆已经在边上睡着了，睡得可真是香啊，希望她梦里都是美好的东西!</p>
+
+				Included file &#8216;post/copyright.html&#8217; not found in _includes directory
+				]]>
+			</description>
+			<title><![CDATA[Interview]]></title>
+			<link>http://hopes4.me/blog/interview/</link>
+			<pubDate>2013-01-25T00:00:00+08:00</pubDate>
+			<guid isPermaLink="false">http://hopes4.me/blog/interview</guid>
+
+			<source url="http://hopes4.me/rss.xml"><![CDATA[我是清都山水郎]]></source>
+		</item>
 		
 		<item>
 			<description>
@@ -597,46 +625,6 @@
 			<link>http://hopes4.me/blog/android-app/</link>
 			<pubDate>2012-05-08T16:39:00+08:00</pubDate>
 			<guid isPermaLink="false">http://hopes4.me/blog/android-app</guid>
-
-			<source url="http://hopes4.me/rss.xml"><![CDATA[我是清都山水郎]]></source>
-		</item>
-		
-		<item>
-			<description>
-				<![CDATA[
-				<p>其实大概半个多月前就在想如何能把我用instagram拍的照片在octopress上展现出来，期间也参考了网络上几位高手的文章，不过因为种种的原因而不能实现。</p>
-
-<h3>我希望的效果</h3>
-
-<ul>
-<li>能即时显示instagram的照片，不过最初比较傻，居然希望可以即时自动生成一篇带instagram照片的日志，其实并没有这个必要。</li>
-<li>最好可以有比较炫的展示效果，而不只是图片阵列。</li>
-</ul>
-
-
-<h3>目前的效果</h3>
-
-<ul>
-<li>能显示最近的20张照片。</li>
-<li>展示效果很不错（见仁见智），可以参考截图，也可以直接猛击此<a href="http://hopes4.me/instagram/">链接</a>。</li>
-</ul>
-
-
-<p><img src="http://pcly6g.bay.livefilestore.com/y1pS3GCBrNIwD-mmJGoHRfPRRimvaoX7KjS5uINvKGynewtxHseTqQchLhx3hCSDoYZ23S05-BZqFibF4cUmv22pDYXodmD2RvJ/ScreenShot_2012-04-20_162110%201.jpg" width="300" alt="相册首页" orihref="http://public.bay.livefilestore.com/y1pTrxKSmTRLSgQ_ccKiEhtO6EEISHjV2MxW07-8DdFwq49mLzuREpdjVVeuSnRQj02uxCCkgPfIh-HhM_lbto62g/ScreenShot_2012-04-20_162110.jpg"/></p>
-
-<p><img src="http://pcly6g.bay.livefilestore.com/y1pfhnDhLqrLGkEDQ4tyLToif6LRNfFLFVWYsl0R0Uynb9ZhuspRRP_JeAdCF-r5G1KQ1CqVSBp_ZXdil-WTZZll-7lLChyQCTs/ScreenShot_2012-04-20_162146%201.jpg" width="300" alt="相册翻开效果" orihref="http://public.bay.livefilestore.com/y1pWRMbzCh5fe1iBz5Eonux9aodJ9WGxWFpEd8sJ5jYtM8dIJFBDl_AF6U8hrxJO8xvHAKQNiVENK-JlCGG0k5KHw/ScreenShot_2012-04-20_162146.jpg"/></p>
-
-<h3>具体实现</h3>
-
-<p>有基础的朋友可以直接看页面的源代码，修改一下api url的参数即可。</p>
-
-				Included file &#8216;post/copyright.html&#8217; not found in _includes directory
-				]]>
-			</description>
-			<title><![CDATA[整合Instagram到Octopress，并且很炫！]]></title>
-			<link>http://hopes4.me/blog/integrate-instagram-into-octopress/</link>
-			<pubDate>2012-04-20T16:06:00+08:00</pubDate>
-			<guid isPermaLink="false">http://hopes4.me/blog/integrate-instagram-into-octopress</guid>
 
 			<source url="http://hopes4.me/rss.xml"><![CDATA[我是清都山水郎]]></source>
 		</item>

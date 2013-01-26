@@ -7,7 +7,7 @@
     <meta name="author" content="sleepy">
 
     
-    <meta name="description" content="今天开始健身 终于在老婆不断地对我的严重走样的身材的抱怨下屈服，今天晚上我绕着小区快走了4圈并小跑了1圈，算是全民健身运动的开始。 说实话，结婚后一直在发胖，至少多了20多斤肉。过于庞大的肚子不仅看上去不太雅观，而且也可能是今后各种疾病的诱因。 所以，痛定思痛之下， &hellip;">
+    <meta name="description" content="整合Instagram到Octopress，并且很炫！ 其实大概半个多月前就在想如何能把我用instagram拍的照片在octopress上展现出来，期间也参考了网络上几位高手的文章，不过因为种种的原因而不能实现。 我希望的效果 能即时显示instagram的照片，不过最初比较傻， &hellip;">
     
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
 
@@ -53,6 +53,69 @@
 </div>
 
 	<div id="content" class="inner">
+
+
+    <article class="post">
+    <h1 class="title"><a href="/blog/integrate-instagram-into-octopress/">整合Instagram到Octopress，并且很炫！</a></h1>
+    <div class="entry">
+        <p>其实大概半个多月前就在想如何能把我用instagram拍的照片在octopress上展现出来，期间也参考了网络上几位高手的文章，不过因为种种的原因而不能实现。</p>
+
+<h3>我希望的效果</h3>
+
+<ul>
+<li>能即时显示instagram的照片，不过最初比较傻，居然希望可以即时自动生成一篇带instagram照片的日志，其实并没有这个必要。</li>
+<li>最好可以有比较炫的展示效果，而不只是图片阵列。</li>
+</ul>
+
+
+<h3>目前的效果</h3>
+
+<ul>
+<li>能显示最近的20张照片。</li>
+<li>展示效果很不错（见仁见智），可以参考截图，也可以直接猛击此<a href="http://hopes4.me/instagram/">链接</a>。</li>
+</ul>
+
+
+<p><img src="http://pcly6g.bay.livefilestore.com/y1pS3GCBrNIwD-mmJGoHRfPRRimvaoX7KjS5uINvKGynewtxHseTqQchLhx3hCSDoYZ23S05-BZqFibF4cUmv22pDYXodmD2RvJ/ScreenShot_2012-04-20_162110%201.jpg" width="300" alt="相册首页" orihref="http://public.bay.livefilestore.com/y1pTrxKSmTRLSgQ_ccKiEhtO6EEISHjV2MxW07-8DdFwq49mLzuREpdjVVeuSnRQj02uxCCkgPfIh-HhM_lbto62g/ScreenShot_2012-04-20_162110.jpg"/></p>
+
+<p><img src="http://pcly6g.bay.livefilestore.com/y1pfhnDhLqrLGkEDQ4tyLToif6LRNfFLFVWYsl0R0Uynb9ZhuspRRP_JeAdCF-r5G1KQ1CqVSBp_ZXdil-WTZZll-7lLChyQCTs/ScreenShot_2012-04-20_162146%201.jpg" width="300" alt="相册翻开效果" orihref="http://public.bay.livefilestore.com/y1pWRMbzCh5fe1iBz5Eonux9aodJ9WGxWFpEd8sJ5jYtM8dIJFBDl_AF6U8hrxJO8xvHAKQNiVENK-JlCGG0k5KHw/ScreenShot_2012-04-20_162146.jpg"/></p>
+
+<h3>具体实现</h3>
+
+<p>有基础的朋友可以直接看页面的源代码，修改一下api url的参数即可。</p>
+
+        
+        
+    </div>
+    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-04-20T16:06:00+08:00" pubdate data-updated="true">Apr 20<span>th</span>, 2012</time></div>
+        <div class="tags">
+
+<div class="cat">
+  
+    <a class='category' href='/blog/categories/octopress/'>Octopress</a>
+  
+</div>
+
+</div>
+        
+        <div class="comments"><a href="/blog/integrate-instagram-into-octopress/#disqus_thread">Comments</a></div>
+        
+		<a class="bshareDiv" href="http://www.bshare.cn/share">share</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#uuid=&amp;style=10&amp;bgcolor=Orange&amp;ssc=false"></script>
+    </div>
+</article>
 
 
     <article class="post">
@@ -507,69 +570,6 @@
 </div>
         
         <div class="comments"><a href="/blog/mklink-octopress-to-dropbox/#disqus_thread">Comments</a></div>
-        
-		<a class="bshareDiv" href="http://www.bshare.cn/share">share</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#uuid=&amp;style=10&amp;bgcolor=Orange&amp;ssc=false"></script>
-    </div>
-</article>
-
-
-    <article class="post">
-    <h1 class="title"><a href="/blog/direct-domain-to-octopress-at-equals-github/">将我的域名指向到github上的octopress</a></h1>
-    <div class="entry">
-        <p>经过了一周时间不断加班的摧残，今天终于有空来折腾octopress了。</p>
-
-<p>想着将disqus换成友言的，希望更适合中文环境。将评论导入的过程比较麻烦，先是想在wordpress装上友言的插件，然后导出所有评论，以为这样可能会比较好导入。可是打开一看，日志的url不正确，不是我需要的那种。</p>
-
-<p>换种方法，从之前导入好评论的disqus里导出，然后写代码生成友言格式的xml文件。使用dom4j，还蛮简单的，1个多小时搞定。</p>
-
-<p>可惜导入成功后，无法与现有的日志进行匹配，自动化程序远不及disqus。</p>
-
-<p>所以最后还是回归disqus，并且顺便把域名也指向github，以示今后就在octopress上折腾的决心。</p>
-
-<h3>记录一下将域名指向github的过程</h3>
-
-<p>需要在octopress的根目录里增加一个文件</p>
-
-<p><code>echo 'fancyoung.com' &gt;&gt; source/CNAME</code></p>
-
-<p>到godaddy上修改cname</p>
-
-<p><code>@ =&gt; odinyu.github.com</code></p>
-
-<p>并修改A</p>
-
-<p><code>@ =&gt; 207.97.227.245</code></p>
-
-<h4>今天游戏上线还算比较平稳，所以终于不用加班到很晚，抚额庆幸</h4>
-
-        
-        
-    </div>
-    <div class="meta">
-        <div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-03-15T17:58:00+08:00" pubdate data-updated="true">Mar 15<span>th</span>, 2012</time></div>
-        <div class="tags">
-
-<div class="cat">
-  
-    <a class='category' href='/blog/categories/octopress/'>Octopress</a>
-  
-</div>
-
-</div>
-        
-        <div class="comments"><a href="/blog/direct-domain-to-octopress-at-equals-github/#disqus_thread">Comments</a></div>
         
 		<a class="bshareDiv" href="http://www.bshare.cn/share">share</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#uuid=&amp;style=10&amp;bgcolor=Orange&amp;ssc=false"></script>
     </div>

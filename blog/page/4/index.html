@@ -7,7 +7,7 @@
     <meta name="author" content="sleepy">
 
     
-    <meta name="description" content="没有重构的日子 今天我们的团队开始没有重构，也意味着痛苦的日子真正开始。 整整一天，为了一个问卷弹出框的样式搞得晕头转向，最后草草收工。 看着同事被页面上的样式问题困扰，而因为没有重构的协助只能继续痛苦。 还有同事因为样式问题周末加班到凌晨，然后周日晚上再次加班。 真是很不明白， &hellip;">
+    <meta name="description" content="将我的域名指向到github上的octopress 经过了一周时间不断加班的摧残，今天终于有空来折腾octopress了。 想着将disqus换成友言的，希望更适合中文环境。将评论导入的过程比较麻烦，先是想在wordpress装上友言的插件，然后导出所有评论，以为这样可能会比较好导入。 &hellip;">
     
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
 
@@ -53,6 +53,69 @@
 </div>
 
 	<div id="content" class="inner">
+
+
+    <article class="post">
+    <h1 class="title"><a href="/blog/direct-domain-to-octopress-at-equals-github/">将我的域名指向到github上的octopress</a></h1>
+    <div class="entry">
+        <p>经过了一周时间不断加班的摧残，今天终于有空来折腾octopress了。</p>
+
+<p>想着将disqus换成友言的，希望更适合中文环境。将评论导入的过程比较麻烦，先是想在wordpress装上友言的插件，然后导出所有评论，以为这样可能会比较好导入。可是打开一看，日志的url不正确，不是我需要的那种。</p>
+
+<p>换种方法，从之前导入好评论的disqus里导出，然后写代码生成友言格式的xml文件。使用dom4j，还蛮简单的，1个多小时搞定。</p>
+
+<p>可惜导入成功后，无法与现有的日志进行匹配，自动化程序远不及disqus。</p>
+
+<p>所以最后还是回归disqus，并且顺便把域名也指向github，以示今后就在octopress上折腾的决心。</p>
+
+<h3>记录一下将域名指向github的过程</h3>
+
+<p>需要在octopress的根目录里增加一个文件</p>
+
+<p><code>echo 'fancyoung.com' &gt;&gt; source/CNAME</code></p>
+
+<p>到godaddy上修改cname</p>
+
+<p><code>@ =&gt; odinyu.github.com</code></p>
+
+<p>并修改A</p>
+
+<p><code>@ =&gt; 207.97.227.245</code></p>
+
+<h4>今天游戏上线还算比较平稳，所以终于不用加班到很晚，抚额庆幸</h4>
+
+        
+        
+    </div>
+    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-15T17:58:00+08:00" pubdate data-updated="true">Mar 15<span>th</span>, 2012</time></div>
+        <div class="tags">
+
+<div class="cat">
+  
+    <a class='category' href='/blog/categories/octopress/'>Octopress</a>
+  
+</div>
+
+</div>
+        
+        <div class="comments"><a href="/blog/direct-domain-to-octopress-at-equals-github/#disqus_thread">Comments</a></div>
+        
+		<a class="bshareDiv" href="http://www.bshare.cn/share">share</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#uuid=&amp;style=10&amp;bgcolor=Orange&amp;ssc=false"></script>
+    </div>
+</article>
 
 
     <article class="post">
@@ -851,51 +914,6 @@
 </div>
         
         <div class="comments"><a href="/blog/chun-cui-xia-xiang/#disqus_thread">Comments</a></div>
-        
-		<a class="bshareDiv" href="http://www.bshare.cn/share">share</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#uuid=&amp;style=10&amp;bgcolor=Orange&amp;ssc=false"></script>
-    </div>
-</article>
-
-
-    <article class="post">
-    <h1 class="title"><a href="/blog/thunder-before-jingzhe/">惊蛰未到，魔都已经打雷了</a></h1>
-    <div class="entry">
-        <p>这两天公司里人心惶惶的，看着一个个部门里的人被裁到只剩个位数，怎么可能让人心情愉快呢。</p>
-
-<p>窗外一片迷雾中，偶尔亮出几道闪电，轰鸣的春雷也应声响起。魔都果然有魔都的风范，惊蛰还没到，老天就开始打雷了。</p>
-
-<p>和同事戏言，是不是公司大规模裁员搞得老天也发怒了？</p>
-
-<p>以上文字是忙了一天后郁闷心情之下的表述，仅此而已。</p>
-
-        
-        
-    </div>
-    <div class="meta">
-        <div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-03-01T00:00:00+08:00" pubdate data-updated="true">Mar 1<span>st</span>, 2012</time></div>
-        <div class="tags">
-
-<div class="cat">
-  
-    <a class='category' href='/blog/categories/normal-life/'>normal life</a>
-  
-</div>
-
-</div>
-        
-        <div class="comments"><a href="/blog/thunder-before-jingzhe/#disqus_thread">Comments</a></div>
         
 		<a class="bshareDiv" href="http://www.bshare.cn/share">share</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/button.js#uuid=&amp;style=10&amp;bgcolor=Orange&amp;ssc=false"></script>
     </div>
