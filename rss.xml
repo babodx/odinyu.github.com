@@ -4,8 +4,52 @@
 		<description><![CDATA[我是清都山水郎]]></description>
 		<title><![CDATA[我是清都山水郎]]></title>
 		<link>http://hopes4.me/</link>
-		<pubDate>2013-01-29T13:50:36+08:00</pubDate>
+		<pubDate>2013-02-01T23:33:05+08:00</pubDate>
 
+		
+		<item>
+			<description>
+				<![CDATA[
+				<p>终于到了周末还是没有等到上周面试的公司的offer，于是只能再次准备面试。</p>
+
+<p>手头上正好还有活要干，所以在家也是在不停地写代码，总的感觉效率还不错。今天完成了项目的主要功能的测试，刚才又解决了另一个辅助功能的难点，所以今天还算是不错。</p>
+
+<p>有的时候在想，是不是能想出些什么别人没有想到的好点子，然后自己就能开始创业，也就不用再为别人打工了。</p>
+
+<p>刚才走了下神，上京东买了点彩票，花点小钱也算给自己点机会，反正目前指望别一个票也同样是没什么希望。</p>
+
+<p>准备睡觉了，明天还要继续奋斗，和小猪和项目和其他。</p>
+
+				Included file &#8216;post/copyright.html&#8217; not found in _includes directory
+				]]>
+			</description>
+			<title><![CDATA[继续在家工作]]></title>
+			<link>http://hopes4.me/blog/homeworking/</link>
+			<pubDate>2013-02-01T23:03:00+08:00</pubDate>
+			<guid isPermaLink="false">http://hopes4.me/blog/homeworking</guid>
+
+			<source url="http://hopes4.me/rss.xml"><![CDATA[我是清都山水郎]]></source>
+		</item>
+		
+		<item>
+			<description>
+				<![CDATA[
+				<p>今天上午又去了一家公司面试，路途比较远，所以心里也就不怎么当回事。</p>
+
+<p>照例是先填表格，然后做题，再主管面试。七弄八弄搞了一个半小时，自我感觉面的不是很好，一些平时没有接触的技术问题都没有回答上来。</p>
+
+<p>看来自己理论水平还是不够，准备继续看书看资料，然后再做打算。</p>
+
+				Included file &#8216;post/copyright.html&#8217; not found in _includes directory
+				]]>
+			</description>
+			<title><![CDATA[再次面试]]></title>
+			<link>http://hopes4.me/blog/interview-again/</link>
+			<pubDate>2013-01-29T13:00:00+08:00</pubDate>
+			<guid isPermaLink="false">http://hopes4.me/blog/interview-again</guid>
+
+			<source url="http://hopes4.me/rss.xml"><![CDATA[我是清都山水郎]]></source>
+		</item>
 		
 		<item>
 			<description>
@@ -579,52 +623,6 @@
 			<link>http://hopes4.me/blog/small-problem-in-android-develop-environment/</link>
 			<pubDate>2012-05-25T17:48:00+08:00</pubDate>
 			<guid isPermaLink="false">http://hopes4.me/blog/small-problem-in-android-develop-environment</guid>
-
-			<source url="http://hopes4.me/rss.xml"><![CDATA[我是清都山水郎]]></source>
-		</item>
-		
-		<item>
-			<description>
-				<![CDATA[
-				<p>之前在开发的美女时钟的android版，由于某些原因耽搁了一阵，今天有空想起来，觉得有必要先小结一下，以免按下来继续开发的时候会有遗忘。</p>
-
-<p>虽然说用phonegap框架开发对于我这个应用来说还算是比较适合，但是过程中遇到的问题还是有一些的，不过还好通过强大的google，基本还是能够解决之。同时必须要提到的另一个网站，stackoverflow.com，绝对是开发人员寻找思路和解决方案的好网站。</p>
-
-<p>用mindmap的形式小结了一下，以作备忘。</p>
-
-<p><img src="http://pcly6g.bay.livefilestore.com/y1pkcehnNe6DU0SYuogKzYBjVqBNWZOsp5uy8Y-vaGKZzuhkf-P_jEQAFdK4iP8VmJpA19YmYQTpLBuIlS7wer6M84Y7x2pVnzZ/Beauty%20Clock.jpg" width="400" alt="美女时钟mindmap" orihref="http://public.bay.livefilestore.com/y1pZ6urAgelGSCK1EQMOJr9XxfSK3PXdPrA0-yVXmrrDD8BICOqCFxvxYyojNvoqAgGAGyRQ5HNOTnwj2ACPq-h9A/Beauty%20Clock.jpeg"/></p>
-
-				Included file &#8216;post/copyright.html&#8217; not found in _includes directory
-				]]>
-			</description>
-			<title><![CDATA[美女时钟android版的开发小结]]></title>
-			<link>http://hopes4.me/blog/summary-of-beauty-clock/</link>
-			<pubDate>2012-05-17T14:27:00+08:00</pubDate>
-			<guid isPermaLink="false">http://hopes4.me/blog/summary-of-beauty-clock</guid>
-
-			<source url="http://hopes4.me/rss.xml"><![CDATA[我是清都山水郎]]></source>
-		</item>
-		
-		<item>
-			<description>
-				<![CDATA[
-				<p>因为本身是做java开发的，所有一直有做一个android应用的想法，只是始终是拖延的毛病在作祟，所以迟迟没有行动。不过最近这一周终于是借助Phonegap这个号称能开发跨平台移动应用的开源框架，结合之前chrome上做过的美女时钟，做出了我的第一个android应用的demo版。</p>
-
-<p>目前应用的主要功能基本已经实现，虚拟机和真机都测试过，运行还算流畅。接下来除了保证应用的稳定性，还会继续增加一些新功能，并调整一下UI。</p>
-
-<p>用了这一段时间的Phonegap和android，感觉和原生的应用相比效率是有点低下，不过胜在开发起来相对简单，尤其适合web应用。</p>
-
-<p>刚才忽然想到也可以用这个框架来做一下电子书的单行本，有空了继续练练手。</p>
-
-<p>希望不久的将来可以把我的应用提交到google play上去，那也就算是没有白做一回。</p>
-
-				Included file &#8216;post/copyright.html&#8217; not found in _includes directory
-				]]>
-			</description>
-			<title><![CDATA[正在用Phonegap做一个Android应用]]></title>
-			<link>http://hopes4.me/blog/android-app/</link>
-			<pubDate>2012-05-08T16:39:00+08:00</pubDate>
-			<guid isPermaLink="false">http://hopes4.me/blog/android-app</guid>
 
 			<source url="http://hopes4.me/rss.xml"><![CDATA[我是清都山水郎]]></source>
 		</item>
