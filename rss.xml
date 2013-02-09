@@ -4,8 +4,34 @@
 		<description><![CDATA[我是清都山水郎]]></description>
 		<title><![CDATA[我是清都山水郎]]></title>
 		<link>http://hopes4.me/</link>
-		<pubDate>2013-02-01T23:33:05+08:00</pubDate>
+		<pubDate>2013-02-09T14:44:28+08:00</pubDate>
 
+		
+		<item>
+			<description>
+				<![CDATA[
+				<p>又是一年过去了，每年都会有一番总结，今年也一样有，只是却不必总结给别人看，只需自己知晓。</p>
+
+<p>日常生活方面，儿子一天一天在长大，虽然顽皮依旧，但是却在明显地成长中。老婆还是一样的偶尔小性子甩甩，可是却对我关心有加。父母身体总的来说还算可以，母亲在手术康复中，父亲持续保养之道。岳父因为对饮食的控制不力，以致糖尿病有并发症症状，不过目前开始收敛了。岳母对我们家的帮助最大，儿子的生活起居和有大程度离不开她。家庭生活总的来说还是比较美满的，和老婆的争吵好像也基本上很少，不过还是要继续努力。</p>
+
+<p>13年生活中又会发生一件可能不算小的事，那就是儿子要开始上小学了。为了让小猪上学放学不用赶路那么累，我们一家可能要到小学附近去租房子，同时考虑把自己的房子也借出去作为补贴。另外，我想随着小猪上一年级，作为家长的我和老婆恐怕也都难免要再次重温一年级的课程了。</p>
+
+<p>工作，很不幸地在年底结束了我友为期2年的工作。不能说在我友一点收获也没有，但是或许当时不离开也不一定是一个更糟的决定。反思是必须的，但接下来的路是要继续走下去，准备年后再找家好一点的公司试试。</p>
+
+<p>博客从去年初迁移到基于github的octopress，日志数量并没有显著地提升，不过陆续还是有在更新。13年有了可以直接在移动端写日志并发布的方法后，我想更新频率应该会提高一些吧。</p>
+
+<p>明天就是大年夜了，估计也没空写什么总结，所以放到小年夜也蛮不错。别了，2012!</p>
+
+				Included file &#8216;post/copyright.html&#8217; not found in _includes directory
+				]]>
+			</description>
+			<title><![CDATA[总结2012]]></title>
+			<link>http://hopes4.me/blog/summary-of-2012/</link>
+			<pubDate>2013-02-08T21:57:00+08:00</pubDate>
+			<guid isPermaLink="false">http://hopes4.me/blog/summary-of-2012</guid>
+
+			<source url="http://hopes4.me/rss.xml"><![CDATA[我是清都山水郎]]></source>
+		</item>
 		
 		<item>
 			<description>
@@ -589,40 +615,6 @@
 			<link>http://hopes4.me/blog/i-can-post-again/</link>
 			<pubDate>2012-06-19T17:59:00+08:00</pubDate>
 			<guid isPermaLink="false">http://hopes4.me/blog/i-can-post-again</guid>
-
-			<source url="http://hopes4.me/rss.xml"><![CDATA[我是清都山水郎]]></source>
-		</item>
-		
-		<item>
-			<description>
-				<![CDATA[
-				<p>昨天休息了一天，今天打开eclipse然后顺手点开Android SDK Manager并升级了一下，结果就出问题了。</p>
-
-<p>首先是eclipse提示我当前的ADT版本太低，需要升级到17或以上。貌似之前也遇到过这个问题，所以也有点准备。直接eclipse里install new software，然后add一个并从本地选择从网上下载回来的ADT升级压缩包，再一路安装。</p>
-
-<p>本来以为安装成功后就没问题了，可是一运行虚拟机却又报了一个错。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>The connection to adb is down, and a severe error has occured</span></code></pre></td></tr></table></div></figure>
-
-
-<p>还好有万能的google，总算找来下面的两个命令，然后重启eclipse，搞定！</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>adb kill-server
-</span><span class='line'>adb start-server</span></code></pre></td></tr></table></div></figure>
-
-
-<p>自己记录一下，免得以后再找麻烦。</p>
-
-				Included file &#8216;post/copyright.html&#8217; not found in _includes directory
-				]]>
-			</description>
-			<title><![CDATA[android开发环境上的小问题]]></title>
-			<link>http://hopes4.me/blog/small-problem-in-android-develop-environment/</link>
-			<pubDate>2012-05-25T17:48:00+08:00</pubDate>
-			<guid isPermaLink="false">http://hopes4.me/blog/small-problem-in-android-develop-environment</guid>
 
 			<source url="http://hopes4.me/rss.xml"><![CDATA[我是清都山水郎]]></source>
 		</item>
