@@ -4,8 +4,32 @@
 		<description><![CDATA[我是清都山水郎]]></description>
 		<title><![CDATA[我是清都山水郎]]></title>
 		<link>http://hopes4.me/</link>
-		<pubDate>2013-02-09T14:44:28+08:00</pubDate>
+		<pubDate>2013-02-16T22:25:12+08:00</pubDate>
 
+		
+		<item>
+			<description>
+				<![CDATA[
+				<p>前天晚上做了一个梦，醒来的时候突然很想把它记下来，于是立即趁对梦境记忆还比较清楚的时候做了一下记录。手机一直放在枕边，所以就直接打开Cotton Notes记录在手机上。</p>
+
+<p>有必要在这里描述一下Cotton Notes，这个应用和另外一个棉花笔记（其实英文名是SomNote）并非同一个东西。英文名这个是大纲式笔记记录应用，中文名这个则是类似云笔记一类的应用。当然Cotton Notes也可以通过dropbox保持多个设备同步，还可以导出导入evernote的内容，功能还是比较多的。为什么要用这个应用，主要是因为用大纲折方式来记录对于思路的整理比较有帮助，也便于概括和归纳。其实iphone上类似的应用还有，像Ita也不错，只是个人觉得不太适合自己。</p>
+
+<p>现在把话题回归到梦境上来，其实整个梦也并不复杂，貌似是我在某个社交平台上分享了一个截图并@了某人，截图上有一段英文，结果因为这段英文引起了梦境中的我的慌乱。具体的英文我已经忘记了，大致的意思是嘲笑某人的理想不切实际行动不着边际云云。于是乎我@的这个人马上严辞回复我，这个人的朋友也开始声讨我，还有些人旁敲侧击，总之我是焦头烂额。最终我只能承认自己其实是并不太懂那句英文的原义，只是在不懂装懂。</p>
+
+<p>我之所以要记录下这个梦，主要是感叹于当今社交网络的发展，连我在梦境还会受到网络社交的影响。昨天和几个同学聚了下，可能是大家都是70后的关系，所以言谈中对当下年轻人的社交行为和方式并不是很以为是，不过我却觉得这似乎是未来的趋势，或许“随波逐流”会更适宜一些吧。</p>
+
+<p>最后，希望今天晚上会有好梦！</p>
+
+				Included file &#8216;post/copyright.html&#8217; not found in _includes directory
+				]]>
+			</description>
+			<title><![CDATA[梦境]]></title>
+			<link>http://hopes4.me/blog/dream/</link>
+			<pubDate>2013-02-16T08:20:00+08:00</pubDate>
+			<guid isPermaLink="false">http://hopes4.me/blog/dream</guid>
+
+			<source url="http://hopes4.me/rss.xml"><![CDATA[我是清都山水郎]]></source>
+		</item>
 		
 		<item>
 			<description>
@@ -576,45 +600,6 @@
 			<link>http://hopes4.me/blog/over-the-wall-again/</link>
 			<pubDate>2012-06-25T18:18:00+08:00</pubDate>
 			<guid isPermaLink="false">http://hopes4.me/blog/over-the-wall-again</guid>
-
-			<source url="http://hopes4.me/rss.xml"><![CDATA[我是清都山水郎]]></source>
-		</item>
-		
-		<item>
-			<description>
-				<![CDATA[
-				<p>好久没有更新我的博客了，这次的主要原因可不是我又怎么犯懒，而是公司的电脑不争气地挂了，而后我更换了一台。</p>
-
-<p>而新电脑需要重新搭建octopress所需要的环境，碰巧我的vpn也不怎么地不能用了，于是耽搁到今天。</p>
-
-<p>今天终于有时间来搞octopress相关的环境，在终于成功之际还是要记录一下，以备今后再用到。</p>
-
-<figure class='code'><figcaption><span>修改Rubygems镜像 </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>gem sources --remove http://rubygems.org/ 
-</span><span class='line'>gem sources -a http://ruby.taobao.org/
-</span><span class='line'>gem sources -l
-</span><span class='line'>gem install bundler --pre</span></code></pre></td></tr></table></div></figure>
-
-
-<p>安装完之后，修改octopress路径下gemfile的Rubygems镜像，同样是改成http://ruby.taobao.org/。</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>bundle install
-</span><span class='line'>rake install</span></code></pre></td></tr></table></div></figure>
-
-
-				Included file &#8216;post/copyright.html&#8217; not found in _includes directory
-				]]>
-			</description>
-			<title><![CDATA[终于又可以更新博客了]]></title>
-			<link>http://hopes4.me/blog/i-can-post-again/</link>
-			<pubDate>2012-06-19T17:59:00+08:00</pubDate>
-			<guid isPermaLink="false">http://hopes4.me/blog/i-can-post-again</guid>
 
 			<source url="http://hopes4.me/rss.xml"><![CDATA[我是清都山水郎]]></source>
 		</item>
